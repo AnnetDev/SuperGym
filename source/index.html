@@ -1,32 +1,264 @@
 <!DOCTYPE html>
 <html lang="ru" data-validate="html">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SUPERGYM</title>
-    <link rel="stylesheet" href="sass/style.scss">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SUPERGYM</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+  <link rel="preload" href="#" type="font/woff2" as="font">
+  <link rel="stylesheet" href="sass/style.scss">
+</head>
 
-  <body class="page-body">
-    <!-- пример использования спрайта -->
-    <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
+<body class="page-body">
+  <!-- пример использования спрайта -->
+  <!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
     <svg>
       <use href="/__spritemap#sprite-user"></use>
-    </svg>
-    <!-- примеры требуемых атрибутов data-test="*" -->
-    <div data-test="hero">hero</div>
-    <div data-test="about">about</div>
-    <div data-test="price">price</div>
-    <div data-test="games">games</div>
-    <div data-test="juri">juri</div>
-    <div data-test="features">features</div>
-    <div data-test="offers">offers</div>
+    </svg> -->
+  <!-- примеры требуемых атрибутов data-test="*" -->
+  <main>
+
+    <section class="hero" data-test="hero">
+      <div class="container">
+        <div class="hero__header">
+          <picture>
+            <!-- адаптивные изображения logo? -->
+          </picture>
+          <a class="hero__phone" href="tel:88005555555">8 800 555-55-55</a>
+        </div>
+        <p>Тренажёрный зал
+          Групповые занятия
+          Кардио-зона</p>
+        <div>
+          <h2>Омск</h2>
+          <h1>ФИТНЕС ЦЕНТР</h1>
+          <a href="#">Купить абонемент</a>
+        </div>
+        <!-- якорь -->
+        <picture>
+          <!-- адаптивные изображения couch -->
+        </picture>
+      </div>
+    </section>
+
+    <section class="about" data-test="about">
+      <div class="container">
+        <h2>Тренажёрный зал</h2>
+        <p>Просторный зал площадью 900 кв/м</p>
+        <!-- content area below -->
+        <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажёрный
+          зал оснащён всем необходимым современным оборудованием для всех спортсменов.
+          В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажёрами. Также в фитнес центре
+          есть несколько оборудованных залов для различных видов групповых занятий.
+        </p>
+        <picture>
+          <!-- адаптивные изображения -->
+        </picture>
+        <video>
+          <iframe></iframe>
+        </video>
+      </div>
+    </section>
+
+    <section class="price" data-test="price">
+      <div class="container">
+        <h2>Абонементы</h2>
+        <ul class="price__tab">
+          <h3 class="price__tab-header">1 месяц</h3>
+
+          <li class="price__tab-item">
+            <h4 class="price__tab-title">С тренером</h4>
+            <p class="price__tab-description">12 занятий</p>
+            <p class="price__tab-price">5000</p>
+            <a class="button price__tab-button" href="#">Купить абонемент</a>
+          </li>
+
+          <li class="price__tab-item">
+            <h4 class="price__tab-title">Дневной</h4>
+            <p class="price__tab-description">с 8:00 до 17:00</p>
+            <p class="price__tab-price">1700</p>
+            <a class="button price__tab-button" href="#">Купить абонемент</a>
+          </li>
+
+          <li class="price__tab-item">
+            <h4 class="price__tab-title">Полный день</h4>
+            <p class="price__tab-description">с 8:00 до 22:00</p>
+            <p class="price__tab-price">2700</p>
+            <a class="button price__tab-button" href="#">Купить абонемент</a>
+          </li>
+        </ul>
+
+        <ul class="price__tab">
+          <h3 class="price__tab-header">6 месяцев</h3>
+
+          <li class="price__tab-item">
+            <h4 class="price__tab-title">С тренером</h4>
+            <p class="price__tab-description">12 занятий</p>
+            <p class="price__tab-price">30 000</p>
+            <a class="button price__tab-button" href="#">Купить абонемент</a>
+          </li>
+
+          <li class="price__tab-item">
+            <h4 class="price__tab-title">Дневной</h4>
+            <p class="price__tab-description">с 8:00 до 17:00</p>
+            <p class="price__tab-price">10 200</p>
+            <a class="button price__tab-button" href="#">Купить абонемент</a>
+          </li>
+
+          <li class="price__tab-item">
+            <h4 class="price__tab-title">Полный день</h4>
+            <p class="price__tab-description">с 8:00 до 22:00</p>
+            <p class="price__tab-price">16 200</p>
+            <a class="button price__tab-button" href="#">Купить абонемент</a>
+          </li>
+        </ul>
+
+        <ul class="price__tab">
+          <h3 class="price__tab-header">12 месяцев</h3>
+
+          <li class="price__tab-item">
+            <h4 class="price__tab-title">С тренером</h4>
+            <p class="price__tab-description">12 занятий</p>
+            <p class="price__tab-price">60 000</p>
+            <a class="button price__tab-button" href="#">Купить абонемент</a>
+          </li>
+
+          <li class="price__tab-item">
+            <h4 class="price__tab-title">Дневной</h4>
+            <p class="price__tab-description">с 8:00 до 17:00</p>
+            <p class="price__tab-price">20 400</p>
+            <a class="button price__tab-button" href="#">Купить абонемент</a>
+          </li>
+
+          <li class="price__tab-item">
+            <h4 class="price__tab-title">Полный день</h4>
+            <p class="price__tab-description">с 8:00 до 22:00</p>
+            <p class="price__tab-price">32 400</p>
+            <a class="button price__tab-button" href="#">Купить абонемент</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <article class="games" data-test="games">
+      <div class="container">
+        <div class="games__content-wrapper">
+          <div class="games__announce">
+            <h1 class="games__title">Super Games</h1>
+            <p class="games__announce-title">Дата</p>
+            <div>
+              <p class="games__announce-date">7</p>
+              <p class="games__announce-details">Марта 2019</p>
+            </div>
+            <div>
+              <p class="games__announce-title">Время</p>
+              <p class="games__announce-date">12:00</p>
+            </div>
+          </div>
+          <p class="games__announce-description">Ежегодные соревнования по CrossFit</p>
+          <a class="button games__announce-button" href="#">заполнить заявку</a>
+        </div>
+        <picture>
+          <!-- адаптивные изображения -->
+        </picture>
+      </div>
+    </article>
+
+    <section class="juri" data-test="juri">
+      <div class="container">
+        <h2 class="juri__title">Жюри</h2>
+        <!-- Swiper -->
+      </div>
+    </section>
+
+
+    <section class="features" data-test="features">
+      <div class="container">
+        <h2 class="features__title">Наши преимущества</h2>
+        <!-- content area below -->
+        <ul>
+          <li>
+            <div>
+              <span>900 <span>кв/м</span> </span>
+            </div>
+            <h3>Площадь</h3>
+            <p>Занимайтесь без очередей и толкучки</p>
+          </li>
+
+          <li>
+            <div>
+              <span>350 <span>мест</span> </span>
+            </div>
+            <h3>Комфорт</h3>
+            <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
+          </li>
+
+          <li>
+            <div>
+              <span>100 <span>Тренажёров</span> </span>
+            </div>
+            <p>Современные тренажёры на все группы мышц</p>
+          </li>
+
+          <li>
+            <div>
+              <span>70 <span>машин</span> </span>
+            </div>
+            <h3>Собственная парковка</h3>
+            <p>Вы всегда найдёте место для своей машины на нашей парковке</p>
+          </li>
+
+          <li>
+            <div>
+              <span>5+ <span>лет</span> </span>
+            </div>
+            <h3>Тренерский опыт</h3>
+            <p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
+          </li>
+
+        </ul>
+      </div>
+
+    </section>
+
+    <section class="offers" data-test="offers">
+      <div class="container">
+        <h2 class="offers__title">Наши Акции</h2>
+        <!-- content area below -->
+        <div>
+          <div>
+            <h4>Год</h4>
+            <span>4999</span>
+            <p>Безлимитный абонемент в тренажёрный зал</p>
+            <a class="button offers__more-link" href="#">подробнее</a>
+          </div>
+          <picture>
+            <!-- адаптивные изображения? -->
+          </picture>
+        </div>
+        <ul>
+          <li>
+            <h4>Месяц бесплатно</h4>
+            <p>Приведи друга, получи абонемент в подарок</p>
+            <a class="button offers__more-link" href="#">подробнее</a>
+          </li>
+          <li>
+            <h4>Скидка 20%</h4>
+            <p>Корпоративный фитнес с командой</p>
+            <a class="button offers__more-link" href="#">подробнее</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
     <div data-test="faq">faq</div>
     <div data-test="reviews">reviews</div>
     <div data-test="form">form</div>
     <div data-test="footer">footer</div>
-    <script type="module" src="js/main.js"></script>
-  </body>
+  </main>
+  <script type="module" src="js/main.js"></script>
+</body>
 
 </html>
