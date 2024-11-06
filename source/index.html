@@ -170,6 +170,26 @@
       <div class="container">
         <h2 class="juri__title">Жюри</h2>
         <!-- Swiper -->
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            ...
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
       </div>
     </section>
 
@@ -253,10 +273,306 @@
       </div>
     </section>
 
-    <div data-test="faq">faq</div>
-    <div data-test="reviews">reviews</div>
-    <div data-test="form">form</div>
-    <div data-test="footer">footer</div>
+    <section class="faq" data-test="faq">
+      <div class="container">
+        <h2 class="faq__heading">Вопросы и ответы</h2>
+        <div class="faq__tabs-wrapper">
+          <ul class="faq__tab">
+            <button class="faq__tab-button" type="button">
+              <h3>Центр</h3>
+            </button>
+            <li>
+              <h4>Как стать членом фитнес-центра?</h4>
+              <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке
+                абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.
+              </p>
+              <button class="faq__button" type="button">
+                <span class="visually-hidden">Показать/Скрыть</span>
+              </button>
+            </li>
+            <li>
+              <h4>Где можно посмотреть расписание?</h4>
+              <p>Вы можете ознакомиться с расписание на стойке информации, на нашем официальном сайте. Так же есть
+                возможность оформить подписку на наши новости и получать расписание и обновления на почту каждую неделю.
+              </p>
+              <button class="faq__button" type="button">
+                <span class="visually-hidden">Показать/Скрыть</span>
+              </button>
+            </li>
+            <li>
+              <h4>Есть кулеры в центре? Предоставляются полотенца?</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat
+              </p>
+              <button class="faq__button" type="button">
+                <span class="visually-hidden">Показать/Скрыть</span>
+              </button>
+            </li>
+            <li>
+              <h4>Сколько тренеров работает в клубе и какова их квалификация?</h4>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              </p>
+              <button class="faq__button" type="button">
+                <span class="visually-hidden">Показать/Скрыть</span>
+              </button>
+            </li>
+          </ul>
+
+          <ul class="faq__tab">
+            <button class="faq__tab-button" type="button">
+              <h3>Абонемент</h3>
+            </button>
+            <li>
+              <h4>Занятия с тренером входят в абонемент?</h4>
+              <p>При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда
+                присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по тренажеру
+                или технике выполнения упражнения.
+              </p>
+              <button class="faq__button" type="button">
+                <span class="visually-hidden">Показать/Скрыть</span>
+              </button>
+            </li>
+            <li>
+              <h4>Можно ли заморозить абонемент?</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+              </p>
+              <button class="faq__button" type="button">
+                <span class="visually-hidden">Показать/Скрыть</span>
+              </button>
+            </li>
+            <li>
+              <h4>Есть ли лимит по посещениям тренажерного зала и групповых занятий?</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat
+              </p>
+              <button class="faq__button" type="button">
+                <span class="visually-hidden">Показать/Скрыть</span>
+              </button>
+            </li>
+            <li>
+              <h4>Что такое семейный доступ и доступ для друзей?</h4>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              </p>
+              <button class="faq__button" type="button">
+                <span class="visually-hidden">Показать/Скрыть</span>
+              </button>
+            </li>
+          </ul>
+
+          <ul class="faq__tab">
+            <button class="faq__tab-button" type="button">
+              <h3>Услуги</h3>
+            </button>
+            <li>
+              <h4>Предлагает ли клуб услуги по консультированию по вопросам питания?</h4>
+              <p>Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши
+                данные, цели и предложит программу питания.
+              </p>
+              <button class="faq__button" type="button">
+                <span class="visually-hidden">Показать/Скрыть</span>
+              </button>
+            </li>
+            <li>
+              <h4>Проводятся ли в клубе какие-либо мероприятия или соревнования?</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+              </p>
+              <button class="faq__button" type="button">
+                <span class="visually-hidden">Показать/Скрыть</span>
+              </button>
+            </li>
+            <li>
+              <h4>Можно ли приобрести в центре спортивное питание?</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat
+              </p>
+              <button class="faq__button" type="button">
+                <span class="visually-hidden">Показать/Скрыть</span>
+              </button>
+            </li>
+            <li>
+              <h4>Есть ли в центре детская комната?</h4>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              </p>
+              <button class="faq__button" type="button">
+                <span class="visually-hidden">Показать/Скрыть</span>
+              </button>
+            </li>
+          </ul>
+
+          <ul class="faq__tab">
+            <button class="faq__tab-button" type="button">
+              <h3>Правила</h3>
+            </button>
+            <li>
+              <h4>Есть в фитнес-центре дресс-код?</h4>
+              <p>Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и
+                нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки).
+                В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п.,
+                исключения составляют специальные классы (например, йога, пилатес).
+              </p>
+              <button class="faq__button" type="button">
+                <span class="visually-hidden">Показать/Скрыть</span>
+              </button>
+            </li>
+            <li>
+              <h4>Можно ли приводить с собой детей на тренировки?</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+              </p>
+              <button class="faq__button" type="button">
+                <span class="visually-hidden">Показать/Скрыть</span>
+              </button>
+            </li>
+            <li>
+              <h4>Какие дополнительные правила посещения центра?</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat
+              </p>
+              <button class="faq__button" type="button">
+                <span class="visually-hidden">Показать/Скрыть</span>
+              </button>
+            </li>
+            <li>
+              <h4>Нужна ли медицинская справка для посещения залов и бассейна?</h4>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              </p>
+              <button class="faq__button" type="button">
+                <span class="visually-hidden">Показать/Скрыть</span>
+              </button>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </section>
+
+
+    <section data-test="reviews">
+      <div class="container">
+        <h2 class="faq__heading">Отзывы</h2>
+
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            ...
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="form" data-test="form">
+      <div class="container form__wrapper">
+        <form action="https://echo.htmlacademy.ru">
+          <h2>Бесплатное занятие</h2>
+          <fieldset>
+            <legend class="visually-hidden">Отправить заявку на бесплатное занятие</legend>
+            <label class="form__label" for="input-name">
+              <input  class="form__input-name" type="text" name="input-name" placeholder="Имя" id="input-name" required>
+            </label>
+            <label class="form__label" for="input-phone">
+            <input  class="form__input-phone" type="tel" name="input-phone" placeholder="Телефон" id="input-phone" required>
+          </label>
+          <button class="button form__button" type="submit">отправить</button>
+          </fieldset>
+          <article class="form__contacts contacts">
+            <h2>Контакты</h2>
+            <ul class="contacts__list">
+              <li class="contacts__list-item">
+                <h4 class="contacts__list-title">Адрес:</h4>
+                <p class="contacts__list-description">г. Омск, ул. 60 лет Октября, 7</p>
+              </li>
+              <li class="contacts__list-item">
+                <h4 class="contacts__list-title">График работы:</h4>
+                <p class="contacts__list-description">Пн-Вс: с 8:00 до 22:00</p>
+              </li>
+              <li class="contacts__list-item">
+                <h4 class="contacts__list-title">Телефон:</h4>
+                <a class="contacts__list-description contacts__list-phone" href="tel:88005555555">8 800 555-55-55</a>
+              </li>
+              <li class="contacts__list-item">
+                <h4 class="contacts__list-title">Email:</h4>
+                <a class="contacts__list-description" href="mailto:oмск@supergym.ru">oмск@supergym.ru</a>
+              </li>
+            </ul>
+          </article>
+        </form>
+    </div>
+  </section>
+
+    <footer class="footer" data-test="footer">
+      <div class="container">
+        <picture>
+          <!-- адаптивные изображения logo? no links -->
+        </picture>
+        <nav class="footer__navigation">
+          <ul class="footer__navigation-list">
+            <li class="footer__navigation-item">
+              <a clas="footer__navigation-link" href="#">
+                Услуги
+              </a>
+            </li>
+            <li class="footer__navigation-item">
+              <a clas="footer__navigation-link" href="#">
+                Абонементы
+              </a>
+            </li>
+            <li class="footer__navigation-item">
+              <a clas="footer__navigation-link" href="#">
+                Акции
+              </a>
+            </li>
+            <li class="footer__navigation-item">
+              <a clas="footer__navigation-link" href="#">
+                Тренеры
+              </a>
+            </li>
+            <li class="footer__navigation-item">
+              <a clas="footer__navigation-link" href="#">
+                Расписание
+              </a>
+            </li>
+          </ul>
+
+          <ul class="footer__social-list">
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="#">
+                <span class="visually-hidden">VK</span>
+                </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="#">
+                <span class="visually-hidden">OK</span>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="#">
+                <span class="visually-hidden">Reddit</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
   </main>
   <script type="module" src="js/main.js"></script>
 </body>
