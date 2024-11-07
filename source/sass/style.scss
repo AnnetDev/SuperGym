@@ -2,3 +2,16 @@
 // ---------------------------------
 
 @import "vendor/normalize";
+
+//Global
+@import "./common/variables.scss";
+@import "./common/mixins.scss";
+@import "./common/global.scss";
+@import "./common/fonts.scss";
+@import "./common/visually-hidden.scss";
+
+
+//Blocks
+@import "./blocks/container.scss";
+@import "./blocks/button.scss";
+@import "./blocks/hero.scss";
