@@ -15,7 +15,7 @@
   <link rel="preload" href="./fonts/RobotoCondensed-Light.woff" as="font" type="font/woff" crossorigin="anonymous">
   <link rel="preload" href="./fonts/RobotoCondensed-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="./fonts/RobotoCondensed-Medium.woff" as="font" type="font/woff" crossorigin="anonymous">
-  <link rel="preload" href="./fonts//RobotoCondensed-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/RobotoCondensed-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="./fonts/RobotoCondensed-Regular.woff" as="font" type="font/woff" crossorigin="anonymous">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
@@ -61,12 +61,11 @@
             <a class="button hero__button" href="#">Купить абонемент</a><!-- якорь -->
           </div>
           <picture>
-            <!-- адаптивные изображения couch -->
             <source type="image/webp" media="(min-width: 1356px)"
               srcset="img/images/hero-img-desktop@1x.webp 1x, img/images/hero-img-desktop@2x.webp 2x" width="500"
               height="524">
             <source type="image/webp" media="(min-width: 768px)"
-              srcset="img/images//hero-img-tablet@1x.webp 1x, img/images/hero-img-tablet@2x.webp 2x" width="324"
+              srcset="img/images/hero-img-tablet@1x.webp 1x, img/images/hero-img-tablet@2x.webp 2x" width="324"
               height="390">
 
             <source type="image/jpg" media="(min-width: 1356px)"
@@ -83,22 +82,47 @@
     </section>
 
     <section class="about" data-test="about">
-      <div class="container">
-        <h2>Тренажёрный зал</h2>
-        <p>Просторный зал площадью 900 кв/м</p>
+      <div class="container about__container">
+        <div class="about__text-wrapper">
+        <h2 class="about__title">Тренажёрный зал</h2>
+        <h4 class="about__subtitle">Просторный зал площадью 900 кв/м</h4>
         <!-- content area below -->
         <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажёрный
           зал оснащён всем необходимым современным оборудованием для всех спортсменов.
+        </p>
+        <p>
           В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажёрами. Также в фитнес центре
           есть несколько оборудованных залов для различных видов групповых занятий.
         </p>
-        <picture>
-          <!-- адаптивные изображения -->
-        </picture>
-        <video>
-          <iframe></iframe>
-        </video>
       </div>
+      <div class="about__media-wrapper">
+        <picture>
+          <source type="image/webp" media="(min-width: 1356px)"
+            srcset="img/images/about-desktop@1x.webp 1x, img/images/about-desktop@2x.webp 2x" width="660" height="400">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/images/about-tablet@1x.webp 1x, img/images/about-tablet@2x.webp 2x" width="678" height="345">
+          <source type="image/webp" srcset="img/images/about-mobile@1x.webp 1x, img/images/about-mobile@2x.webp 2x"
+            width="320" height="280">
+
+          <source type="image/png" media="(min-width: 1356px)"
+            srcset="img/images/about-desktop@1x.png 1x, img/images/about-desktop@2x.png 2x" width="500" height="524">
+          <source type="image/png" media="(min-width: 768px)"
+            srcset="img/images/aboutg-tablet@1x.png 1x, img/images/about-tablet@2x.png 2x" width="324" height="390">
+          <img class="about__image" src="img/images/about-mobile@1x.png" srcset="images/img/images/about-mobile@2x.png"
+            width="320" height="280" alt="Тренажёрный зал">
+        </picture>
+        <div class="about__video video">
+          <div class="video__container">
+            <div class="video__placeholder">
+              <button class="video__button" type="button">
+                <span class="visually-hidden">Play</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
     </section>
 
     <section class="price" data-test="price">
