@@ -1,0 +1,21 @@
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+  width: 100vw;
+  max-width: 320px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 768px;
+    padding: 0 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1366px;
+    padding: 0 103px;
+  }
+
+  // @media (max-width: 319px) {
+  //   max-width: 100%;
+  //   padding: 0 10px;
+  // }
+}

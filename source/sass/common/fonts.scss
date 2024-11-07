@@ -1,0 +1,9 @@
+// AlumniSans
+@include font-face("Alumni Sans", 600, normal, url("../../fonts/AlumniSans-SemiBold.woff2") format("woff2"), url("../../fonts/AlumniSans-SemiBold.woff") format("woff"));
+@include font-face("Alumni Sans", 800, normal, url("../../fonts/AlumniSans-ExtraBold.woff2") format("woff2"), url("../../fonts/AlumniSans-ExtraBold.woff") format("woff"));
+
+// Roboto Condensed
+@include font-face("Roboto Condensed", 300, normal, url("../../fonts/RobotoCondensed-Light.woff2") format("woff2"), url("../../fonts/RobotoCondensed-Light.woff") format("woff"));
+@include font-face("Roboto Condensed", 400, normal, url("../../fonts/RobotoCondensed-Regular.woff2") format("woff2"), url("../../fonts/RobotoCondensed-Regular.woff") format("woff"));
+@include font-face("Roboto Condensed", 500, normal, url("../../fonts/RobotoCondensed-Medium.woff2") format("woff2"), url("../../fonts/RobotoCondensed-Medium.woff") format("woff"));
+@include font-face("Roboto Condensed", 700, normal, url("../../fonts/RobotoCondensed-Bold.woff2") format("woff2"), url("../../fonts/RobotoCondensed-Bold.woff") format("woff"));
