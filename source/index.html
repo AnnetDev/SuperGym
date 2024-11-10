@@ -29,7 +29,6 @@
     <svg>
       <use href="/__spritemap#sprite-user"></use>
     </svg> -->
-  <!-- примеры требуемых атрибутов data-test="*" -->
   <main>
 
     <section class="hero" data-test="hero">
@@ -84,121 +83,118 @@
     <section class="about" data-test="about">
       <div class="container about__container">
         <div class="about__text-wrapper">
-        <h2 class="about__title">Тренажёрный зал</h2>
-        <h4 class="about__subtitle">Просторный зал площадью 900 кв/м</h4>
-        <!-- content area below -->
-        <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажёрный
-          зал оснащён всем необходимым современным оборудованием для всех спортсменов.
-        </p>
-        <p>
-          В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажёрами. Также в фитнес центре
-          есть несколько оборудованных залов для различных видов групповых занятий.
-        </p>
-      </div>
-      <div class="about__media-wrapper">
-        <picture>
-          <source type="image/webp" media="(min-width: 1356px)"
-            srcset="img/images/about-desktop@1x.webp 1x, img/images/about-desktop@2x.webp 2x" width="660" height="400">
-          <source type="image/webp" media="(min-width: 768px)"
-            srcset="img/images/about-tablet@1x.webp 1x, img/images/about-tablet@2x.webp 2x" width="678" height="345">
-          <source type="image/webp" srcset="img/images/about-mobile@1x.webp 1x, img/images/about-mobile@2x.webp 2x"
-            width="320" height="280">
+          <h2 class="about__title">Тренажёрный зал</h2>
+          <h4 class="about__subtitle">Просторный зал площадью 900 кв/м</h4>
+          <!-- content area below -->
+          <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья.
+            Тренажёрный
+            зал оснащён всем необходимым современным оборудованием для всех спортсменов.
+          </p>
+          <p>
+            В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажёрами. Также в фитнес центре
+            есть несколько оборудованных залов для различных видов групповых занятий.
+          </p>
+        </div>
+        <div class="about__media-wrapper">
+          <picture>
+            <source type="image/webp" media="(min-width: 1356px)"
+              srcset="img/images/about-desktop@1x.webp 1x, img/images/about-desktop@2x.webp 2x" width="660"
+              height="400">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/images/about-tablet@1x.webp 1x, img/images/about-tablet@2x.webp 2x" width="678" height="345">
+            <source type="image/webp" srcset="img/images/about-mobile@1x.webp 1x, img/images/about-mobile@2x.webp 2x"
+              width="320" height="280">
 
-          <source type="image/png" media="(min-width: 1356px)"
-            srcset="img/images/about-desktop@1x.png 1x, img/images/about-desktop@2x.png 2x" width="500" height="524">
-          <source type="image/png" media="(min-width: 768px)"
-            srcset="img/images/aboutg-tablet@1x.png 1x, img/images/about-tablet@2x.png 2x" width="324" height="390">
-          <img class="about__image" src="img/images/about-mobile@1x.png" srcset="images/img/images/about-mobile@2x.png"
-            width="320" height="280" alt="Тренажёрный зал">
-        </picture>
-        <div class="about__video video">
-          <div class="video__container">
-            <div class="video__placeholder">
-              <button class="video__button" type="button" >
-                <span class="visually-hidden">Play</span>
-              </button>
+            <source type="image/png" media="(min-width: 1356px)"
+              srcset="img/images/about-desktop@1x.png 1x, img/images/about-desktop@2x.png 2x" width="660" height="400">
+            <source type="image/png" media="(min-width: 768px)"
+              srcset="img/images/about-tablet@1x.png 1x, img/images/about-tablet@2x.png 2x" width="678" height="345">
+            <img class="about__image" src="img/images/about-mobile@1x.png"
+              srcset="images/img/images/about-mobile@2x.png" width="320" height="280" alt="Тренажёрный зал">
+          </picture>
+          <div class="about__video video">
+            <div class="video__container">
+              <div class="video__placeholder">
+                <button class="video__button" type="button">
+                  <span class="visually-hidden">Play</span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
       </div>
 
     </section>
 
     <section class="price" data-test="price">
-      <div class="container">
-        <h2>Абонементы</h2>
-        <ul class="price__tab">
-          <h3 class="price__tab-header">1 месяц</h3>
+      <div class="container price__container">
+        <h2 class="price__title">Абонементы</h2>
+        <nav class="price__tabs">
+          <button class="price__tab-link price__tab-link--active" data-tab="1-month" type="button">1 месяц</button>
+          <button class="price__tab-link" data-tab="6-months" type="button">6 месяцев</button>
+          <button class="price__tab-link" data-tab="12-months" type="button">12 месяцев</button>
+        </nav>
 
+        <ul class="price__tab-content price__tab-content--active" data-tab="1-month">
           <li class="price__tab-item">
             <h4 class="price__tab-title">С тренером</h4>
             <p class="price__tab-description">12 занятий</p>
-            <p class="price__tab-price">5000</p>
+            <p class="price__tab-price" data-price="5000">5000<span class="price__ruble-icon"></span></p>
             <a class="button price__tab-button" href="#">Купить абонемент</a>
           </li>
-
           <li class="price__tab-item">
             <h4 class="price__tab-title">Дневной</h4>
             <p class="price__tab-description">с 8:00 до 17:00</p>
-            <p class="price__tab-price">1700</p>
+            <p class="price__tab-price" data-price="1700">1700<span class="price__ruble-icon"></span></p>
             <a class="button price__tab-button" href="#">Купить абонемент</a>
           </li>
-
           <li class="price__tab-item">
             <h4 class="price__tab-title">Полный день</h4>
             <p class="price__tab-description">с 8:00 до 22:00</p>
-            <p class="price__tab-price">2700</p>
+            <p class="price__tab-price" data-price="2700">2700<span class="price__ruble-icon"></span></p>
             <a class="button price__tab-button" href="#">Купить абонемент</a>
           </li>
         </ul>
 
-        <ul class="price__tab">
-          <h3 class="price__tab-header">6 месяцев</h3>
-
+        <ul class="price__tab-content price__tab-content--inactive" data-tab="6-months">
           <li class="price__tab-item">
             <h4 class="price__tab-title">С тренером</h4>
             <p class="price__tab-description">12 занятий</p>
-            <p class="price__tab-price">30 000</p>
+            <p class="price__tab-price" data-price="30 000">30 000<span class="price__ruble-icon"></span></p>
             <a class="button price__tab-button" href="#">Купить абонемент</a>
           </li>
-
           <li class="price__tab-item">
             <h4 class="price__tab-title">Дневной</h4>
             <p class="price__tab-description">с 8:00 до 17:00</p>
-            <p class="price__tab-price">10 200</p>
+            <p class="price__tab-price" data-price="10 200">10 200<span class="price__ruble-icon"></span></p>
             <a class="button price__tab-button" href="#">Купить абонемент</a>
           </li>
-
           <li class="price__tab-item">
             <h4 class="price__tab-title">Полный день</h4>
             <p class="price__tab-description">с 8:00 до 22:00</p>
-            <p class="price__tab-price">16 200</p>
+            <p class="price__tab-price" data-price="16 200">16 200<span class="price__ruble-icon"></span></p>
             <a class="button price__tab-button" href="#">Купить абонемент</a>
           </li>
         </ul>
 
-        <ul class="price__tab">
-          <h3 class="price__tab-header">12 месяцев</h3>
-
+        <ul class="price__tab-content price__tab-content--inactive" data-tab="12-months">
           <li class="price__tab-item">
             <h4 class="price__tab-title">С тренером</h4>
             <p class="price__tab-description">12 занятий</p>
-            <p class="price__tab-price">60 000</p>
+            <p class="price__tab-price" data-price="60 000">60 000<span class="price__ruble-icon"></span></p>
             <a class="button price__tab-button" href="#">Купить абонемент</a>
           </li>
-
           <li class="price__tab-item">
             <h4 class="price__tab-title">Дневной</h4>
             <p class="price__tab-description">с 8:00 до 17:00</p>
-            <p class="price__tab-price">20 400</p>
+            <p class="price__tab-price" data-price="20 400">20 400<span class="price__ruble-icon"></span></p>
+
             <a class="button price__tab-button" href="#">Купить абонемент</a>
           </li>
-
           <li class="price__tab-item">
             <h4 class="price__tab-title">Полный день</h4>
             <p class="price__tab-description">с 8:00 до 22:00</p>
-            <p class="price__tab-price">32 400</p>
+            <p class="price__tab-price" data-price="32 400">32 400<span class="price__ruble-icon"></span></p>
             <a class="button price__tab-button" href="#">Купить абонемент</a>
           </li>
         </ul>
@@ -206,25 +202,37 @@
     </section>
 
     <article class="games" data-test="games">
-      <div class="container">
+      <div class="container games__container ">
         <div class="games__content-wrapper">
           <div class="games__announce">
             <h1 class="games__title">Super Games</h1>
-            <p class="games__announce-title">Дата</p>
-            <div>
-              <p class="games__announce-date">7</p>
-              <p class="games__announce-details">Марта 2019</p>
-            </div>
-            <div>
-              <p class="games__announce-title">Время</p>
-              <p class="games__announce-date">12:00</p>
+            <div class="games__details">
+              <h2 class="games__details-title">Дата</h2>
+              <div class="games__details-date">
+                <p class="games__details-when">7</p>
+                <p class="games__details-when-month">Марта 2019</p>
+              </div>
+              <h2 class="games__details-title">Время</h2>
+                <p class="games__details-when">12:00</p>
             </div>
           </div>
           <p class="games__announce-description">Ежегодные соревнования по CrossFit</p>
           <a class="button games__announce-button" href="#">заполнить заявку</a>
         </div>
         <picture>
-          <!-- адаптивные изображения -->
+          <source type="image/webp" media="(min-width: 1356px)"
+            srcset="img/images/games-desktop@1x.webp 1x, img/images/games-desktop@2x.webp 2x" width="660" height="500">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/images/games-tablet@1x.webp 1x, img/images/games-tablet@2x.webp 2x" width="378" height="348">
+          <source type="image/webp" srcset="img/images/games-mobile@1x.webp 1x, img/images/games-mobile@2x.webp 2x"
+            width="290" height="290">
+
+          <source type="image/png" media="(min-width: 1356px)"
+            srcset="img/images/games-desktop@1x.png 1x, img/images/games-desktop@2x.png 2x" width="660" height="500">
+          <source type="image/png" media="(min-width: 768px)"
+            srcset="img/images/games-tablet@1x.png 1x, img/images/games-tablet@2x.png 2x" width="378" height="348">
+          <img class="games__image" src="img/images/games-mobile@1x.png" srcset="images/img/images/games-mobile@2x.png"
+            width="290" height="290" alt="Атлет в движении на соревнованиях по CrossFit">
         </picture>
       </div>
     </article>

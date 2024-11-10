@@ -5,6 +5,12 @@
 
 
 import { loadVideo } from './video.js';
+import { changeTab } from './tabs-price/';
 
-// Вызов функции для инициализации события
+document.querySelectorAll('.price__tab-link').forEach(tab => {
+  tab.addEventListener('click', changeTab);
+});
+
 loadVideo();
+
+changeTab();

@@ -16,6 +16,12 @@ body {
   margin: 0 auto;
   height: 100%;
   width: 100%;
+  min-width: 320px;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+
+  min-width: none;}
+
 }

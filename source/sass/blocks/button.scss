@@ -10,4 +10,28 @@
   border: solid 2px $basic-dark;
   padding: 25px;
   text-align: center;
+
+  &:hover {
+    background-image: $buttons-play-gradient;
+    color: $basic-white;
+    border-color: transparent; //???
+  }
+
+  &:focus {
+    background-image: $buttons-play-gradient;
+    opacity: 80%;
+    outline: solid 2px #000000;
+    color: $basic-white;
+  }
+
+  &:active {
+    background-image: $buttons-play-gradient;
+    color: #ffffffb3;
+  }
+
+  &:disabled {
+    opacity: 30%;
+    cursor: not-allowed; //??
+  }
+
 }

@@ -67,6 +67,7 @@
   color: #333;
   border-radius: 50%;
   position: relative;
+  // transition: background-image 0.3s ease;
 
   &:disabled {
     background-image: none;
