@@ -2,6 +2,7 @@
 // ---------------------------------
 
 @import "vendor/normalize";
+// @import "./vendor/swiper.css";
 
 //Global
 @import "./common/variables.scss";
@@ -18,4 +19,7 @@
 @import "./blocks/about.scss";
 @import "./blocks/video.scss";
 @import "./blocks/price.scss";
-@import "./blocks/games.scss";
+@import "blocks/games.scss";
+@import "blocks/juri.scss";
+@import "blocks/swiper.scss";
+

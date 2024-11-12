@@ -58,6 +58,7 @@
 }
 
 .video__button {
+  background-color: #8a1b6b;
   background-image: $buttons-play-gradient;
   border: none;
   width: 52px;
@@ -67,7 +68,8 @@
   color: #333;
   border-radius: 50%;
   position: relative;
-  // transition: background-image 0.3s ease;
+  transition: background-color 0.3s ease;
+
 
   &:disabled {
     background-image: none;

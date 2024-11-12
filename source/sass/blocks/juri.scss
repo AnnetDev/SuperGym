@@ -1,0 +1,35 @@
+.juri {
+  padding: 40px 0;
+  overflow: visible;
+  @media (min-width: $tablet-width) {
+    padding: 30px 0 60px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 0;
+  }
+}
+
+.juri__container{
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 59px;
+  }
+}
+
+.juri__title {
+  font-family: $font-alumni;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 32px;
+  text-align: center;
+  margin: 0 0 20px;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 54px;
+    line-height: 54px;
+    margin: 0 0 46px;
+  }
+}
