@@ -23,27 +23,31 @@
 
 .swiper-button-prev {
   display: none;
+
   @media (min-width: $tablet-width) {
     display: block;
     mask: url("/__spritemap#sprite-juri-button-prev-view") center no-repeat;
     background-color: $basic-dark;
     left: 0px;
   }
+
   @media (min-width: $desktop-width) {
-  left: -52px;
+    left: -52px;
   }
 }
 
 .swiper-button-next {
   display: none;
+
   @media (min-width: $tablet-width) {
     display: block;
     mask: url("/__spritemap#sprite-juri-button-next-view") center no-repeat;
     background-color: $basic-dark;
     right: 0px;
   }
+
   @media (min-width: $desktop-width) {
-  right: -52px;
+    right: -52px;
   }
 
 }
@@ -130,7 +134,8 @@
   visibility: visible;
 }
 
-.swiper-slide:focus-within .swiper-slide__title .swiper-slide:focus .swiper-slide__title,
+.swiper-slide:focus-within .swiper-slide__title,
+.swiper-slide:focus .swiper-slide__title,
 .swiper-slide:focus-visible .swiper-slide__title {
   display: none;
 }
