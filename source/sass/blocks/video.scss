@@ -8,9 +8,9 @@
 
   @media (max-width: $mobile-width-only) {
     position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-left: -10px;
+    // left: 50%;
+    // transform: translateX(-50%);
+    margin: 0 calc((100% - 320px)/2);
   }
 
   @media (min-width: $tablet-width) {
@@ -26,6 +26,7 @@
 
 .video__placeholder {
   position: absolute;
+  content: "";
   top: 0;
   left: 0;
   right: 0;

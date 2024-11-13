@@ -118,9 +118,7 @@
   @media (max-width: $mobile-width-only) {
     width: 320px;
     position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-left: -10px;
+    margin: 0 calc((100% - 320px)/2);
     margin-bottom: 36px;
   }
 

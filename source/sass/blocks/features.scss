@@ -1,0 +1,226 @@
+.features {
+  background-color: $bg-additional;
+  padding: 40px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 0;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    gap: 35px;
+    justify-content: center;
+    position: relative;
+
+
+    @media (min-width: $tablet-width) {
+      flex-flow: row wrap;
+      gap: 40px 30px;
+      align-items: flex-start;
+      justify-content: flex-start; // подумать о переполнении
+    }
+
+    @media (min-width: $desktop-width) {
+      gap: 40px 440px;
+      justify-content: flex-start;
+    }
+
+    li {
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      width: 290px;
+
+      @media (min-width: $tablet-width) {
+        width: 324px;
+        align-items: start;
+        flex-flow: row nowrap;
+        gap: 14px
+      }
+      @media (min-width: $desktop-width) {
+      width: 360px;
+      border-bottom: solid 2px #D10A4233;
+      padding-bottom: 40px;
+
+      &:nth-last-child(2),
+      &:last-child {
+        border: none;
+        padding-bottom: 0;
+      }
+      }
+
+      div {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+
+        @media (min-width: $tablet-width) {
+          align-items: start;
+        }
+
+        span {
+          font-weight: 700;
+          font-size: 64px;
+          line-height: 64px;
+          margin: 0;
+          padding: 0;
+          background: $text-gradient;
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+
+          @media (min-width: $tablet-width) {
+            font-size: 70px;
+            line-height: 70px;
+          }
+        }
+
+        span:last-of-type {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 20px;
+          margin-bottom: 12px;
+
+
+          @media (min-width: $tablet-width) {
+            line-height: 22px;
+          }
+        }
+      }
+
+      div:last-of-type {
+        h3 {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 20px;
+          color: $basic-dark;
+          margin: 0 0 12px;
+          padding: 0;
+
+          @media (min-width: $tablet-width) {
+            font-size: 20px;
+          }
+        }
+
+        p {
+          font-weight: 300;
+          font-size: 14px;
+          line-height: 22px;
+          text-align: center;
+          margin: 0;
+          padding: 0;
+
+          @media (min-width: $tablet-width) {
+            font-size: 16px;
+            line-height: 24px;
+            text-align: left;
+          }
+        }
+      }
+    }
+
+    li:nth-of-type(3) {
+      background-color: $bg-blocks;
+      color: $basic-white;
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+      padding: 30px 50px 40px;
+      width: 320px;
+      margin: 0 calc((100% - 320px)/2);
+
+      @media (min-width: $tablet-width) {
+        margin: 0 calc((100% - 320px)/2);
+      }
+
+      @media (min-width: $desktop-width) {
+        position: absolute;
+        content: "";
+        width: 360px;
+        margin: 0;
+        top: 50%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      div {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 20px;
+
+        @media (min-width: $tablet-width) {
+          gap: 25px;
+          margin-bottom: 25px;
+        }
+
+        span {
+          font-weight: 700;
+          font-size: 64px;
+          line-height: 64px;
+          text-align: center;
+          background: $basic-white;
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+
+        span:last-of-type {
+          font-weight: 700;
+          font-size: 22px;
+          line-height: 22px;
+          text-align: center;
+          margin-bottom: 0;
+        }
+      }
+
+      p {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 22px;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+
+        @media (min-width: $tablet-width) {
+          display: flex;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+.features__title {
+  font-family: $font-alumni;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 32px;
+  text-align: center;
+  margin: 0 0 40px;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 42px;
+    margin: 0 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 54px;
+    line-height: 54px;
+  }
+}
