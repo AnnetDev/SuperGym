@@ -421,7 +421,6 @@
     <section class="features" data-test="features">
       <div class="container">
         <h2 class="features__title">Наши преимущества</h2>
-        <!-- content area below -->
         <ul>
           <li>
             <div>
@@ -481,28 +480,40 @@
     </section>
 
     <section class="offers" data-test="offers">
-      <div class="container">
-        <h2 class="offers__title">Наши Акции</h2>
+      <div class="offers__container container">
+        <h2 class="offers__title">Акции</h2>
         <!-- content area below -->
         <div>
           <div>
-            <h4>Год</h4>
+            <h3>Год</h3>
             <span>4999</span>
             <p>Безлимитный абонемент в тренажёрный зал</p>
             <a class="button offers__more-link" href="#">подробнее</a>
           </div>
           <picture>
-            <!-- адаптивные изображения? -->
+            <source type="image/webp" media="(min-width: 1366px)"
+              srcset="img/images/offer-img-desktop@1x.webp 1x, img/images/offer-img-desktop@2x.webp 2x" width="280" height="460">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/images/offer-img-tablet@1x.webp 1x, img/images/offer-img-tablet@2x.webp 2x" width="400" height="462">
+            <source type="image/webp" srcset="img/images/offer-img-mobile@1x.webp 1x, img/images/offer-img-mobile@2x.webp 2x"
+              width="320" height="360">
+
+            <source type="image/jpg" media="(min-width: 1366px)"
+              srcset="img/images/offer-img-desktop@1x.jpg 1x, img/images/offer-img-desktop@2x.jpg 2x" width="280" height="460">
+            <source type="image/jpg" media="(min-width: 768px)"
+              srcset="img/images/offer-img-tablet@1x.jpg 1x, img/images/offer-img-tablet@2x.jpg 2x" width="400" height="462">
+            <img class="offers__image" src="img/images/offer-img-mobile@1x.jpg" srcset="img/images/offer-img-mobile@2x.jpg"
+              width="320" height="360" alt="Спортсменка в синем спортивном костюме готовится к тренировке">
           </picture>
-        </div>
+                </div>
         <ul>
           <li>
-            <h4>Месяц бесплатно</h4>
+            <h3>Месяц бесплатно</h3>
             <p>Приведи друга, получи абонемент в подарок</p>
             <a class="button offers__more-link" href="#">подробнее</a>
           </li>
           <li>
-            <h4>Скидка 20%</h4>
+            <h3>Скидка 20%</h3>
             <p>Корпоративный фитнес с командой</p>
             <a class="button offers__more-link" href="#">подробнее</a>
           </li>
@@ -519,7 +530,7 @@
               <h3>Центр</h3>
             </button>
             <li>
-              <h4>Как стать членом фитнес-центра?</h4>
+              <h3>Как стать членом фитнес-центра?</h3>
               <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке
                 абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.
               </p>
@@ -528,7 +539,7 @@
               </button>
             </li>
             <li>
-              <h4>Где можно посмотреть расписание?</h4>
+              <h3>Где можно посмотреть расписание?</h3>
               <p>Вы можете ознакомиться с расписание на стойке информации, на нашем официальном сайте. Так же есть
                 возможность оформить подписку на наши новости и получать расписание и обновления на почту каждую неделю.
               </p>
@@ -537,7 +548,7 @@
               </button>
             </li>
             <li>
-              <h4>Есть кулеры в центре? Предоставляются полотенца?</h4>
+              <h3>Есть кулеры в центре? Предоставляются полотенца?</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                 ex ea commodo consequat
@@ -547,7 +558,7 @@
               </button>
             </li>
             <li>
-              <h4>Сколько тренеров работает в клубе и какова их квалификация?</h4>
+              <h3>Сколько тренеров работает в клубе и какова их квалификация?</h3>
               <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
               </p>
               <button class="faq__button" type="button">
@@ -561,7 +572,7 @@
               <h3>Абонемент</h3>
             </button>
             <li>
-              <h4>Занятия с тренером входят в абонемент?</h4>
+              <h3>Занятия с тренером входят в абонемент?</h3>
               <p>При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда
                 присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по тренажеру
                 или технике выполнения упражнения.
@@ -571,7 +582,7 @@
               </button>
             </li>
             <li>
-              <h4>Можно ли заморозить абонемент?</h4>
+              <h3>Можно ли заморозить абонемент?</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua.
               </p>
@@ -580,7 +591,7 @@
               </button>
             </li>
             <li>
-              <h4>Есть ли лимит по посещениям тренажерного зала и групповых занятий?</h4>
+              <h3>Есть ли лимит по посещениям тренажерного зала и групповых занятий?</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                 ex ea commodo consequat
@@ -590,7 +601,7 @@
               </button>
             </li>
             <li>
-              <h4>Что такое семейный доступ и доступ для друзей?</h4>
+              <h3>Что такое семейный доступ и доступ для друзей?</h3>
               <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
               </p>
               <button class="faq__button" type="button">
