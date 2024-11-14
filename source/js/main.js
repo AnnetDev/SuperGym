@@ -5,6 +5,7 @@ import "swiper/scss";
 
 import { loadVideo } from "./video.js";
 import { changeTab } from "./tabs-price";
+import { switchTab } from "./tabs-accordion"
 
 const juriSwiper = new Swiper(".swiper", {
   modules: [Navigation, Pagination], // подключаем модули
@@ -37,3 +38,4 @@ document.querySelectorAll(".price__tab-link").forEach(tab => {
 
 loadVideo();
 changeTab();
+switchTab();

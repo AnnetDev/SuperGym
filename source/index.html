@@ -492,20 +492,26 @@
           </div>
           <picture>
             <source type="image/webp" media="(min-width: 1366px)"
-              srcset="img/images/offer-img-desktop@1x.webp 1x, img/images/offer-img-desktop@2x.webp 2x" width="280" height="460">
+              srcset="img/images/offer-img-desktop@1x.webp 1x, img/images/offer-img-desktop@2x.webp 2x" width="280"
+              height="460">
             <source type="image/webp" media="(min-width: 768px)"
-              srcset="img/images/offer-img-tablet@1x.webp 1x, img/images/offer-img-tablet@2x.webp 2x" width="400" height="462">
-            <source type="image/webp" srcset="img/images/offer-img-mobile@1x.webp 1x, img/images/offer-img-mobile@2x.webp 2x"
-              width="320" height="360">
+              srcset="img/images/offer-img-tablet@1x.webp 1x, img/images/offer-img-tablet@2x.webp 2x" width="400"
+              height="462">
+            <source type="image/webp"
+              srcset="img/images/offer-img-mobile@1x.webp 1x, img/images/offer-img-mobile@2x.webp 2x" width="320"
+              height="360">
 
             <source type="image/jpg" media="(min-width: 1366px)"
-              srcset="img/images/offer-img-desktop@1x.jpg 1x, img/images/offer-img-desktop@2x.jpg 2x" width="280" height="460">
+              srcset="img/images/offer-img-desktop@1x.jpg 1x, img/images/offer-img-desktop@2x.jpg 2x" width="280"
+              height="460">
             <source type="image/jpg" media="(min-width: 768px)"
-              srcset="img/images/offer-img-tablet@1x.jpg 1x, img/images/offer-img-tablet@2x.jpg 2x" width="400" height="462">
-            <img class="offers__image" src="img/images/offer-img-mobile@1x.jpg" srcset="img/images/offer-img-mobile@2x.jpg"
-              width="320" height="360" alt="Спортсменка в синем спортивном костюме готовится к тренировке">
+              srcset="img/images/offer-img-tablet@1x.jpg 1x, img/images/offer-img-tablet@2x.jpg 2x" width="400"
+              height="462">
+            <img class="offers__image" src="img/images/offer-img-mobile@1x.jpg"
+              srcset="img/images/offer-img-mobile@2x.jpg" width="320" height="360"
+              alt="Спортсменка в синем спортивном костюме готовится к тренировке">
           </picture>
-                </div>
+        </div>
         <ul>
           <li>
             <h3>Месяц бесплатно</h3>
@@ -525,16 +531,28 @@
       <div class="container">
         <h2 class="faq__heading">Вопросы и ответы</h2>
         <div class="faq__tabs-wrapper">
-          <ul class="faq__tab">
-            <button class="faq__tab-button" type="button">
-              <h3>Центр</h3>
-            </button>
+        <nav class="faq__tab-nav">
+          <button class="button faq__tab-button faq__tab-button--active" type="button" data-tab="center">
+            Центр
+          </button>
+          <button class="button faq__tab-button" type="button" data-tab="subscription">
+            Абонемент
+          </button>
+          <button class="button faq__tab-button" type="button" data-tab="services">
+            Услуги
+          </button>
+          <button class="button faq__tab-button" type="button" data-tab="rules">
+            Правила
+          </button>
+        </nav>
+
+          <ul class="faq__tab faq__tab--active" data-tab="center">
             <li>
               <h3>Как стать членом фитнес-центра?</h3>
               <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке
                 абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.
               </p>
-              <button class="faq__button" type="button">
+              <button class="faq__button faq__button--active" type="button">
                 <span class="visually-hidden">Показать/Скрыть</span>
               </button>
             </li>
@@ -567,10 +585,7 @@
             </li>
           </ul>
 
-          <ul class="faq__tab">
-            <button class="faq__tab-button" type="button">
-              <h3>Абонемент</h3>
-            </button>
+          <ul class="faq__tab faq__tab--inactive" data-tab="subscription">
             <li>
               <h3>Занятия с тренером входят в абонемент?</h3>
               <p>При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда
@@ -610,10 +625,7 @@
             </li>
           </ul>
 
-          <ul class="faq__tab">
-            <button class="faq__tab-button" type="button">
-              <h3>Услуги</h3>
-            </button>
+          <ul class="faq__tab faq__tab--inactive" data-tab="services">
             <li>
               <h4>Предлагает ли клуб услуги по консультированию по вопросам питания?</h4>
               <p>Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши
@@ -652,10 +664,7 @@
             </li>
           </ul>
 
-          <ul class="faq__tab">
-            <button class="faq__tab-button" type="button">
-              <h3>Правила</h3>
-            </button>
+          <ul class="faq__tab faq__tab--inactive" data-tab="rules">
             <li>
               <h4>Есть в фитнес-центре дресс-код?</h4>
               <p>Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и
