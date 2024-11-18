@@ -123,5 +123,36 @@
 .games__announce-button {
   width: 100%;
   color: $basic-white;
-  border-color: $basic-white;
+  outline: solid 2px $basic-white;
+
+  &:hover {
+    background-color: $basic-white;
+    background-image: none;
+    outline: none;
+    color: $text-accent;
+  }
+
+  &:focus,
+  &:focus-visible,
+  &:focus-within {
+    outline: solid 2px #000000;
+    background-image: none;
+    background-color: $basic-white;
+    opacity: 80%;
+    color: $text-accent;
+  }
+
+  &:active {
+    outline: none;
+    background-image: none;
+    background-color: $basic-white;
+    color: $basic-dark;
+    opacity: 100%;
+  }
+
+  // &:disabled {} ???
+}
+.games__announce-button[aria-disabled="true"] {
+  opacity: 50%;
+  cursor: not-allowed;
 }

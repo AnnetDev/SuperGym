@@ -234,7 +234,8 @@
   line-height: 14px;
   cursor: pointer;
   position: relative;
-  transition: border-color 0.3s ease, color 0.3s ease, opacity 0.3s ease ;
+  transition: all 0.3s ease ;
+  outline: none;
 
   &::after {
     position: absolute;
@@ -293,4 +294,8 @@
 .offers__more-link:focus-visible::after,
 .offers__more-link:focus-within::after {
   display: none;
+}
+.offers__more-link:active::after {
+  display: block;
+
 }

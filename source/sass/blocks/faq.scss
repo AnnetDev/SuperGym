@@ -1,6 +1,7 @@
 .faq {
   margin: 0;
   padding: 70px 0;
+  background-color: $bg-additional;
 }
 
 .faq__heading {
@@ -45,7 +46,38 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: capitalize;
-  border-color: #10265433;
+  outline: solid 1px #10265433;
+  border: none;
+  transition: all 0.3s ease;
+
+  &:hover {
+    outline: solid 1px $basic-dark;
+    background-image: none;
+    color:$basic-dark;
+  }
+
+  &:focus,
+  &:focus-visible,
+  &:focus-within {
+    outline: solid 1px $basic-dark;
+    background-image: none;
+    color: $basic-dark;
+    opacity: 100%;
+    background-color: $basic-white; //??
+
+    &.faq__tab-button--active {
+      outline: none;
+      color: $basic-white;
+      background-image: $buttons-play-gradient;
+    }
+  }
+
+  &:active,
+  &--active {
+    outline: none;
+    color: $basic-white;
+    background-image: $buttons-play-gradient;
+  }
 
   @media (min-width: $tablet-width) {
     width: 162px;
@@ -58,6 +90,11 @@
   @media (min-width: $desktop-width) {
     width: 260px;
   }
+}
+
+.faq__tab-button[aria-disabled="true"] {
+  opacity: 20%;
+  cursor: not-allowed;
 }
 
 .faq__tab {
@@ -108,6 +145,10 @@
       line-height: 20px;
       width: 238px;
       text-align: left;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-in-out;
+
 
       @media (min-width: $tablet-width) {
         width: 560px;
@@ -146,6 +187,7 @@
   padding: 0;
   top: 20px;
   right: 0;
+  transition: background-color 0.3s ease, display 0.3s ease;
   @media (min-width: $tablet-width) {
     top: 23px;
   }
@@ -174,8 +216,47 @@
     transform: translate(-50%, -50%);
   }
 
-  &--active {
+  &:hover {
     background-color: $bg-blocks;
+
+  }
+
+  &:focus,
+  &:focus-visible,
+  &:focus-within {
+    background-color: #74819C;
+    border: solid 1px $bg-blocks;
+outline: none;
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: $basic-white;
+  }
+
+  &:focus::before,
+  &:focus-visible::before,
+  &:focus-within::before,
+  &:focus::after,
+  &:focus-visible::after,
+  &:focus-within::after {
+    background-color: $basic-white;
+  }
+
+  &:disabled {
+    background-color: transparent;
+    border-color: $bg-blocks;
+    opacity: 30%;
+    cursor: not-allowed;
+  }
+  &:disabled::before,
+  &:disabled::after {
+    opacity: 30%;
+  }
+}
+
+.faq__button[aria-expanded="true"] {
+  background-color: $bg-blocks;
 
     &::before {
       background-color: $basic-white;
@@ -184,7 +265,11 @@
     &::after {
       display: none;
     }
-  }
 }
 
-// .faq__button--active
+.faq__tab li button[aria-expanded="true"] + p {
+  max-height: 500px; /* Значение должно превышать максимальную высоту контента */
+  // padding: 10px 0;
+}
+
+//hover for .faq__button[aria-expanded="true"] ????

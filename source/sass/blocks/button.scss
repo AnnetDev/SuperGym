@@ -7,17 +7,20 @@
   font-size: 12px;
   line-height: 12px;
   background-color: transparent;
-  border: solid 2px $basic-dark;
+  outline: solid 2px $basic-dark;
   padding: 25px;
   text-align: center;
+  transition: all 0.3s ease;
 
   &:hover {
     background-image: $buttons-play-gradient;
     color: $basic-white;
-    border-color: transparent; //???
+    outline: none;
   }
 
-  &:focus {
+  &:focus,
+  &:focus-visible,
+  &:focus-within {
     background-image: $buttons-play-gradient;
     opacity: 80%;
     outline: solid 2px #000000;
@@ -27,11 +30,15 @@
   &:active {
     background-image: $buttons-play-gradient;
     color: #ffffffb3;
+    outline: none;
   }
 
-  &:disabled {
-    opacity: 30%;
-    cursor: not-allowed; //??
-  }
-
+  // &:disabled {
+  //   opacity: 30%;
+  //   cursor: not-allowed; //??
+  // }
+}
+.button[aria-disabled="true"] {
+  opacity: 30%;
+  cursor: not-allowed;
 }

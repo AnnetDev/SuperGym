@@ -1,17 +1,32 @@
 // https://swiperjs.com/get-started#installation
-import Swiper from "swiper";
-import { Navigation, Pagination } from "swiper/modules";
-import "swiper/scss";
+// import Swiper from "swiper";
+// import { Navigation, Pagination } from "swiper/modules";
+// import "swiper/scss";
 
-import { loadVideo } from "./video.js";
-import { changeTab } from "./tabs-price";
-import { switchTab } from "./tabs-accordion"
+import { initializeSwiper } from "./utils/init-swiper";
+import { loadVideo } from "./modules/video";
+import { changeTabPrice } from './modules/change-tab-price';
+import { changeTabFaq } from './modules/change-tab-faq';
 
-const juriSwiper = new Swiper(".swiper", {
-  modules: [Navigation, Pagination], // подключаем модули
+document.querySelectorAll('.price__tab-link').forEach(tab => {
+  tab.addEventListener('click', changeTabPrice);
+});
+
+document.querySelectorAll('.faq__tab-button').forEach(tab => {
+  tab.addEventListener('click', changeTabFaq);
+});
+
+document.querySelectorAll('.faq__button').forEach(button => {
+  button.addEventListener('click', () => {
+    const expanded = button.getAttribute('aria-expanded') === 'true';
+    button.setAttribute('aria-expanded', !expanded);
+  });
+});
+
+loadVideo();
+
+initializeSwiper('.juri__swiper', {
   loop: true,
-  direction: "horizontal",
-
   breakpoints: {
     320: {
       slidesPerView: 1
@@ -25,17 +40,9 @@ const juriSwiper = new Swiper(".swiper", {
       spaceBetween: 40,
     }
   },
-
-  navigation: {
-    nextEl: ".swiper-button-next",  // подключаем кнопки навигации
-    prevEl: ".swiper-button-prev",
-  },
 });
 
-document.querySelectorAll(".price__tab-link").forEach(tab => {
-  tab.addEventListener("click", changeTab);
+initializeSwiper('.reviews__swiper', {
+  loop: false,
+  slidesPerView: 1,
 });
-
-loadVideo();
-changeTab();
-switchTab();

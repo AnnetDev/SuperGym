@@ -1,0 +1,161 @@
+.reviews {
+  padding: 40px 0;
+}
+
+.reviews__heading {
+  font-family: $font-alumni;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 32px;
+  text-align: center;
+  margin: 0 0 40px;
+  padding: 0;
+}
+
+.reviews__swiper {
+  width: 240px;
+  box-shadow: 0px 0px 40px 0px #1C337433;
+
+  @media (min-width: $tablet-width) {
+    width: 500px;
+  }
+
+  div {
+
+    div {
+      background-color: $bg-blocks;
+      box-shadow: 0px 0px 40px 0px #1C337433;
+      margin: 0;
+      padding: 30px 25px;
+      display: flex;
+      flex-flow: column wrap;
+      color: $basic-white;
+      align-items: center;
+      height: auto;
+
+
+      @media (min-width: $tablet-width) {
+        flex-flow: row wrap;
+        align-items: flex-start;
+        // position: relative;
+
+
+      }
+
+      img {
+        display: block;
+        width: 68px;
+        height: 68px;
+        background-color: $basic-dark;
+        border-radius: 50%;
+        margin-bottom: 10px;
+
+        @media (min-width: $tablet-width) {
+          width: 80px;
+          height: 80px;
+          margin-bottom: 0;
+          margin-right: 40px;
+          ;
+        }
+      }
+
+      div {
+        margin: 0;
+        padding: 0;
+        width: 320px;
+
+        h3 {
+          margin: 0;
+          padding: 0;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 20px;
+          text-align: center;
+          margin-bottom: 16px;
+
+          @media (min-width: $tablet-width) {
+            font-size: 22px;
+            line-height: 22px;
+            text-align: left;
+            margin-bottom: 20px;
+          }
+        }
+
+        p {
+          margin: 0;
+          padding: 0;
+          width: 100%;
+          font-weight: 300;
+          font-size: 14px;
+          line-height: 22px;
+          text-align: center;
+
+          @media (min-width: $tablet-width) {
+            font-size: 16px;
+            line-height: 24px;
+            text-align: left;
+          }
+        }
+
+      }
+    }
+  }
+}
+
+.reviews__slide {
+  position: relative;
+}
+
+// .reviews .swiper-button-prev {
+//   @media (min-width: $tablet-width) {
+//     width: 16px;
+// height: 32px;  left: -73px;
+//   display: block;
+//   mask: url("/__spritemap#sprite-juri-button-prev-view") center no-repeat;
+//   background-color: red;
+// }
+// }
+
+.reviews .reviews__slide .swiper-button-prev,
+.reviews .reviews__slide .swiper-button-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: red;
+  border: none;
+  width: 16px;
+  height: 32px;
+  cursor: pointer;
+  display: none; /* Скрыты по умолчанию */
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    background-color: $basic-dark; /* Цвет из стилей `swiper` */
+  }
+}
+
+.reviews .swiper-button-prev {
+  background-color: rebeccapurple;
+  width: 16px;
+  height: 32px;
+
+  @media (min-width: $tablet-width) {
+    left: -73px; /* Расположение как в `reviews` */
+  }
+
+  @media (min-width: $desktop-width) {
+    left: -52px; /* Корректировка для десктопа */
+  }
+}
+
+.reviews .swiper-button-next {
+  mask: url("/__spritemap#sprite-juri-button-next-view") center no-repeat;
+  @media (min-width: $tablet-width) {
+    right: -73px; /* Расположение как в `reviews` */
+  }
+
+  @media (min-width: $desktop-width) {
+    right: -52px; /* Корректировка для десктопа */
+  }
+}
