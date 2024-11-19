@@ -1,5 +1,6 @@
 .reviews {
   padding: 40px 0;
+  overflow: visible;
 }
 
 .reviews__heading {
@@ -15,6 +16,8 @@
 .reviews__swiper {
   width: 240px;
   box-shadow: 0px 0px 40px 0px #1C337433;
+  z-index: 1;
+  position: relative; //
 
   @media (min-width: $tablet-width) {
     width: 500px;
@@ -37,9 +40,6 @@
       @media (min-width: $tablet-width) {
         flex-flow: row wrap;
         align-items: flex-start;
-        // position: relative;
-
-
       }
 
       img {
@@ -62,7 +62,9 @@
       div {
         margin: 0;
         padding: 0;
-        width: 320px;
+        @media (min-width: $tablet-width) {
+
+        width: 320px;}
 
         h3 {
           margin: 0;
@@ -102,60 +104,30 @@
   }
 }
 
-.reviews__slide {
+.reviews__container {
   position: relative;
-}
-
-// .reviews .swiper-button-prev {
-//   @media (min-width: $tablet-width) {
-//     width: 16px;
-// height: 32px;  left: -73px;
-//   display: block;
-//   mask: url("/__spritemap#sprite-juri-button-prev-view") center no-repeat;
-//   background-color: red;
-// }
-// }
-
-.reviews .reviews__slide .swiper-button-prev,
-.reviews .reviews__slide .swiper-button-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10;
-  background-color: red;
-  border: none;
-  width: 16px;
-  height: 32px;
-  cursor: pointer;
-  display: none; /* Скрыты по умолчанию */
-
-  @media (min-width: $tablet-width) {
-    display: block;
-    background-color: $basic-dark; /* Цвет из стилей `swiper` */
-  }
-}
-
-.reviews .swiper-button-prev {
-  background-color: rebeccapurple;
-  width: 16px;
-  height: 32px;
-
-  @media (min-width: $tablet-width) {
-    left: -73px; /* Расположение как в `reviews` */
-  }
 
   @media (min-width: $desktop-width) {
-    left: -52px; /* Корректировка для десктопа */
+    width: 768px;
+    margin: 0 auto;
   }
 }
 
-.reviews .swiper-button-next {
-  mask: url("/__spritemap#sprite-juri-button-next-view") center no-repeat;
-  @media (min-width: $tablet-width) {
-    right: -73px; /* Расположение как в `reviews` */
-  }
+.reviews__button.swiper-button-prev,
+{
+@media (min-width: $desktop-width) {
+  left: 0;
+}
+}
 
+.reviews__button.swiper-button-next {
   @media (min-width: $desktop-width) {
-    right: -52px; /* Корректировка для десктопа */
+    right: 0;
   }
+}
+
+.reviews__button.swiper-button-prev:disabled,
+.reviews__button.swiper-button-next:disabled {
+  background-color: #1026544d;
+  cursor: not-allowed;
 }

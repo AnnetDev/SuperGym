@@ -714,87 +714,89 @@
     <section class="reviews" data-test="reviews">
       <div class="container">
         <h2 class="reviews__heading">Отзывы</h2>
+        <div class="reviews__container">
+          <!-- Slider main container -->
+          <div class="reviews__swiper swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide reviews__slide">
+                <picture>
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/images/reviewer-img-tablet@1x.webp 1x, img/images/reviewer-img-tablet@2x.webp 2x"
+                    width="80" height="80">
+                  <source type="image/webp"
+                    srcset="img/images/reviewer-img-mobile@1x.webp 1x, img/images/reviewer-img-mobile@2x.webp 2x"
+                    width="68" height="68">
 
-        <!-- Slider main container -->
-        <div class="reviews__swiper swiper">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide reviews__slide">
-              <picture>
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/images/reviewer-img-tablet@1x.webp 1x, img/images/reviewer-img-tablet@2x.webp 2x"
-                  width="80" height="80">
-                <source type="image/webp"
-                  srcset="img/images/reviewer-img-mobile@1x.webp 1x, img/images/reviewer-img-mobile@2x.webp 2x"
-                  width="68" height="68">
+                  <source type="image/png" media="(min-width: 768px)"
+                    srcset="img/images/reviewer-img-tablet@1x.png 1x, img/images/reviewer-img-tablet@2x.png 2x"
+                    width="80" height="80">
+                  <img src="img/images/reviewer-img-mobile@1x.png" srcset="img/images/reviewer-img-mobile@2x.png"
+                    width="68" height="68" alt="Фото клиента">
+                </picture>
+                <div>
+                  <h3>Анна Орлова</h3>
+                  <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал
+                    дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                </div>
+              </div>
 
-                <source type="image/png" media="(min-width: 768px)"
-                  srcset="img/images/reviewer-img-tablet@1x.png 1x, img/images/reviewer-img-tablet@2x.png 2x" width="80"
-                  height="80">
-                <img src="img/images/reviewer-img-mobile@1x.png" srcset="img/images/reviewer-img-mobile@2x.png"
-                  width="68" height="68" alt="Фото клиента">
-              </picture>
-              <div>
-                <h3>Анна Орлова</h3>
-                <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал
-                  дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+              <div class="swiper-slide reviews__slide">
+                <picture>
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/images/reviewer-img-tablet@1x.webp 1x, img/images/reviewer-img-tablet@2x.webp 2x"
+                    width="80" height="80">
+                  <source type="image/webp"
+                    srcset="img/images/reviewer-img-mobile@1x.webp 1x, img/images/reviewer-img-mobile@2x.webp 2x"
+                    width="68" height="68">
+
+                  <source type="image/png" media="(min-width: 768px)"
+                    srcset="img/images/reviewer-img-tablet@1x.png 1x, img/images/reviewer-img-tablet@2x.png 2x"
+                    width="80" height="80">
+                  <img src="img/images/reviewer-img-mobile@1x.png" srcset="img/images/reviewer-img-mobile@2x.png"
+                    width="68" height="68" alt="Фото клиента">
+                </picture>
+                <div>
+                  <h3>Мария Кузнецова</h3>
+                  <p>«Недавно записалась в Supergym, и уже вижу прогресс. Большой выбор тренажёров, приятная атмосфера
+                    и компетентные
+                    тренеры. Здесь тренировки — настоящее удовольствие!»</p>
+                </div>
+              </div>
+
+              <div class="swiper-slide reviews__slide">
+                <picture>
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/images/reviewer-img-tablet@1x.webp 1x, img/images/reviewer-img-tablet@2x.webp 2x"
+                    width="80" height="80">
+                  <source type="image/webp"
+                    srcset="img/images/reviewer-img-mobile@1x.webp 1x, img/images/reviewer-img-mobile@2x.webp 2x"
+                    width="68" height="68">
+
+                  <source type="image/png" media="(min-width: 768px)"
+                    srcset="img/images/reviewer-img-tablet@1x.png 1x, img/images/reviewer-img-tablet@2x.png 2x"
+                    width="80" height="80">
+                  <img src="img/images/reviewer-img-mobile@1x.png" srcset="img/images/reviewer-img-mobile@2x.png"
+                    width="68" height="68" alt="Фото клиента">
+                </picture>
+                <div>
+                  <h3>Иван Петров</h3>
+                  <p>«Отличный фитнес-центр! Очень нравятся групповые занятия, тренеры мотивируют и подсказывают
+                    правильную технику.
+                    Абонемент стоит своих денег, рекомендую всем.»</p>
+                </div>
+
               </div>
             </div>
 
-            <div class="swiper-slide reviews__slide">
-              <picture>
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/images/reviewer-img-tablet@1x.webp 1x, img/images/reviewer-img-tablet@2x.webp 2x"
-                  width="80" height="80">
-                <source type="image/webp"
-                  srcset="img/images/reviewer-img-mobile@1x.webp 1x, img/images/reviewer-img-mobile@2x.webp 2x"
-                  width="68" height="68">
 
-                <source type="image/png" media="(min-width: 768px)"
-                  srcset="img/images/reviewer-img-tablet@1x.png 1x, img/images/reviewer-img-tablet@2x.png 2x" width="80"
-                  height="80">
-                <img src="img/images/reviewer-img-mobile@1x.png" srcset="img/images/reviewer-img-mobile@2x.png"
-                  width="68" height="68" alt="Фото клиента">
-              </picture>
-              <div>
-                <h3>Мария Кузнецова</h3>
-                <p>«Недавно записалась в Supergym, и уже вижу прогресс. Большой выбор тренажёров, приятная атмосфера
-                  и компетентные
-                  тренеры. Здесь тренировки — настоящее удовольствие!»</p>
-              </div>
-            </div>
-
-            <div class="swiper-slide reviews__slide">
-              <picture>
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/images/reviewer-img-tablet@1x.webp 1x, img/images/reviewer-img-tablet@2x.webp 2x"
-                  width="80" height="80">
-                <source type="image/webp"
-                  srcset="img/images/reviewer-img-mobile@1x.webp 1x, img/images/reviewer-img-mobile@2x.webp 2x"
-                  width="68" height="68">
-
-                <source type="image/png" media="(min-width: 768px)"
-                  srcset="img/images/reviewer-img-tablet@1x.png 1x, img/images/reviewer-img-tablet@2x.png 2x" width="80"
-                  height="80">
-                <img src="img/images/reviewer-img-mobile@1x.png" srcset="img/images/reviewer-img-mobile@2x.png"
-                  width="68" height="68" alt="Фото клиента">
-              </picture>
-              <div>
-                <h3>Иван Петров</h3>
-                <p>«Отличный фитнес-центр! Очень нравятся групповые занятия, тренеры мотивируют и подсказывают
-                  правильную технику.
-                  Абонемент стоит своих денег, рекомендую всем.»</p>
-              </div>
-
-            </div>
           </div>
-
-          <button class="swiper__button swiper-button-prev" type="button">
+          <button class="swiper__button reviews__button swiper-button-prev" type="button">
             <span class="visually-hidden">Предыдущий слайд</span>
           </button>
 
-          <button class="swiper__button swiper-button-next" type="button">
+          <button class="swiper__button reviews__button swiper-button-next" type="button">
             <span class="visually-hidden">Следующий слайд</span>
           </button>
         </div>
@@ -803,23 +805,24 @@
 
     <section class="form" data-test="form">
       <div class="form__wrapper">
-      <div class="container form__container">
-        <form action="https://echo.htmlacademy.ru">
-          <h2 class="form__heading">Бесплатное занятие</h2>
-          <fieldset class="form__fieldset">
-            <legend class="visually-hidden">Отправить заявку на бесплатное занятие</legend>
-            <label class="form__label" for="input-name">
-              <input class="form__input form__input-name" type="text" name="input-name" placeholder="Имя" id="input-name" required>
-            </label>
-            <label class="form__label" for="input-phone">
-              <input class="form__input form__input-phone" type="tel" name="input-phone" placeholder="Телефон" id="input-phone"
-                required>
-            </label>
-            <button class="button form__button" type="submit">отправить</button>
-          </fieldset>
-        </form>
+        <div class="container form__container">
+          <form action="https://echo.htmlacademy.ru">
+            <h2 class="form__heading">Бесплатное занятие</h2>
+            <fieldset class="form__fieldset">
+              <legend class="visually-hidden">Отправить заявку на бесплатное занятие</legend>
+              <label class="form__label" for="input-name">
+                <input class="form__input form__input-name" type="text" name="input-name" placeholder="Имя"
+                  id="input-name" required>
+              </label>
+              <label class="form__label" for="input-phone">
+                <input class="form__input form__input-phone" type="tel" name="input-phone" placeholder="Телефон"
+                  id="input-phone" required>
+              </label>
+              <button class="button form__button" type="submit">отправить</button>
+            </fieldset>
+          </form>
+        </div>
       </div>
-    </div>
       <article class="form__contacts contacts">
         <div class="container contacts__container">
           <h2 class="contacts__heading">Контакты</h2>
@@ -838,7 +841,8 @@
             </li>
             <li class="contacts__list-item">
               <h3 class="contacts__list-title">Email:</h3>
-              <a class="contacts__list-description contacts__list-email" href="mailto:oмск@supergym.ru">oмск@supergym.ru</a>
+              <a class="contacts__list-description contacts__list-email"
+                href="mailto:oмск@supergym.ru">oмск@supergym.ru</a>
             </li>
           </ul>
         </div>
@@ -847,65 +851,65 @@
     </section>
   </main>
 
-    <footer class="footer" data-test="footer">
-      <div class="container footer__container">
-        <picture>
-          <source type="image/svg+xml" media="(min-width: 1366px)" srcset="img/images/logo-supergym.svg" width="130"
-            height="26">
-          <source type="image/svg+xml" media="(min-width: 768px)" srcset="img/images/logo-supergym.svg" width="110"
-            height="22">
-          <img class="footer__logo" src="img/images/logo-supergym.svg" width="100" height="20" alt="логотип SUPERGYM">
-        </picture>
-        <nav class="footer__navigation">
-          <ul class="footer__navigation-list">
-            <li class="footer__navigation-item">
-              <a class="footer__navigation-link" href="#">
-                Услуги
-              </a>
-            </li>
-            <li class="footer__navigation-item">
-              <a class="footer__navigation-link" href="#">
-                Абонементы
-              </a>
-            </li>
-            <li class="footer__navigation-item">
-              <a class="footer__navigation-link" href="#">
-                Акции
-              </a>
-            </li>
-            <li class="footer__navigation-item">
-              <a class="footer__navigation-link" href="#">
-                Тренеры
-              </a>
-            </li>
-            <li class="footer__navigation-item">
-              <a class="footer__navigation-link" href="#">
-                Расписание
-              </a>
-            </li>
-          </ul>
-        </nav>
-          <ul class="footer__social-list">
-            <li class="footer__social-item">
-              <a class="footer__social-link footer__social-link-vk" href="#">
-                <span class="visually-hidden">VK</span>
+  <footer class="footer" data-test="footer">
+    <div class="container footer__container">
+      <picture>
+        <source type="image/svg+xml" media="(min-width: 1366px)" srcset="img/images/logo-supergym.svg" width="130"
+          height="26">
+        <source type="image/svg+xml" media="(min-width: 768px)" srcset="img/images/logo-supergym.svg" width="110"
+          height="22">
+        <img class="footer__logo" src="img/images/logo-supergym.svg" width="100" height="20" alt="логотип SUPERGYM">
+      </picture>
+      <nav class="footer__navigation">
+        <ul class="footer__navigation-list">
+          <li class="footer__navigation-item">
+            <a class="footer__navigation-link" href="#">
+              Услуги
+            </a>
+          </li>
+          <li class="footer__navigation-item">
+            <a class="footer__navigation-link" href="#">
+              Абонементы
+            </a>
+          </li>
+          <li class="footer__navigation-item">
+            <a class="footer__navigation-link" href="#">
+              Акции
+            </a>
+          </li>
+          <li class="footer__navigation-item">
+            <a class="footer__navigation-link" href="#">
+              Тренеры
+            </a>
+          </li>
+          <li class="footer__navigation-item">
+            <a class="footer__navigation-link" href="#">
+              Расписание
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="footer__social-list">
+        <li class="footer__social-item">
+          <a class="footer__social-link footer__social-link-vk" href="#">
+            <span class="visually-hidden">VK</span>
 
-              </a>
-            </li>
-            <li class="footer__social-item">
-              <a class="footer__social-link footer__social-link-ok" href="#">
-                <span class="visually-hidden">OK</span>
-              </a>
-            </li>
-            <li class="footer__social-item">
-              <a class="footer__social-link footer__social-link-reddit" href="#">
-                <span class="visually-hidden">Reddit</span>
-              </a>
-            </li>
-          </ul>
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a class="footer__social-link footer__social-link-ok" href="#">
+            <span class="visually-hidden">OK</span>
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a class="footer__social-link footer__social-link-reddit" href="#">
+            <span class="visually-hidden">Reddit</span>
+          </a>
+        </li>
+      </ul>
 
-      </div>
-    </footer>
+    </div>
+  </footer>
 
   <script type="module" src="js/main.js"></script>
 </body>
