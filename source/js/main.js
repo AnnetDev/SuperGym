@@ -3,20 +3,20 @@
 // import { Navigation, Pagination } from "swiper/modules";
 // import "swiper/scss";
 
-import { initializeSwiper } from "./utils/init-swiper";
-import { loadVideo } from "./modules/video";
+import { initializeSwiper } from './utils/init-swiper';
+import { loadVideo } from './modules/video';
 import { changeTabPrice } from './modules/change-tab-price';
 import { changeTabFaq } from './modules/change-tab-faq';
 
-document.querySelectorAll('.price__tab-link').forEach(tab => {
+document.querySelectorAll('.price__tab-link').forEach((tab) => {
   tab.addEventListener('click', changeTabPrice);
 });
 
-document.querySelectorAll('.faq__tab-button').forEach(tab => {
+document.querySelectorAll('.faq__tab-button').forEach((tab) => {
   tab.addEventListener('click', changeTabFaq);
 });
 
-document.querySelectorAll('.faq__button').forEach(button => {
+document.querySelectorAll('.faq__button').forEach((button) => {
   button.addEventListener('click', () => {
     const expanded = button.getAttribute('aria-expanded') === 'true';
     button.setAttribute('aria-expanded', !expanded);

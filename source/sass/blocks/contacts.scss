@@ -9,23 +9,24 @@
 
   @media (min-width: $desktop-width) {
     width: 100%;
-border-top: solid 1px #74819c;
+    border-top: solid 1px #74819c;
   }
 }
 
 .contacts__container {
   width: 100%;
+
   @media (min-width: $desktop-width) {
-  width: 683px;
-  margin: 0;
+    width: 683px;
+    margin: 0;
 
 
-
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: flex-start;}
-
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+  }
 }
+
 .contacts__heading {
   margin: 0;
   padding: 0;
@@ -44,9 +45,7 @@ border-top: solid 1px #74819c;
 
   @media (min-width: $desktop-width) {
     text-align: left;
-
   }
-
 }
 
 .contacts__list {
@@ -58,37 +57,39 @@ border-top: solid 1px #74819c;
   gap: 28px;
 
   @media (min-width: $tablet-width) {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto;
-  row-gap: 15px;
-  column-gap: 60px;
-  width: 440px;
-  position: relative;
-  margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    row-gap: 15px;
+    column-gap: 60px;
+    width: 440px;
+    position: relative;
+    margin: 0 auto;
 
-  &::after {
-    position: absolute;
-    content: "";
-    width: 1px;
-    height: 100%;
-    background-color: #74819c;
-    left: 50%;
-    transform: translateX(-50%);
+    &::after {
+      position: absolute;
+      content: "";
+      width: 1px;
+      height: 100%;
+      background-color: #74819c;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 }
-}
+
 .contacts__list-item {
   margin: 0;
   padding: 0;
-
 }
+
 .contacts__list-item:nth-child(1),
 .contacts__list-item:nth-child(2) {
   @media (min-width: $tablet-width) {
     grid-column: 1;
   }
 }
+
 .contacts__list-item:nth-child(3),
 .contacts__list-item:nth-child(4) {
   @media (min-width: $tablet-width) {
@@ -98,15 +99,16 @@ border-top: solid 1px #74819c;
 
 .contacts__list-item:nth-child(1),
 .contacts__list-item:nth-child(3) {
-@media (min-width: $tablet-width) {
-  grid-row: 1;
+  @media (min-width: $tablet-width) {
+    grid-row: 1;
+  }
 }
-}
+
 .contacts__list-item:nth-child(2),
 .contacts__list-item:nth-child(4) {
-@media (min-width: $tablet-width) {
-  grid-row: 2;
-}
+  @media (min-width: $tablet-width) {
+    grid-row: 2;
+  }
 }
 
 .contacts__list-title {
@@ -115,6 +117,7 @@ border-top: solid 1px #74819c;
   font-weight: 400;
   font-size: 20px;
   line-height: 20px;
+
   @media (min-width: $tablet-width) {
     font-size: 24px;
     line-height: 24px;

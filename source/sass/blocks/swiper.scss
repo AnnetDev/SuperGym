@@ -28,7 +28,7 @@
     display: block;
     mask: url("/__spritemap#sprite-juri-button-prev-view") center no-repeat;
     background-color: $basic-dark;
-    left: 0px;
+    left: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -43,13 +43,12 @@
     display: block;
     mask: url("/__spritemap#sprite-juri-button-next-view") center no-repeat;
     background-color: $basic-dark;
-    right: 0px;
+    right: 0;
   }
 
   @media (min-width: $desktop-width) {
     right: -52px;
   }
-
 }
 
 .swiper__image {
@@ -80,18 +79,17 @@
   z-index: 10;
   position: absolute;
   content: "";
-  padding: 0;
   margin: 0;
   width: 100%;
   height: 100%;
   top: 0;
   right: 0;
-  background-color: #102654E3;
+  background-color: #102654e3;
   color: $basic-white;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-  padding: 46px 0 20px 0;
+  padding: 46px 0 20px;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;

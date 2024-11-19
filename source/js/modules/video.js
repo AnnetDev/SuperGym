@@ -1,5 +1,5 @@
 export function loadVideo() {
-  document.querySelector('.video__button').addEventListener('click', function() {
+  document.querySelector('.video__button').addEventListener('click', () => {
     const videoContainer = document.querySelector('.video__container');
 
     // Создаем iframe с ленивой загрузкой видео

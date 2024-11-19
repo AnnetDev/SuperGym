@@ -18,6 +18,7 @@
   display: flex;
   flex-flow: column wrap;
   gap: 35px;
+
   @media (min-width: $tablet-width) {
     gap: 45px;
   }
@@ -53,7 +54,7 @@
   &:hover {
     outline: solid 1px $basic-dark;
     background-image: none;
-    color:$basic-dark;
+    color: $basic-dark;
   }
 
   &:focus,
@@ -84,7 +85,6 @@
     padding: 18px;
     font-size: 18px;
     line-height: 18px;
-
   }
 
   @media (min-width: $desktop-width) {
@@ -111,6 +111,7 @@
     padding: 20px 0;
     position: relative;
     border-bottom: solid 1px #74819c;
+
     @media (min-width: $tablet-width) {
       padding: 23px 0;
     }
@@ -134,7 +135,7 @@
         font-size: 24px;
         line-height: 24px;
         width: 660px;
-}
+      }
     }
 
     p {
@@ -155,16 +156,16 @@
         font-size: 18px;
         line-height: 24px;
       }
+
       @media (min-width: $desktop-width) {
         width: 660px;
-}
+      }
     }
   }
 
   li:first-of-type {
     border-top: solid 1px #74819c;
   }
-
 }
 
 .faq__tab--active {
@@ -188,6 +189,7 @@
   top: 20px;
   right: 0;
   transition: background-color 0.3s ease, display 0.3s ease;
+
   @media (min-width: $tablet-width) {
     top: 23px;
   }
@@ -218,15 +220,14 @@
 
   &:hover {
     background-color: $bg-blocks;
-
   }
 
   &:focus,
   &:focus-visible,
   &:focus-within {
-    background-color: #74819C;
+    background-color: #74819c;
     border: solid 1px $bg-blocks;
-outline: none;
+    outline: none;
   }
 
   &:hover::before,
@@ -249,6 +250,7 @@ outline: none;
     opacity: 30%;
     cursor: not-allowed;
   }
+
   &:disabled::before,
   &:disabled::after {
     opacity: 30%;
@@ -258,13 +260,13 @@ outline: none;
 .faq__button[aria-expanded="true"] {
   background-color: $bg-blocks;
 
-    &::before {
-      background-color: $basic-white;
-    }
+  &::before {
+    background-color: $basic-white;
+  }
 
-    &::after {
-      display: none;
-    }
+  &::after {
+    display: none;
+  }
 }
 
 .faq__tab li button[aria-expanded="true"] + p {

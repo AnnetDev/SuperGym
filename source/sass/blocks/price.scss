@@ -2,7 +2,6 @@
   position: relative;
   z-index: 1;
   overflow: hidden;
-
 }
 
 .price {
@@ -22,7 +21,7 @@
     padding: 100px 0;
   }
 
-  &:before {
+  &::before {
     position: absolute;
     content: "";
     z-index: -1;
@@ -31,11 +30,12 @@
       width: 275px;
       height: 328px;
       transform: rotate(150deg);
-      background-image: image-set(url("../../img/images/bg-image-price-tablet@1x.webp") 1x,
-          url("../../img/images/bg-image-price-tablet@2x.webp") 2x,
-          url("../../img/images/bg-image-price-tablet@1x.png") 1x,
-          url("../../img/images/bg-image-price-tablet@2x.png") 2x,
-        );
+      background-image:
+        image-set(url("../../img/images/bg-image-price-tablet@1x.webp") 1x,
+        url("../../img/images/bg-image-price-tablet@2x.webp") 2x,
+        url("../../img/images/bg-image-price-tablet@1x.png") 1x,
+        url("../../img/images/bg-image-price-tablet@2x.png") 2x,
+      );
       bottom: 0;
       right: 0;
     }
@@ -43,14 +43,14 @@
     @media (min-width: $desktop-width) {
       width: 321px;
       height: 384px;
-      background-image: image-set(url("../../img/images/bg-image-price-desktop@1x.webp") 1x,
-          url("../../img/images/bg-image-price-desktop@2x.webp") 2x,
-          url("../../img/images/bg-image-price-desktop@1x.png") 1x,
-          url("../../img/images/bg-image-price-desktop@2x.png") 2x,
-        );
+      background-image:
+        image-set(url("../../img/images/bg-image-price-desktop@1x.webp") 1x,
+        url("../../img/images/bg-image-price-desktop@2x.webp") 2x,
+        url("../../img/images/bg-image-price-desktop@1x.png") 1x,
+        url("../../img/images/bg-image-price-desktop@2x.png") 2x,
+      );
       bottom: 0;
       right: 0;
-
     }
   }
 }
@@ -108,13 +108,13 @@
   flex-flow: row wrap;
   justify-content: space-between;
   margin: 0 auto 30px;
+
   // border-bottom: solid 2px #78787833;
 
   @media (min-width: $tablet-width) {
     width: 310px;
     margin: 0 auto 45px;
   }
-
 }
 
 .price__tab-link {
@@ -145,7 +145,7 @@
   }
 
   &:hover {
-    color: #102654B2;
+    color: #102654b2;
   }
 
   &:hover::after {

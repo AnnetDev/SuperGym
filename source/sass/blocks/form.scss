@@ -23,7 +23,6 @@
     width: 100%;
     display: flex;
     justify-content: flex-end;
-
   }
 }
 
@@ -34,7 +33,6 @@
     margin: 0;
     width: 683px;
   }
-
 }
 
 .form__heading {
@@ -55,7 +53,6 @@
   @media (min-width: $desktop-width) {
     text-align: left;
   }
-
 }
 
 .form__fieldset {
@@ -86,7 +83,7 @@
   line-height: 22px;
   margin: 0;
   padding: 0 0 4px;
-  border-bottom: solid 1px #74819C;
+  border-bottom: solid 1px #74819c;
   width: 100%;
 
   @media (min-width: $tablet-width) {

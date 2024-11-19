@@ -1,4 +1,4 @@
-import { changeTab } from "../utils/change-tab";
+import { changeTab } from '../utils/change-tab';
 
 export function changeTabFaq(event) {
   event.preventDefault(); // Убираем стандартное поведение

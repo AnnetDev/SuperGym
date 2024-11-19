@@ -52,7 +52,7 @@
                 <li class="hero__description">Кардио-зона</li>
               </ul>
               <div class="hero__titles-wrapper">
-                <h2 class="hero__title-city">Омск</h2>
+                <span class="hero__title-city">Омск</span>
                 <h1 class="hero__title">ФИТНЕС ЦЕНТР</h1>
               </div>
             </div>
@@ -128,7 +128,7 @@
     <section class="price" data-test="price">
       <div class="container price__container">
         <h2 class="price__title">Абонементы</h2>
-        <nav class="price__tabs">
+        <nav class="price__tabs" aria-label="Выбор  абонемента">
           <button class="price__tab-link price__tab-link--active" data-tab="1-month" type="button">1 месяц</button>
           <button class="price__tab-link" data-tab="6-months" type="button">6 месяцев</button>
           <button class="price__tab-link" data-tab="12-months" type="button">12 месяцев</button>
@@ -204,7 +204,7 @@
       <div class="container games__container ">
         <div class="games__content-wrapper">
           <div class="games__announce">
-            <h1 class="games__title">Super Games</h1>
+            <h2 class="games__title">Super Games</h2>
             <div class="games__details">
               <h2 class="games__details-title">Дата</h2>
               <div class="games__details-date">
@@ -405,11 +405,11 @@
 
           </div>
 
-          <button class="swiper__button swiper-button-prev" type="button">
+          <button class="juri__button-prev swiper__button swiper-button-prev" type="button">
             <span class="visually-hidden">Предыдущий слайд</span>
           </button>
 
-          <button class="swiper__button swiper-button-next" type="button">
+          <button class="juri__button-next swiper__button swiper-button-next" type="button">
             <span class="visually-hidden">Следующий слайд</span>
           </button>
         </div>
@@ -530,7 +530,7 @@
       <div class="container">
         <h2 class="faq__heading">Вопросы и ответы</h2>
         <div class="faq__tabs-wrapper">
-          <nav class="faq__tab-nav">
+          <nav class="faq__tab-nav" aria-label="Навигация по разделам FAQ">
             <button class="button faq__tab-button" type="button" data-tab="center">
               Центр
             </button>
@@ -810,11 +810,13 @@
             <h2 class="form__heading">Бесплатное занятие</h2>
             <fieldset class="form__fieldset">
               <legend class="visually-hidden">Отправить заявку на бесплатное занятие</legend>
-              <label class="form__label" for="input-name">
+              <label class="form__label">
+                <span class="visually-hidden">Имя</span>
                 <input class="form__input form__input-name" type="text" name="input-name" placeholder="Имя"
                   id="input-name" required>
               </label>
-              <label class="form__label" for="input-phone">
+              <label class="form__label">
+                <span class="visually-hidden">Телефон</span>
                 <input class="form__input form__input-phone" type="tel" name="input-phone" placeholder="Телефон"
                   id="input-phone" required>
               </label>
@@ -847,7 +849,6 @@
           </ul>
         </div>
       </article>
-      </form>
     </section>
   </main>
 
@@ -860,7 +861,7 @@
           height="22">
         <img class="footer__logo" src="img/images/logo-supergym.svg" width="100" height="20" alt="логотип SUPERGYM">
       </picture>
-      <nav class="footer__navigation">
+      <nav class="footer__navigation" aria-label="Навигация по разделам сайта">
         <ul class="footer__navigation-list">
           <li class="footer__navigation-item">
             <a class="footer__navigation-link" href="#">

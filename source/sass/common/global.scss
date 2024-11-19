@@ -21,7 +21,6 @@ body {
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
-
-  min-width: none;}
-
+    min-width: none;
+  }
 }

@@ -13,10 +13,10 @@ export function changeTab(event, options) {
   const currentContentId = currentTab.getAttribute('data-tab');
 
   // Удаляем активные классы у всех табов
-  tabs.forEach(tab => tab.classList.remove(activeTabClass));
+  tabs.forEach((tab) => tab.classList.remove(activeTabClass));
 
   // Скрываем весь контент
-  contents.forEach(content => {
+  contents.forEach((content) => {
     content.classList.remove(activeContentClass);
     if (inactiveContentClass) {
       content.classList.add(inactiveContentClass);

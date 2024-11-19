@@ -46,18 +46,19 @@
         width: 324px;
         align-items: start;
         flex-flow: row nowrap;
-        gap: 14px
+        gap: 14px;
       }
-      @media (min-width: $desktop-width) {
-      width: 360px;
-      border-bottom: solid 2px #D10A4233;
-      padding-bottom: 40px;
 
-      &:nth-last-child(2),
-      &:last-child {
-        border: none;
-        padding-bottom: 0;
-      }
+      @media (min-width: $desktop-width) {
+        width: 360px;
+        border-bottom: solid 2px #d10a4233;
+        padding-bottom: 40px;
+
+        &:nth-last-child(2),
+        &:last-child {
+          border: none;
+          padding-bottom: 0;
+        }
       }
 
       div {
@@ -77,7 +78,7 @@
           padding: 0;
           background: $text-gradient;
           background-clip: text;
-          -webkit-background-clip: text;
+          background-clip: text;
           -webkit-text-fill-color: transparent;
 
           @media (min-width: $tablet-width) {
@@ -173,7 +174,7 @@
           text-align: center;
           background: $basic-white;
           background-clip: text;
-          -webkit-background-clip: text;
+          background-clip: text;
           -webkit-text-fill-color: transparent;
         }
 

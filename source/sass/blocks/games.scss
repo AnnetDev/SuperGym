@@ -81,7 +81,6 @@
   display: flex;
   flex-flow: row wrap;
   gap: 3px;
-
 }
 
 .games__details-when {
@@ -152,6 +151,7 @@
 
   // &:disabled {} ???
 }
+
 .games__announce-button[aria-disabled="true"] {
   opacity: 50%;
   cursor: not-allowed;

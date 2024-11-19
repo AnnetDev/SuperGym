@@ -8,6 +8,7 @@
 
   @media (max-width: $mobile-width-only) {
     position: relative;
+
     // left: 50%;
     // transform: translateX(-50%);
     margin: 0 calc((100% - 320px)/2);
@@ -35,26 +36,29 @@
   align-items: center;
   justify-content: center;
   background-color: $basic-dark;
-  background-image: image-set(url("../../img/images/video-placeholder-mobile@1x.webp") 1x,
-      url("../../img/images/video-placeholder-mobile@2x.webp") 2x,
-      url("../../img/images/video-placeholder-mobile@1x.png") 1x,
-      url("../../img/images/video-placeholder-mobile@2x.png") 2x,
-    );
+  background-image:
+    image-set(url("../../img/images/video-placeholder-mobile@1x.webp") 1x,
+    url("../../img/images/video-placeholder-mobile@2x.webp") 2x,
+    url("../../img/images/video-placeholder-mobile@1x.png") 1x,
+    url("../../img/images/video-placeholder-mobile@2x.png") 2x,
+  );
 
   @media (min-width: $tablet-width) {
-    background-image: image-set(url("../../img/images/video-placeholder-tablet@1x.webp") 1x,
-        url("../../img/images/video-placeholder-tablet@2x.webp") 2x,
-        url("../../img/images/video-placeholder-tablet@1x.png") 1x,
-        url("../../img/images/video-placeholder-tablet@2x.png") 2x,
-      );
+    background-image:
+      image-set(url("../../img/images/video-placeholder-tablet@1x.webp") 1x,
+      url("../../img/images/video-placeholder-tablet@2x.webp") 2x,
+      url("../../img/images/video-placeholder-tablet@1x.png") 1x,
+      url("../../img/images/video-placeholder-tablet@2x.png") 2x,
+    );
   }
 
   @media (min-width: $desktop-width) {
-    background-image: image-set(url("../../img/images/video-placeholder-desktop@1x.webp") 1x,
-        url("../../img/images/video-placeholder-desktop@2x.webp") 2x,
-        url("../../img/images/video-placeholder-desktop@1x.png") 1x,
-        url("../../img/images/video-placeholder-desktop@2x.png") 2x,
-      );
+    background-image:
+      image-set(url("../../img/images/video-placeholder-desktop@1x.webp") 1x,
+      url("../../img/images/video-placeholder-desktop@2x.webp") 2x,
+      url("../../img/images/video-placeholder-desktop@1x.png") 1x,
+      url("../../img/images/video-placeholder-desktop@2x.png") 2x,
+    );
   }
 }
 
@@ -66,7 +70,7 @@
   height: 52px;
   padding: 20px;
   cursor: pointer;
-  color: #333;
+  color: #333333;
   border-radius: 50%;
   position: relative;
   transition: background-color 0.3s ease;
