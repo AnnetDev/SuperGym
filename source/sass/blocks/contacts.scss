@@ -8,12 +8,23 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 683px;
+    width: 100%;
+border-top: solid 1px #74819c;
   }
 }
 
 .contacts__container {
   width: 100%;
+  @media (min-width: $desktop-width) {
+  width: 683px;
+  margin: 0;
+
+
+
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;}
+
 }
 .contacts__heading {
   margin: 0;

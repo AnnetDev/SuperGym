@@ -29,7 +29,7 @@
     <svg>
       <use href="/__spritemap#sprite-user"></use>
     </svg> -->
-  <main>
+  <main class="main-container">
 
     <section class="hero" data-test="hero">
       <div class="container">
@@ -845,62 +845,68 @@
       </article>
       </form>
     </section>
+  </main>
 
     <footer class="footer" data-test="footer">
-      <div class="container">
+      <div class="container footer__container">
         <picture>
-          <!-- адаптивные изображения logo? no links -->
+          <source type="image/svg+xml" media="(min-width: 1366px)" srcset="img/images/logo-supergym.svg" width="130"
+            height="26">
+          <source type="image/svg+xml" media="(min-width: 768px)" srcset="img/images/logo-supergym.svg" width="110"
+            height="22">
+          <img class="footer__logo" src="img/images/logo-supergym.svg" width="100" height="20" alt="логотип SUPERGYM">
         </picture>
         <nav class="footer__navigation">
           <ul class="footer__navigation-list">
             <li class="footer__navigation-item">
-              <a clas="footer__navigation-link" href="#">
+              <a class="footer__navigation-link" href="#">
                 Услуги
               </a>
             </li>
             <li class="footer__navigation-item">
-              <a clas="footer__navigation-link" href="#">
+              <a class="footer__navigation-link" href="#">
                 Абонементы
               </a>
             </li>
             <li class="footer__navigation-item">
-              <a clas="footer__navigation-link" href="#">
+              <a class="footer__navigation-link" href="#">
                 Акции
               </a>
             </li>
             <li class="footer__navigation-item">
-              <a clas="footer__navigation-link" href="#">
+              <a class="footer__navigation-link" href="#">
                 Тренеры
               </a>
             </li>
             <li class="footer__navigation-item">
-              <a clas="footer__navigation-link" href="#">
+              <a class="footer__navigation-link" href="#">
                 Расписание
               </a>
             </li>
           </ul>
-
+        </nav>
           <ul class="footer__social-list">
             <li class="footer__social-item">
-              <a class="footer__social-link" href="#">
+              <a class="footer__social-link footer__social-link-vk" href="#">
                 <span class="visually-hidden">VK</span>
+
               </a>
             </li>
             <li class="footer__social-item">
-              <a class="footer__social-link" href="#">
+              <a class="footer__social-link footer__social-link-ok" href="#">
                 <span class="visually-hidden">OK</span>
               </a>
             </li>
             <li class="footer__social-item">
-              <a class="footer__social-link" href="#">
+              <a class="footer__social-link footer__social-link-reddit" href="#">
                 <span class="visually-hidden">Reddit</span>
               </a>
             </li>
           </ul>
-        </nav>
+
       </div>
     </footer>
-  </main>
+
   <script type="module" src="js/main.js"></script>
 </body>
 
