@@ -17,7 +17,7 @@
     align-items: center;
     margin: 0;
     padding: 0;
-    gap: 35px;
+    // gap: 35px;
     justify-content: center;
     position: relative;
 
@@ -38,7 +38,7 @@
       display: flex;
       flex-flow: column wrap;
       align-items: center;
-      margin: 0;
+      margin: 0 0 35px;
       padding: 0;
       width: 290px;
 
@@ -121,6 +121,7 @@
           text-align: center;
           margin: 0;
           padding: 0;
+          width: 230px;
 
           @media (min-width: $tablet-width) {
             font-size: 16px;
@@ -131,6 +132,10 @@
       }
     }
 
+
+    li:last-of-type {
+      margin: 0;
+    }
     li:nth-of-type(3) {
       background-color: $bg-blocks;
       color: $basic-white;
@@ -139,7 +144,7 @@
       align-items: center;
       padding: 30px 50px 40px;
       width: 320px;
-      margin: 0 calc((100% - 320px)/2);
+      margin: 5px calc((100% - 320px)/2) 40px;
 
       @media (min-width: $tablet-width) {
         margin: 0 calc((100% - 320px)/2);

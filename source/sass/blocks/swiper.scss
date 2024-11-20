@@ -1,5 +1,9 @@
 .swiper {
   position: relative; //??
+  @media (max-width: $mobile-width-only) {
+    width: 260px;
+
+  }
 }
 
 

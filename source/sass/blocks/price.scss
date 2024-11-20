@@ -6,7 +6,7 @@
 
 .price {
   background-color: $bg-additional;
-  padding: 40px 0;
+  padding: 41px 0 41px;
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -61,7 +61,7 @@
   font-size: 32px;
   line-height: 32px;
   text-align: center;
-  margin: 0 0 30px;
+  margin: 0 0 31px;
   padding: 0;
 
   @media (min-width: $tablet-width) {
@@ -83,7 +83,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: 35px;
+  gap: 38px;
   align-items: center;
 
   @media (min-width: $tablet-width) {
@@ -107,9 +107,22 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  margin: 0 auto 30px;
+  margin: 0 auto 39px;
+  position: relative;
 
   // border-bottom: solid 2px #78787833;
+
+  &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #78787833;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 
   @media (min-width: $tablet-width) {
     width: 310px;
@@ -138,8 +151,8 @@
     display: block;
     width: 100%;
     height: 2px;
-    background-color: #78787833;
-    bottom: -14px;
+    background-color: transparent; //  костыль
+    bottom: -8px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -223,7 +236,7 @@
   font-weight: 700;
   font-size: 22px;
   line-height: 22px;
-  margin: 0 0 18px;
+  margin: 0 0 17px;
   padding: 0;
 
   @media (min-width: $tablet-width) {
@@ -243,7 +256,7 @@
   font-weight: 700;
   font-size: 48px;
   line-height: 72px;
-  margin: 0 0 18px;
+  margin: 0 0 20px;
   padding: 0;
   position: relative;
   z-index: 1;
@@ -291,5 +304,5 @@
 }
 
 .price__tab-button {
-  width: 206px;
+  width: 200px;
 }

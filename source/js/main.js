@@ -16,12 +16,30 @@ document.querySelectorAll('.faq__tab-button').forEach((tab) => {
   tab.addEventListener('click', changeTabFaq);
 });
 
+// document.querySelectorAll('.faq__button').forEach((button) => {
+//   button.addEventListener('click', () => {
+//     const expanded = button.getAttribute('aria-expanded') === 'true';
+//     button.setAttribute('aria-expanded', !expanded);
+//   });
+// });
+
 document.querySelectorAll('.faq__button').forEach((button) => {
   button.addEventListener('click', () => {
     const expanded = button.getAttribute('aria-expanded') === 'true';
     button.setAttribute('aria-expanded', !expanded);
+
+    // Найти соседний <p>, используя closest и nextElementSibling
+    const parent = button.closest('li');
+    const content = parent.querySelector('p');
+
+    if (!expanded) {
+      content.style.maxHeight = `${content.scrollHeight}px`; // Разворачиваем
+    } else {
+      content.style.maxHeight = null; // Сворачиваем
+    }
   });
 });
+
 
 loadVideo();
 

@@ -1,6 +1,6 @@
 .about {
   margin: 0;
-  padding: 40px 0 36px;
+  padding: 40px 0 40px;
 
   @media (min-width: $tablet-width) {
     padding: 60px 0 35px;
@@ -17,6 +17,7 @@
     font-size: 14px;
     line-height: 22px;
     text-align: left;
+    margin-bottom: 36px;
 
 
     @media (min-width: $tablet-width) {
@@ -118,7 +119,7 @@
     width: 320px;
     position: relative;
     margin: 0 calc((100% - 320px)/2);
-    margin-bottom: 36px;
+    margin-bottom: 31px;
   }
 
   @media (min-width: $tablet-width) {

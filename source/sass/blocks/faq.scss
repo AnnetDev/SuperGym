@@ -1,6 +1,6 @@
 .faq {
   margin: 0;
-  padding: 70px 0;
+  padding: 71px 0;
   background-color: $bg-additional;
 }
 
@@ -32,7 +32,7 @@
 .faq__tab-nav {
   display: flex;
   flex-flow: row wrap;
-  gap: 10px;
+  gap: 12px 10px;
 
   @media (min-width: $desktop-width) {
     flex-flow: column wrap;
@@ -101,6 +101,8 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  transition: all 0.3s ease;
+
 
   @media (min-width: $desktop-width) {
     width: 860px;
@@ -109,32 +111,38 @@
   li {
     margin: 0;
     padding: 20px 0;
-    position: relative;
     border-bottom: solid 1px #74819c;
 
     @media (min-width: $tablet-width) {
       padding: 23px 0;
     }
 
-    h3 {
-      margin: 0 0 20px;
-      padding: 0;
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 20px;
-      width: 238px;
-      text-align: left;
+    div {
 
-      @media (min-width: $tablet-width) {
-        font-size: 22px;
-        line-height: 22px;
-        width: 560px;
-      }
+      position: relative;
 
-      @media (min-width: $desktop-width) {
-        font-size: 24px;
-        line-height: 24px;
-        width: 660px;
+
+      h3 {
+        margin: 0;
+        padding: 0;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 20px;
+        width: 238px;
+        text-align: left;
+
+
+        @media (min-width: $tablet-width) {
+          font-size: 22px;
+          line-height: 22px;
+          width: 560px;
+        }
+
+        @media (min-width: $desktop-width) {
+          font-size: 24px;
+          line-height: 24px;
+          width: 660px;
+        }
       }
     }
 
@@ -148,7 +156,7 @@
       text-align: left;
       max-height: 0;
       overflow: hidden;
-      transition: max-height 0.3s ease-in-out;
+      transition: all 0.3s ease;
 
 
       @media (min-width: $tablet-width) {
@@ -186,12 +194,14 @@
   background-color: transparent;
   margin: 0;
   padding: 0;
-  top: 20px;
+  // top: 26px;
   right: 0;
-  transition: background-color 0.3s ease, display 0.3s ease;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
 
   @media (min-width: $tablet-width) {
-    top: 23px;
+    // top: 23px;
   }
 
   &::before {
@@ -269,9 +279,17 @@
   }
 }
 
-.faq__tab li button[aria-expanded="true"] + p {
-  max-height: 500px; /* Значение должно превышать максимальную высоту контента */
-  // padding: 10px 0;
+.faq__tab li:has(button[aria-expanded="true"]) p {
+  max-height: 500px;
+  padding: 20px 0 0;
 }
+
+
+// .faq__tab li button[aria-expanded="true"] + h3 {
+//   margin-bottom: 20px;
+// }
+
+
+
 
 //hover for .faq__button[aria-expanded="true"] ????

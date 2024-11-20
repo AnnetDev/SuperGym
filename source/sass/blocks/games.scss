@@ -1,3 +1,9 @@
+.games {
+  background-color: $basic-white;
+  margin: 0;
+  padding: 25px 0;
+}
+
 .games__container {
   display: flex;
   flex-flow: column wrap;
@@ -10,7 +16,10 @@
 .games__content-wrapper {
   background-color: $bg-banners;
   color: $basic-white;
-  padding: 40px;
+  padding: 40px 40px 43px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     width: 300px;
@@ -26,7 +35,7 @@
   display: flex;
   flex-flow: row wrap;
   gap: 37px;
-  margin-bottom: 16px;
+  margin-bottom: 17px;
 
   @media (min-width: $tablet-width) {
     gap: 20px;
@@ -66,7 +75,7 @@
   font-size: 16px;
   line-height: 20px;
   margin: 0;
-  padding: 0 0 4px;
+  padding: 0 0 3px;
   width: 56px;
   border-bottom: solid 1px $basic-white;
 
@@ -81,6 +90,7 @@
   display: flex;
   flex-flow: row wrap;
   gap: 3px;
+  margin-top: -3px;
 }
 
 .games__details-when {
@@ -89,6 +99,10 @@
   line-height: 24px;
   margin: 0;
   padding: 0;
+}
+
+.games__details-when:last-of-type {
+  margin: -3px 0 0;
 }
 
 .games__details-when-month {
@@ -109,7 +123,7 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 20px;
-  margin: 0 0 16px;
+  margin: 0 0 17px;
   padding: 0;
 
   @media (min-width: $tablet-width) {
@@ -120,9 +134,10 @@
 }
 
 .games__announce-button {
-  width: 100%;
+  width: 206px;
   color: $basic-white;
   outline: solid 2px $basic-white;
+  padding: 22px;
 
   &:hover {
     background-color: $basic-white;
@@ -155,4 +170,8 @@
 .games__announce-button[aria-disabled="true"] {
   opacity: 50%;
   cursor: not-allowed;
+}
+
+.games__image {
+  display: block;
 }

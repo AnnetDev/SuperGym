@@ -1,6 +1,6 @@
 .hero {
   background-image: $bg-main-page;
-  padding: 18px 0 32px;
+  padding: 0 0 35px;
   color: $basic-white;
 
   @media (min-width: $tablet-width) {
@@ -17,9 +17,9 @@
   flex-flow: row wrap;
   justify-content: space-between;
   margin: 0;
-  padding: 0 0 16px;
+  padding: 16px 0;
 
-  // margin-bottom: ?;
+  margin-bottom: 47px;
 
 
   @media (min-width: $tablet-width) {
@@ -39,7 +39,7 @@
   color: $basic-white;
   font-weight: 700;
   font-size: 22px;
-  line-height: 22px;
+  line-height: 22px; //?? pp
 
   @media (min-width: $tablet-width) {
     font-size: 24px;
@@ -71,6 +71,8 @@
 .hero__main {
   display: flex;
   flex-direction: column;
+  align-items:center;
+
 
   @media (min-width: $tablet-width) {
     flex-flow: column wrap;
@@ -174,6 +176,7 @@
 
 .hero__description {
   display: inline-block;
+  font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   text-align: right;
@@ -201,6 +204,8 @@
 .hero__button {
   color: $basic-white;
   outline: solid 2px $basic-white;
+  padding: 22px;
+  width: 286px;
 
   &:hover {
     background-color: $basic-white;

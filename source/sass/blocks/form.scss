@@ -12,7 +12,7 @@
 .form__wrapper {
   background-color: $basic-dark;
   color: $basic-white;
-  padding: 70px 0;
+  padding: 70px 0 69px;
   margin: 0;
 
   @media (min-width: $tablet-width) {
@@ -43,6 +43,8 @@
   font-size: 32px;
   line-height: 32px;
   margin-bottom: 36px;
+  text-align: left;
+
 
   @media (min-width: $tablet-width) {
     font-size: 54px;
@@ -62,6 +64,7 @@
   gap: 36px;
   margin: 0;
   padding: 0;
+  // align-content: center;
 
   @media (min-width: $tablet-width) {
     flex-flow: row wrap;
@@ -102,6 +105,10 @@
 .form__button {
   color: $basic-white;
   outline: solid 2px $basic-white;
+  padding: 21px;
+  margin: 1px 0 0 0;  // костыль
+  width: 286px;
+  align-self: center;
 
   @media (min-width: $tablet-width) {
     width: 440px;
