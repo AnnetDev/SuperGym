@@ -6,7 +6,6 @@
   }
 }
 
-
 .swiper-slide {
   width: 260px;
   height: 300px;
@@ -32,7 +31,7 @@
     display: block;
     mask: url("/__spritemap#sprite-juri-button-prev-view") center no-repeat;
     background-color: $basic-dark;
-    left: 0;
+    left: 5px;
   }
 
   @media (min-width: $desktop-width) {
@@ -47,7 +46,7 @@
     display: block;
     mask: url("/__spritemap#sprite-juri-button-next-view") center no-repeat;
     background-color: $basic-dark;
-    right: 0;
+    right: 5px;
   }
 
   @media (min-width: $desktop-width) {
@@ -73,7 +72,7 @@
   line-height: 22px;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 25px;
+  bottom: 24px;
   display: inline-block;
   text-align: center;
   width: calc((100%) - 20px);

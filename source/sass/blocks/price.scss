@@ -1,8 +1,42 @@
 .price__container {
   position: relative;
   z-index: 1;
-  overflow: hidden;
+  overflow: visible;
+
+  &::before {
+    position: absolute;
+    content: "";
+    z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      width: 275px;
+      height: 328px;
+      transform: rotate(150deg);
+      background-image:
+        image-set(url("../../img/images/bg-image-price-tablet@1x.webp") 1x,
+          url("../../img/images/bg-image-price-tablet@2x.webp") 2x,
+          url("../../img/images/bg-image-price-tablet@1x.png") 1x,
+          url("../../img/images/bg-image-price-tablet@2x.png") 2x,
+        );
+      bottom: -50px;
+      right: -15px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 321px;
+      height: 384px;
+      background-image:
+        image-set(url("../../img/images/bg-image-price-desktop@1x.webp") 1x,
+          url("../../img/images/bg-image-price-desktop@2x.webp") 2x,
+          url("../../img/images/bg-image-price-desktop@1x.png") 1x,
+          url("../../img/images/bg-image-price-desktop@2x.png") 2x,
+        );
+      bottom: 0;
+      right: 0;
+    }
+  }
 }
+
 
 .price {
   background-color: $bg-additional;
@@ -19,39 +53,6 @@
 
   @media (min-width: $desktop-width) {
     padding: 100px 0;
-  }
-
-  &::before {
-    position: absolute;
-    content: "";
-    z-index: -1;
-
-    @media (min-width: $tablet-width) {
-      width: 275px;
-      height: 328px;
-      transform: rotate(150deg);
-      background-image:
-        image-set(url("../../img/images/bg-image-price-tablet@1x.webp") 1x,
-        url("../../img/images/bg-image-price-tablet@2x.webp") 2x,
-        url("../../img/images/bg-image-price-tablet@1x.png") 1x,
-        url("../../img/images/bg-image-price-tablet@2x.png") 2x,
-      );
-      bottom: 0;
-      right: 0;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 321px;
-      height: 384px;
-      background-image:
-        image-set(url("../../img/images/bg-image-price-desktop@1x.webp") 1x,
-        url("../../img/images/bg-image-price-desktop@2x.webp") 2x,
-        url("../../img/images/bg-image-price-desktop@1x.png") 1x,
-        url("../../img/images/bg-image-price-desktop@2x.png") 2x,
-      );
-      bottom: 0;
-      right: 0;
-    }
   }
 }
 
@@ -87,7 +88,7 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    gap: 40px;
+    gap: 42px;
   }
 
   &--active {
@@ -126,7 +127,7 @@
 
   @media (min-width: $tablet-width) {
     width: 310px;
-    margin: 0 auto 45px;
+    margin: 0 auto 54px;
   }
 }
 
@@ -143,6 +144,11 @@
   cursor: pointer;
   position: relative;
   transition: all 0.3s ease;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 18px;
+  }
 
 
   &::after {
@@ -219,6 +225,7 @@
 
   @media (min-width: $tablet-width) {
     width: 380px;
+    padding: 65px;
   }
 
   @media (min-width: $desktop-width) {
@@ -240,7 +247,9 @@
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 35px;
+    margin: 0 0 22px;
+    font-size: 24px;
+    line-height: 24px;
   }
 }
 
@@ -250,6 +259,13 @@
   line-height: 22px;
   margin: 0 0 66px;
   padding: 0;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 82px;
+  }
 }
 
 .price__tab-price {
@@ -263,7 +279,10 @@
   color: $text-accent;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 22px;
+    margin-bottom: 24px;
+    font-size: 60px;
+    line-height: 90px;
+
   }
 
   @media (min-width: $desktop-width) {
@@ -284,6 +303,12 @@
     z-index: -1;
     min-width: 230px;
     text-align: center;
+
+    @media (min-width: $tablet-width) {
+      font-size: 100px;
+      line-height: 150px;
+      top: -59px;
+    }
   }
 }
 
@@ -300,9 +325,17 @@
 
   @media (min-width: $tablet-width) {
     margin-left: 14px;
+    width: 30px;
+    height: 42px;
+
   }
 }
 
 .price__tab-button {
-  width: 200px;
+  width: 202px;
+
+  @media (min-width: $tablet-width) {
+    width: 246px;
+    padding: 25px;
+  }
 }

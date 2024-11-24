@@ -2,11 +2,14 @@
 
 .offers {
   padding: 40px 0;
+  @media (min-width: $tablet-width) {
+    padding: 61px 0 60px 0;
+  }
 
   div {
     display: flex;
     flex-flow: column wrap;
-    gap: 40px;
+    gap: 39px;
 
 
     @media (min-width: $tablet-width) {
@@ -36,7 +39,7 @@
         align-content: center;
         width: 320px;
         margin: 0 calc((100% - 320px)/2);
-        padding: 30px 30px 25px;
+        padding: 31px 30px 26px;
         color: $basic-white;
 
         @media (min-width: $tablet-width) {
@@ -44,6 +47,8 @@
           margin: 0;
           align-items: start;
           align-content: start;
+          padding: 40px 25px;
+
         }
 
         h3 {
@@ -64,7 +69,7 @@
           font-weight: 700;
           font-size: 64px;
           line-height: 64px;
-          margin: 0 0 28px;
+          margin: 0 0 27px;
           padding: 0;
 
           @media (min-width: $tablet-width) {
@@ -78,7 +83,7 @@
           font-weight: 300;
           font-size: 16px;
           line-height: 20px;
-          margin: 0 0 19px;
+          margin: 0 0 18px;
           padding: 0;
           text-align: center;
 
@@ -125,6 +130,10 @@
 
       @media (min-width: $tablet-width) {
         width: 324px;
+        align-items: flex-start;
+        gap: 0;
+
+
       }
 
       @media (min-width: $desktop-width) {
@@ -143,6 +152,12 @@
         font-size: 22px;
         line-height: 22px;
 
+        @media (min-width: $tablet-width) {
+          font-size: 26px;
+          line-height: 26px;
+          margin: 0 0 10px;
+        }
+
         @media (min-width: $desktop-width) {
           margin: 0 0 10px;
         }
@@ -155,6 +170,15 @@
         font-size: 14px;
         line-height: 22px;
 
+        @media (min-width: $tablet-width) {
+          font-size: 16px;
+          line-height: 24px;
+          text-align: left;
+          margin: 0 0 30px;
+
+        }
+
+
         @media (min-width: $desktop-width) {
           margin: 0 0 40px;
         }
@@ -164,7 +188,10 @@
         color: $bg-blocks;
         margin: 0;
         padding: 0;
-        margin-top: 0;
+
+        @media (min-width: $tablet-width) {
+          margin-top: auto;
+        }
 
         &::after {
           position: absolute;
@@ -221,6 +248,10 @@
   line-height: 32px;
   text-align: center;
 
+  @media (min-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 42px;
+  }
   @media (min-width: $desktop-width) {
     width: 100%;
   }
@@ -246,13 +277,16 @@
     width: calc(100% - 20px);
     height: 1px;
     background-color: $basic-white;
-    bottom: 5px;
+    bottom: 4px;
     left: 50%;
     transform: translateX(-50%);
   }
 
   @media (min-width: $tablet-width) {
     margin-top: auto;
+    margin-left: -10px;
+    margin-bottom: -5px;
+    // padding: 0 0 5px;
   }
 
   &:hover {

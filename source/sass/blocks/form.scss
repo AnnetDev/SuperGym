@@ -12,7 +12,7 @@
 .form__wrapper {
   background-color: $basic-dark;
   color: $basic-white;
-  padding: 70px 0 69px;
+  padding: 71px 0 70px;
   margin: 0;
 
   @media (min-width: $tablet-width) {
@@ -42,7 +42,7 @@
   font-weight: 600;
   font-size: 32px;
   line-height: 32px;
-  margin-bottom: 36px;
+  margin-bottom: 35px;
   text-align: left;
 
 
@@ -105,8 +105,9 @@
 .form__button {
   color: $basic-white;
   outline: solid 2px $basic-white;
-  padding: 21px;
-  margin: 1px 0 0 0;  // костыль
+  padding: 22px;
+  margin: 0 0 0 0;  // костыль
+  min-width: 60px;
   width: 286px;
   align-self: center;
 
