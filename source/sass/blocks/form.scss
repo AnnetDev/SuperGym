@@ -88,6 +88,8 @@
   padding: 0 0 4px;
   border-bottom: solid 1px #74819c;
   width: 100%;
+  position: relative;
+  color: $basic-white;
 
   @media (min-width: $tablet-width) {
     width: 205px;
@@ -96,6 +98,27 @@
   @media (min-width: $desktop-width) {
     width: 223px;
   }
+
+  &--error {
+    border-bottom: solid 1px $error;
+  }
+}
+
+.form__label {
+  position: relative;
+}
+
+.form__error-message {
+  position: absolute;
+  // content: "";
+  color: $error;
+  font-size: 14px;
+  line-height: 22px;
+  // bottom: 5px;
+  top: 100%; /* Сообщение будет под input */
+  left: 0;
+  margin-top: 4px;
+  width: max-content;
 }
 
 // .form__input[placeholder] {
@@ -106,7 +129,7 @@
   color: $basic-white;
   outline: solid 2px $basic-white;
   padding: 22px;
-  margin: 0 0 0 0;  // костыль
+  margin: 0 0 0 0; // костыль
   min-width: 60px;
   width: 286px;
   align-self: center;

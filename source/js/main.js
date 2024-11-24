@@ -7,6 +7,7 @@ import { initializeSwiper } from './utils/init-swiper';
 import { loadVideo } from './modules/video';
 import { changeTabPrice } from './modules/change-tab-price';
 import { changeTabFaq } from './modules/change-tab-faq';
+import { formValidator } from './modules/form-validate';
 
 document.querySelectorAll('.price__tab-link').forEach((tab) => {
   tab.addEventListener('click', changeTabPrice);
@@ -38,6 +39,14 @@ document.querySelectorAll('.faq__button').forEach((button) => {
       content.style.maxHeight = null; // Сворачиваем
     }
   });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  try {
+    formValidator();
+  } catch (error) {
+    console.error(error.message);
+  }
 });
 
 
