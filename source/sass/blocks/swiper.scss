@@ -21,8 +21,15 @@
   border: none;
   width: 16px;
   height: 32px;
+  // padding: 9px;
   cursor: pointer;
+
+  &:hover {
+    outline: solid 1px $basic-dark;
+    // border-radius: 50%;
+  }
 }
+
 
 .swiper-button-prev {
   display: none;

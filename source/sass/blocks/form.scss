@@ -85,7 +85,7 @@
   font-size: 14px;
   line-height: 22px;
   margin: 0;
-  padding: 0 0 4px;
+  padding: 10px 4px;
   border-bottom: solid 1px #74819c;
   width: 100%;
   position: relative;
@@ -101,6 +101,21 @@
 
   &--error {
     border-bottom: solid 1px $error;
+  }
+
+  &:hover {
+    border-bottom: solid 1px $basic-white;
+  }
+
+  &:focus,
+  &:focus-visible,
+  &:focus-within {
+    outline: solid 1px $basic-white;
+    border-bottom: none;
+  }
+
+  &:disabled {
+    opacity: 40%;
   }
 }
 
@@ -121,9 +136,9 @@
   width: max-content;
 }
 
-// .form__input[placeholder] {
-//   color: #74819C;
-// }
+.form__input::placeholder {
+  color: #74819C;
+}
 
 .form__button {
   color: $basic-white;
