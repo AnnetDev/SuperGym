@@ -1,9 +1,9 @@
 .about {
   margin: 0;
-  padding: 41px 0 40px;
+  padding: 40px 0 40px;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 0 31px;
+    padding: 60px 0 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -70,7 +70,7 @@
   font-weight: 600;
   font-size: 32px;
   line-height: 32px;
-  margin: 0 0 11px;
+  margin: 1px 0 11px;
   padding: 0;
   text-align: left;
 
@@ -112,6 +112,7 @@
 }
 
 .about__image {
+  display: block;
   max-width: none;
   margin: 0 auto;
 
@@ -119,7 +120,7 @@
     width: 320px;
     position: relative;
     margin: 0 calc((100% - 320px)/2);
-    margin-bottom: 32px;
+    margin-bottom: 35px;
   }
 
   @media (min-width: $tablet-width) {
