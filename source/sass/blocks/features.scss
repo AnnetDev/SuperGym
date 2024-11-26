@@ -48,13 +48,14 @@
         flex-flow: row nowrap;
         gap: 15px;
         margin: 0;
-
       }
 
       @media (min-width: $desktop-width) {
         width: 360px;
         border-bottom: solid 2px #d10a4233;
-        padding-bottom: 40px;
+        gap: unset;
+        padding-bottom: 39px;
+        justify-content: space-between;
 
         &:nth-last-child(2),
         &:last-child {
@@ -70,6 +71,11 @@
 
         @media (min-width: $tablet-width) {
           align-items: start;
+        }
+
+        @media (min-width: $desktop-width) {
+          width: 210px;
+          min-height: 110px;
         }
 
         span {
@@ -105,6 +111,10 @@
       }
 
       div:last-of-type {
+        @media (min-width: $desktop-width) {
+          min-height: 110px;
+        }
+
         h3 {
           font-weight: 400;
           font-size: 18px;
@@ -115,6 +125,13 @@
 
           @media (min-width: $tablet-width) {
             font-size: 20px;
+          }
+
+          @media (min-width: $desktop-width) {
+            justify-items: flex-start;
+            font-size: 22px;
+            line-height: 22px;
+            margin: 0 0 8px;
           }
         }
 
@@ -132,6 +149,10 @@
             line-height: 24px;
             text-align: left;
             width: 238px;
+          }
+
+          @media (min-width: $desktop-width) {
+            width: 210px;
           }
         }
       }
@@ -164,6 +185,7 @@
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
+        padding: 58px 40px;
       }
 
       div {
@@ -176,6 +198,10 @@
         @media (min-width: $tablet-width) {
           gap: 25px;
           margin-bottom: 10px;
+        }
+        @media (min-width: $desktop-width) {
+          gap: unset;
+          margin-bottom: 26px;
         }
 
         span {
@@ -192,6 +218,10 @@
             font-size: 70px;
             line-height: 70px;
           }
+
+          @media (min-width: $desktop-width) {
+            margin-bottom: 10px;
+          }
         }
 
         span:last-of-type {
@@ -200,11 +230,17 @@
           line-height: 22px;
           text-align: center;
           margin-bottom: 0;
+
           @media (min-width: $tablet-width) {
             font-size: 24px;
             line-height: 24px;
             padding: 0;
           }
+          @media (min-width: $desktop-width) {
+            font-size: 26px;
+            line-height: 26px;
+          }
+
         }
       }
 
@@ -220,7 +256,7 @@
           display: flex;
           text-align: center;
           font-size: 16px;
-        line-height: 24px;
+          line-height: 24px;
         }
       }
     }
