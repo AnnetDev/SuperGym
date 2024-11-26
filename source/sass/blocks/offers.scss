@@ -5,29 +5,37 @@
   @media (min-width: $tablet-width) {
     padding: 61px 0 60px 0;
   }
+  @media (min-width: $desktop-width) {
+    padding: 100px 0;
+  }
 
   div {
     display: flex;
     flex-flow: column wrap;
-    gap: 39px;
+    // gap: 39px;
 
 
     @media (min-width: $tablet-width) {
-      gap: 35px;
+      // gap: 35px;
     }
 
     @media (min-width: $desktop-width) {
       flex-flow: row wrap;
-      gap: 40px;
+      // gap: 40px;
     }
 
     div {
       display: flex;
       flex-flow: column wrap;
       gap: 0;
+      margin-bottom: 40px;
 
       @media (min-width: $tablet-width) {
         flex-flow: row wrap;
+        margin-bottom: 35px;
+      }
+      @media (min-width: $desktop-width) {
+        margin-right: 40px;
       }
 
 
@@ -39,8 +47,9 @@
         align-content: center;
         width: 320px;
         margin: 0 calc((100% - 320px)/2);
-        padding: 31px 30px 26px;
+        padding: 30px 30px 26px;
         color: $basic-white;
+        min-height: 271px;
 
         @media (min-width: $tablet-width) {
           width: 278px;
@@ -48,14 +57,19 @@
           align-items: start;
           align-content: start;
           padding: 40px 25px;
+        }
 
+        @media (min-width: $desktop-width) {
+          padding: 40px 45px;
+          width: 280px;
         }
 
         h3 {
+          display: block;
           font-weight: 700;
           font-size: 22px;
           line-height: 22px;
-          margin: 0 0 9px;
+          margin: 1px 0 9px;
           padding: 0;
 
           @media (min-width: $tablet-width) {
@@ -63,9 +77,14 @@
             line-height: 24px;
             margin: 0 0 20px;
           }
+
+          @media (min-width: $desktop-width) {
+            margin: 0 0 21px;
+          }
         }
 
         span {
+          display: block;
           font-weight: 700;
           font-size: 64px;
           line-height: 64px;
@@ -80,6 +99,7 @@
         }
 
         p {
+          display: block;
           font-weight: 300;
           font-size: 16px;
           line-height: 20px;
@@ -113,6 +133,7 @@
       width: 560px;
       align-items: flex-end;
       align-content: flex-end;
+      margin-bottom: 36px;
     }
 
     li {
@@ -240,6 +261,7 @@
 }
 
 .offers__title {
+  display: block;
   margin: 0;
   padding: 0;
   font-family: $font-alumni;
@@ -247,13 +269,19 @@
   font-size: 32px;
   line-height: 32px;
   text-align: center;
+  margin-bottom: 39px;
 
   @media (min-width: $tablet-width) {
     font-size: 42px;
     line-height: 42px;
+    margin-bottom: 35px;
+
   }
   @media (min-width: $desktop-width) {
     width: 100%;
+    font-size: 54px;
+    line-height: 54px;
+    margin-bottom: 70px;
   }
 }
 
@@ -285,7 +313,7 @@
   @media (min-width: $tablet-width) {
     margin-top: auto;
     margin-left: -10px;
-    margin-bottom: -5px;
+    margin-bottom: -4px;
     // padding: 0 0 5px;
   }
 
