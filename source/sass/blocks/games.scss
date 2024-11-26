@@ -1,7 +1,7 @@
 .games {
   background-color: $basic-white;
   margin: 0;
-  padding: 26px 0 25px 0;
+  padding: 25px 0;
   @media (min-width: $tablet-width) {
     padding: 60px 0;
   }
@@ -19,14 +19,16 @@
 .games__content-wrapper {
   background-color: $bg-banners;
   color: $basic-white;
-  padding: 40px 40px 42px;
+  padding: 40px;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
+  min-height: 320px;
 
   @media (min-width: $tablet-width) {
     width: 300px;
     padding: 42px 40px 40px;
+    min-height: unset;
   }
 
   @media (min-width: $desktop-width) {
