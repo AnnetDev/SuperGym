@@ -6,6 +6,10 @@
   @media (min-width: $tablet-width) {
     padding: 60px 0;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 0;
+  }
 }
 
 .games__container {
@@ -28,13 +32,13 @@
 
   @media (min-width: $tablet-width) {
     width: 300px;
-    padding: 42px 40px 40px;
     min-height: unset;
   }
 
   @media (min-width: $desktop-width) {
     width: 500px;
     padding: 60px 80px;
+    align-items: unset;
   }
 }
 
@@ -46,7 +50,12 @@
 
   @media (min-width: $tablet-width) {
     gap: 20px;
-    margin-bottom: 9px;
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 77px;
+    margin-bottom: 29px;
   }
 }
 
@@ -64,6 +73,12 @@
   @media (min-width: $tablet-width) {
     width: 100px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 168px;
+    font-size: 82px;
+    line-height: 96px;
+  }
 }
 
 .games__details {
@@ -74,26 +89,14 @@
 
   @media (min-width: $tablet-width) {
     width: 100px;
-    gap: 9px;
+    gap: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 95px;
+    gap: 22px;
   }
 }
-
-// .games__details-title {
-//   font-weight: 300;
-//   font-size: 16px;
-//   line-height: 20px;
-//   margin: 0;
-//   padding: 0 0 2px;
-//   width: 56px;
-//   border-bottom: solid 1px $basic-white;
-
-//   @media (min-width: $tablet-width) {
-//     font-size: 18px;
-//     line-height: 24px;
-//     width: 100px;
-//     padding: 0 0 1px;
-//   }
-// }
 
 .games__detail-title {
   display: block;
@@ -102,16 +105,38 @@
   line-height: 20px;
   margin: 0 0 2px;
   padding: 0 0 2px;
-  width: 56px;
+  // width: 56px;
+  width: 100%;
   border-bottom: solid 1px $basic-white;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 0 0 1px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 5px;
+    margin: 0 0 4px;
+  }
 }
+
 .games__date {
   // width: 100%;
   display: flex;
   flex-flow: row wrap;
   gap: 4px;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    gap: 6px;
+  }
+  @media (min-width: $desktop-width) {
+    align-items: flex-end;
+  }
+
 }
+
 .games__date-day {
   display: block;
   font-weight: 700;
@@ -119,6 +144,11 @@
   line-height: 24px;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+    line-height: 40px;
+  }
 }
 
 .games__date-month {
@@ -129,6 +159,13 @@
   margin: 0;
   padding: 0;
   max-width: 39px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 22px;
+    max-width: 50px;
+
+  }
 }
 
 .games__time {
@@ -138,51 +175,14 @@
   line-height: 24px;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+    line-height: 40px;
+    margin: 7px 0 0;
+
+  }
 }
-
-// .games__details-date {
-//   display: flex;
-//   flex-flow: row wrap;
-//   gap: 3px;
-//   margin-top: -3px;
-
-//   @media (min-width: $tablet-width) {
-//     align-items: center;
-//     gap: 6px;
-//     margin-top: -6px;
-
-//   }
-// }
-
-// .games__details-when {
-//   font-weight: 700;
-//   font-size: 24px;
-//   line-height: 24px;
-//   margin: 0;
-//   padding: 0;
-// }
-
-// .games__details-when:last-of-type {
-//   margin: -3px 0 0;
-
-//   @media (min-width: $tablet-width) {
-//     margin: -6px 0 0;
-//   }
-// }
-
-// .games__details-when-month {
-//   font-weight: 400;
-//   font-size: 12px;
-//   line-height: 12px;
-//   margin: 0;
-//   padding: 0;
-//   width: 40px;
-
-//   @media (min-width: $tablet-width) {
-//     font-size: 14px;
-//     line-height: 22px;
-//   }
-// }
 
 .games__announce-description {
   font-weight: 300;
@@ -192,9 +192,13 @@
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 11px;
+    margin-bottom: 12px;
     font-size: 18px;
     line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 33px;
   }
 }
 
@@ -205,8 +209,13 @@
   padding: 22px;
 
   @media (min-width: $tablet-width) {
-    padding: 26px;
+    padding: 25px;
     width: 216px;
+  }
+  @media (min-width: $desktop-width) {
+    align-self: center;
+    padding: 26px 0 25px;
+    width: 336px;
   }
 
   &:hover {
