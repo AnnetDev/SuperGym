@@ -16,7 +16,7 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 0;
+    padding: 60px 0 62px;
   }
 
   @media (min-width: $desktop-width) {
@@ -52,6 +52,7 @@
     font-size: 54px;
     line-height: 54px;
     text-align: center;
+    margin-top:0;
   }
 
   @media (min-width: $desktop-width) {
@@ -70,7 +71,7 @@
 
   @media (min-width: $tablet-width) {
     flex-flow: row wrap;
-    // gap: 36px 30px;
+    gap: 37px 36px;
     justify-content: center;
   }
 
@@ -128,10 +129,17 @@
   position: relative;
   margin: 0 0 36px -1px;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 0 -2px;
+  }
 }
 
 .form__label:last-of-type {
   margin: 0 0 38px -1px;
+  @media (min-width: $tablet-width) {
+    margin: 0 0 0 -6px;
+  }
 
 }
 
@@ -155,14 +163,16 @@
 .form__button {
   color: $basic-white;
   outline: solid 2px $basic-white;
-  padding: 20px;
+  padding: 22px;
   margin: 0 0 0 0; // костыль
   min-width: 60px;
   width: 286px;
   align-self: center;
 
   @media (min-width: $tablet-width) {
-    width: 440px;
+    width: 436px;
+    padding: 26px 10px 24px;
+
   }
 
   @media (min-width: $desktop-width) {
