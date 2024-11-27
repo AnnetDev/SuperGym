@@ -1,15 +1,16 @@
 .faq {
   margin: 0;
-  padding: 71px 0;
+  padding: 70px 0;
   background-color: $bg-additional;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 0;
+    padding: 61px 0 60px;
   }
 }
 
 .faq__heading {
-  margin: 0 0 35px;
+  display: block;
+  margin: 0px 0 35px;
   padding: 0;
   font-family: $font-alumni;
   font-weight: 600;
@@ -20,14 +21,14 @@
   @media (min-width: $tablet-width) {
     font-size: 42px;
     line-height: 42px;
-    margin: 0 0 45px;
+    margin: 0px 0 44px;
   }
 }
 
 .faq__tabs-wrapper {
   display: flex;
   flex-flow: column wrap;
-  gap: 37px;
+  gap: 35px;
 
   @media (min-width: $tablet-width) {
     gap: 45px;
@@ -42,7 +43,8 @@
 .faq__tab-nav {
   display: flex;
   flex-flow: row wrap;
-  gap: 12px 10px;
+  gap: 10px 10px;
+  justify-content: center;
 
   @media (min-width: $desktop-width) {
     flex-flow: column wrap;
@@ -53,16 +55,30 @@
 .faq__tab-button {
   width: 140px;
   padding: 14px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
   text-transform: capitalize;
-  outline: solid 1px #10265433;
-  border: none;
-  transition: all 0.3s ease;
+  // outline: solid 1px #10265433;
+  // border: none;
+  border: 1px solid rgba(16, 38, 84, 0.2);
+  outline: none;
+  transition: none;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+    padding: 17px 18px 17px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 260px;
+  }
 
   &:hover {
-    outline: solid 1px $basic-dark;
+    outline: none;
     background-image: none;
     color: $basic-dark;
   }
@@ -88,18 +104,15 @@
     outline: none;
     color: $basic-white;
     background-image: $buttons-play-gradient;
+    padding: 15px;
+    border: none;
+
+    @media (min-width: $tablet-width) {
+      padding: 18px;
+    }
+
   }
 
-  @media (min-width: $tablet-width) {
-    width: 162px;
-    padding: 18px;
-    font-size: 18px;
-    line-height: 18px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 260px;
-  }
 }
 
 .faq__tab-button[aria-disabled="true"] {
@@ -121,6 +134,20 @@
   li:first-of-type {
     h3 {
       width: 216px;
+
+      @media (min-width: $tablet-width) {
+        width: 550px;
+      }
+    }
+  }
+
+  li:last-of-type {
+    @media (min-width: $tablet-width) {
+      padding: 22px 0 20px;
+
+      div {
+        padding: 2px 0;
+      }
     }
   }
 
@@ -134,13 +161,18 @@
     }
 
     div {
-
       position: relative;
+      display: flex;
+      align-items: center;
 
+      @media (min-width: $tablet-width) {
+        padding: 10px 0 8px;
+      }
 
 
 
       h3 {
+        display: block;
         margin: 0;
         padding: 0;
         font-weight: 400;
@@ -235,6 +267,11 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    @media (min-width: $tablet-width) {
+      width: 19px;
+
+    }
   }
 
   &::after {
@@ -247,6 +284,10 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    @media (min-width: $tablet-width) {
+      height: 19px;
+    }
   }
 
   &:hover {
@@ -305,13 +346,13 @@
   padding: 20px 0 0;
 
   @media (min-width: $tablet-width) {
-    padding: 20px 0 0;
+    padding: 10px 0 0;
   }
 }
 
 .faq__tab li:has(button[aria-expanded="true"]) {
   @media (min-width: $tablet-width) {
-    padding: 32px 0 23px;
+    // padding: 32px 0 23px;
   }
 }
 

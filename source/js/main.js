@@ -33,11 +33,11 @@ document.querySelectorAll('.faq__button').forEach((button) => {
     const parent = button.closest('li');
     const content = parent.querySelector('p');
 
-    if (!expanded) {
-      content.style.maxHeight = `${content.scrollHeight}px`; // Разворачиваем
-    } else {
-      content.style.maxHeight = null; // Сворачиваем
-    }
+    // if (!expanded) {
+    //   // content.style.maxHeight = `${content.scrollHeight}px`; // Разворачиваем
+    // } else {
+    //   content.style.maxHeight = null; // Сворачиваем
+    // }
   });
 });
 
