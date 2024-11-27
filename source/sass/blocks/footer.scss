@@ -5,6 +5,10 @@
   @media (min-width: $tablet-width) {
     padding: 45px 0;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 40px 0;
+  }
 }
 
 .footer__container {
@@ -21,6 +25,10 @@
   margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 3px;
+  }
+
+  @media (min-width: $desktop-width) {
     margin-bottom: 0;
   }
 }
@@ -32,9 +40,12 @@
   flex-flow: row wrap;
   margin-bottom: 30px;
 
-
   @media (min-width: $tablet-width) {
-    margin-bottom: 0;
+    margin-bottom: 3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 4px;
   }
 }
 
@@ -86,6 +97,11 @@
 
   @media (min-width: $tablet-width) {
     gap: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 1px;
+    gap: 10px;
   }
 }
 
