@@ -12,7 +12,7 @@
 .form__wrapper {
   background-color: $basic-dark;
   color: $basic-white;
-  padding: 71px 0 70px;
+  padding: 70px 0 72px;
   margin: 0;
 
   @media (min-width: $tablet-width) {
@@ -36,12 +36,14 @@
 }
 
 .form__heading {
+  display: block;
   margin: 0;
   padding: 0;
   font-family: $font-alumni;
   font-weight: 600;
   font-size: 32px;
   line-height: 32px;
+  margin-top: 1px;
   margin-bottom: 35px;
   text-align: left;
 
@@ -61,14 +63,14 @@
   display: flex;
   flex-flow: column wrap;
   border: none;
-  gap: 36px;
+  // gap: 36px;
   margin: 0;
   padding: 0;
   // align-content: center;
 
   @media (min-width: $tablet-width) {
     flex-flow: row wrap;
-    gap: 36px 30px;
+    // gap: 36px 30px;
     justify-content: center;
   }
 
@@ -78,6 +80,7 @@
 }
 
 .form__input {
+  display: block;
   background-color: transparent;
   outline: none;
   border: none;
@@ -85,7 +88,8 @@
   font-size: 14px;
   line-height: 22px;
   margin: 0;
-  padding: 10px 4px;
+  // padding: 10px 4px;
+  padding-bottom: 3px;
   border-bottom: solid 1px #74819c;
   width: 100%;
   position: relative;
@@ -120,7 +124,15 @@
 }
 
 .form__label {
+  display: block;
   position: relative;
+  margin: 0 0 36px -1px;
+  padding: 0;
+}
+
+.form__label:last-of-type {
+  margin: 0 0 38px -1px;
+
 }
 
 .form__error-message {
@@ -143,7 +155,7 @@
 .form__button {
   color: $basic-white;
   outline: solid 2px $basic-white;
-  padding: 22px;
+  padding: 20px;
   margin: 0 0 0 0; // костыль
   min-width: 60px;
   width: 286px;
