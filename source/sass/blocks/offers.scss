@@ -36,6 +36,7 @@
       }
       @media (min-width: $desktop-width) {
         margin-right: 40px;
+        margin-bottom: 0;
       }
 
 
@@ -133,7 +134,7 @@
       width: 560px;
       align-items: flex-end;
       align-content: flex-end;
-      margin-bottom: 36px;
+      // margin-bottom: 36px;
     }
 
     li {
@@ -275,7 +276,7 @@
   @media (min-width: $tablet-width) {
     font-size: 42px;
     line-height: 42px;
-    margin: 1px 0 34px;
+    margin: 1px 0 33px;
 
   }
   @media (min-width: $desktop-width) {

@@ -4,7 +4,11 @@
   background-color: $bg-additional;
 
   @media (min-width: $tablet-width) {
-    padding: 61px 0 60px;
+    padding: 60px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 0;
   }
 }
 
@@ -21,7 +25,15 @@
   @media (min-width: $tablet-width) {
     font-size: 42px;
     line-height: 42px;
-    margin: 0px 0 44px;
+    margin: 0px 0 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 54px;
+    line-height: 54px;
+    text-align: left;
+    margin: 0px 0 48px;
+
   }
 }
 
@@ -46,8 +58,15 @@
   gap: 10px 10px;
   justify-content: center;
 
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+  }
+
   @media (min-width: $desktop-width) {
     flex-flow: column wrap;
+    justify-content: flex-start;
     width: 260px;
   }
 }
@@ -55,7 +74,6 @@
 .faq__tab-button {
   width: 140px;
   padding: 14px;
-
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
@@ -68,13 +86,16 @@
 
   @media (min-width: $tablet-width) {
     width: 162px;
-    padding: 17px 18px 17px;
+    padding: 16px 18px 16px;
     font-size: 18px;
     line-height: 18px;
   }
 
   @media (min-width: $desktop-width) {
     width: 260px;
+    padding: 17px 18px 17px;
+
+    min-height: 54px; //
   }
 
   &:hover {
@@ -111,6 +132,12 @@
       padding: 18px;
     }
 
+    @media (min-width: $desktop-width) {
+      min-height: 54px; //
+
+      padding: 18px;
+    }
+
   }
 
 }
@@ -121,6 +148,7 @@
 }
 
 .faq__tab {
+  display: block;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -149,6 +177,12 @@
         padding: 2px 0;
       }
     }
+
+    @media (min-width: $desktop-width) {
+      div {
+        padding: 8px 0 11px;
+      }
+    }
   }
 
   li {
@@ -160,6 +194,10 @@
       padding: 23px 0;
     }
 
+    @media (min-width: $desktop-width) {
+      padding: 23px 0 22px;
+    }
+
     div {
       position: relative;
       display: flex;
@@ -169,6 +207,9 @@
         padding: 10px 0 8px;
       }
 
+      @media (min-width: $desktop-width) {
+        padding: 8px 0 8px;
+      }
 
 
       h3 {
@@ -256,6 +297,7 @@
     height: 40px;
     // top: 23px;
   }
+
 
   &::before {
     position: absolute;
@@ -347,6 +389,10 @@
 
   @media (min-width: $tablet-width) {
     padding: 10px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 23px 0 0;
   }
 }
 
