@@ -25,7 +25,7 @@
   @media (min-width: $tablet-width) {
     padding: 0 0 30px;
     margin-bottom: 0;
-      justify-content: space-between;
+    justify-content: space-between;
 
   }
 
@@ -41,7 +41,7 @@
   color: $basic-white;
   font-weight: 700;
   font-size: 22px;
-  line-height: 22px; //?? pp
+  line-height: 22px;
   margin: 0;
   padding: 0;
 
@@ -54,6 +54,36 @@
     font-size: 26px;
     line-height: 26px;
     margin-bottom: -5px;
+  }
+
+  &:hover {
+    color: #1C337480;
+    cursor: pointer;
+  }
+
+  &:focus,
+  &:focus-within {
+    color: $bg-blocks;
+    outline: none;
+  }
+
+  &:active {
+    color: $basic-dark;
+    border-bottom: solid 1px $basic-dark;
+  }
+}
+
+.hero__phone[aria-disabled="true"] {
+  opacity: 50%;
+  cursor: not-allowed;
+
+  &:hover,
+  &:focus,
+  &:focus-within,
+  &:active {
+    color: inherit;
+    border-bottom: none;
+    cursor: not-allowed;
   }
 }
 
@@ -80,7 +110,7 @@
 .hero__main {
   display: flex;
   flex-direction: column;
-  align-items:center;
+  align-items: center;
 
 
   @media (min-width: $tablet-width) {
@@ -195,6 +225,7 @@
   @media (min-width: $tablet-width) {
     margin: 0 0 26px;
   }
+
   @media (min-width: $desktop-width) {
     width: 115px;
     margin: 0px 0px 72px 3px;
