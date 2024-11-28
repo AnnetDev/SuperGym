@@ -31,8 +31,8 @@
           url("../../img/images/bg-image-price-desktop@1x.png") 1x,
           url("../../img/images/bg-image-price-desktop@2x.png") 2x,
         );
-          bottom: -93px;
-          right: -93px;
+      bottom: -93px;
+      right: -93px;
     }
   }
 }
@@ -52,7 +52,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 100px 0 100px;
+    padding: 100px 0;
   }
 }
 
@@ -167,7 +167,6 @@
   }
 
 
-
   &::after {
     position: absolute;
     content: "";
@@ -178,9 +177,9 @@
     bottom: -8px;
     left: 50%;
     transform: translateX(-50%);
+
     @media (min-width: $desktop-width) {
       bottom: -10px;
-
     }
   }
 
@@ -229,11 +228,20 @@
   &:disabled {
     opacity: 30%;
     cursor: not-allowed;
-  }
 
-  &:disabled::after {
-    background-color: $basic-dark;
-    opacity: 30%;
+    &::after {
+      background-color: $basic-dark;
+      opacity: 30%;
+    }
+
+    &:hover,
+    &:focus,
+    &:focus-within,
+    &:active {
+      color: #10265480;
+      opacity: 30%;
+      cursor: not-allowed;
+    }
   }
 }
 
@@ -250,7 +258,6 @@
     width: 380px;
     padding: 65px;
     min-height: unset;
-
   }
 
   @media (min-width: $desktop-width) {
@@ -301,7 +308,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0px 0 79px;
+    margin: 0 0 79px;
   }
 }
 
@@ -363,7 +370,6 @@
     margin-left: 14px;
     width: 30px;
     height: 42px;
-
   }
 }
 

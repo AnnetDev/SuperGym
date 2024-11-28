@@ -26,7 +26,6 @@
     padding: 0 0 30px;
     margin-bottom: 0;
     justify-content: space-between;
-
   }
 
   @media (min-width: $desktop-width) {
@@ -57,7 +56,7 @@
   }
 
   &:hover {
-    color: #1C337480;
+    color: #1c337480;
     cursor: pointer;
   }
 
@@ -99,6 +98,7 @@
     flex-flow: row wrap;
     gap: 30px;
     justify-content: center;
+
     // align-items: center;
   }
 
@@ -143,7 +143,6 @@
   @media (min-width: $desktop-width) {
     gap: 0;
     margin-bottom: 41px;
-
   }
 }
 
@@ -186,7 +185,6 @@
     font-size: 54px;
     line-height: 54px;
     margin: 0 0 41px;
-
   }
 }
 
@@ -205,8 +203,8 @@
     font-size: 72px;
     line-height: 85px;
     letter-spacing: 2px;
-    // -webkit-text-stroke: 1px $basic-white;
 
+    // -webkit-text-stroke: 1px $basic-white;
   }
 
   @media (min-width: $desktop-width) {
@@ -228,7 +226,7 @@
 
   @media (min-width: $desktop-width) {
     width: 115px;
-    margin: 0px 0px 72px 3px;
+    margin: 0 0 72px 3px;
   }
 }
 
@@ -301,11 +299,23 @@
 
   @media (min-width: $desktop-width) {
     width: 268px;
-    padding: 26px 0 24px 0;
+    padding: 26px 0 24px;
   }
 }
 
 .hero__button[aria-disabled="true"] {
   opacity: 50%;
   cursor: not-allowed;
+
+  &:hover,
+  &:focus,
+  &:focus-within,
+  &:active {
+    color: inherit;
+    background-color: inherit;
+    background-image: none;
+    cursor: not-allowed;
+    outline: solid 2px $basic-white;
+    opacity: 50%;
+  }
 }

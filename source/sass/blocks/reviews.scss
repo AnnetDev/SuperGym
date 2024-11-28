@@ -24,12 +24,11 @@
     font-size: 54px;
     line-height: 54px;
     margin: 0 0 35px;
-    }
+  }
 
-    @media (min-width: $desktop-width) {
-      margin: 0 0 75px;
-      }
-
+  @media (min-width: $desktop-width) {
+    margin: 0 0 75px;
+  }
 }
 
 .reviews__swiper {
@@ -64,6 +63,7 @@
         align-items: flex-start;
         padding: 40px 30px;
       }
+
       @media (min-width: $desktop-width) {
         padding: 60px;
       }
@@ -82,6 +82,7 @@
           margin-bottom: 0;
           margin-right: 40px;
         }
+
         @media (min-width: $desktop-width) {
           margin-right: 30px;
         }
@@ -94,6 +95,7 @@
         @media (min-width: $tablet-width) {
           width: 320px;
         }
+
         @media (min-width: $desktop-width) {
           width: 330px;
         }
@@ -148,6 +150,7 @@
   @media (min-width: $tablet-width) {
     left: 0;
   }
+
   @media (min-width: $desktop-width) {
     left: 0;
   }
@@ -157,6 +160,7 @@
   @media (min-width: $tablet-width) {
     right: 0;
   }
+
   @media (min-width: $desktop-width) {
     right: 0;
   }
@@ -164,6 +168,15 @@
 
 .reviews__button.swiper-button-prev:disabled,
 .reviews__button.swiper-button-next:disabled {
-  background-color: #1026544d;
   cursor: not-allowed;
+
+  &:hover {
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+}
+
+.reviews__button:disabled .swiper-button__icon {
+  background-color: #1026544d;
 }

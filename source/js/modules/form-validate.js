@@ -9,7 +9,7 @@ export function formValidator() {
   form.addEventListener('submit', (event) => {
     let isValid = true;
 
-    document.querySelectorAll('.form__error-message').forEach(msg => msg.remove());
+    document.querySelectorAll('.form__error-message').forEach((msg) => msg.remove());
     nameInput.classList.remove('form__input--error');
     phoneInput.classList.remove('form__input--error');
 

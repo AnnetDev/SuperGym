@@ -33,14 +33,21 @@
     color: #ffffffb3;
     outline: none;
   }
-
-  // &:disabled {
-  //   opacity: 30%;
-  //   cursor: not-allowed; //??
-  // }
 }
 
 .button[aria-disabled="true"] {
   opacity: 30%;
   cursor: not-allowed;
+
+  &:hover,
+  &:focus,
+  &:focus-within,
+  &:active {
+    color: inherit;
+    background-color: inherit;
+    background-image: none;
+    cursor: not-allowed;
+    outline: solid 2px $basic-dark;
+    opacity: 30%;
+  }
 }

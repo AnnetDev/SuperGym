@@ -105,6 +105,7 @@
   line-height: 20px;
   margin: 0 0 2px;
   padding: 0 0 2px;
+
   // width: 56px;
   width: 100%;
   border-bottom: solid 1px $basic-white;
@@ -131,10 +132,10 @@
   @media (min-width: $tablet-width) {
     gap: 6px;
   }
+
   @media (min-width: $desktop-width) {
     align-items: flex-end;
   }
-
 }
 
 .games__date-day {
@@ -164,7 +165,6 @@
     font-size: 14px;
     line-height: 22px;
     max-width: 50px;
-
   }
 }
 
@@ -180,7 +180,6 @@
     font-size: 40px;
     line-height: 40px;
     margin: 7px 0 0;
-
   }
 }
 
@@ -212,6 +211,7 @@
     padding: 25px;
     width: 216px;
   }
+
   @media (min-width: $desktop-width) {
     align-self: center;
     padding: 26px 0 25px;
@@ -249,7 +249,20 @@
 .games__announce-button[aria-disabled="true"] {
   opacity: 50%;
   cursor: not-allowed;
-}
+
+    &:hover,
+    &:focus,
+    &:focus-within,
+    &:active {
+      color: inherit;
+      background-color: inherit;
+      background-image: none;
+      cursor: not-allowed;
+      outline: solid 2px $basic-white;
+      opacity: 50%;
+    }
+  }
+
 
 .games__image {
   display: block;

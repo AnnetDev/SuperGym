@@ -1,6 +1,6 @@
 .contacts {
   background-color: $basic-white;
-  padding: 37px 0 40px 0;
+  padding: 37px 0 40px;
   margin: 0;
 
   @media (min-width: $tablet-width) {
@@ -11,7 +11,6 @@
     width: 100%;
     border-top: solid 1px #74819c;
     padding: 60px 0 71px;
-
   }
 }
 
@@ -46,7 +45,6 @@
   @media (min-width: $desktop-width) {
     text-align: left;
     margin-bottom: 35px;
-
   }
 }
 
@@ -83,9 +81,7 @@
     margin: 0;
     column-gap: 120px;
     width: 477px;
-
   }
-
 }
 
 .contacts__list-item {
@@ -132,7 +128,6 @@
     font-size: 24px;
     line-height: 24px;
     margin: 0 0 7px;
-
   }
 }
 
