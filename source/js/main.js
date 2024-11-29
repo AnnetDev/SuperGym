@@ -1,4 +1,5 @@
-import { initializeSwiper } from './utils/init-swiper';
+import { initializeJuriSwiper } from './modules/juri-swiper';
+import { initializeReviewsSwiper } from './modules/reviews-swiper';
 import { loadVideo } from './modules/video';
 import { changeTabPrice } from './modules/change-tab-price';
 import { changeTabFaq } from './modules/change-tab-faq';
@@ -40,24 +41,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
 loadVideo();
 
-initializeSwiper('.juri__swiper', {
-  loop: true,
-  breakpoints: {
-    320: {
-      slidesPerView: 1
-    },
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 40,
-    },
-    1366: {
-      slidesPerView: 4,
-      spaceBetween: 40,
-    }
-  },
-});
-
-initializeSwiper('.reviews__swiper', {
-  loop: false,
-  slidesPerView: 1,
-});
+initializeJuriSwiper();
+initializeReviewsSwiper();
