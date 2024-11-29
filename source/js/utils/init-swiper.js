@@ -4,17 +4,36 @@ import 'swiper/scss';
 
 export function initializeSwiper(containerSelector, customOptions = {}) {
   const defaultOptions = {
-    modules: [Navigation, Pagination], // подключаем модули
+    modules: [Navigation, Pagination],
     direction: 'horizontal',
     navigation: {
-      nextEl: '.swiper-button-next', // подключаем кнопки навигации
+      nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
+      disabledClass: '.swiper-button-disabled',
     },
   };
 
   // Объединяем общие настройки с уникальными
   const swiperOptions = Object.assign({}, defaultOptions, customOptions);
 
-  // Инициализируем Swiper
-  new Swiper(containerSelector, swiperOptions);
+  const swiper = new Swiper(containerSelector, swiperOptions);
+
+  if (containerSelector.includes('.juri__swiper') && swiper.params.loop) { // не работает
+    swiper.on('slideChange', () => {
+      const prevButton = document.querySelector(swiper.params.navigation.prevEl);
+      const nextButton = document.querySelector(swiper.params.navigation.nextEl);
+
+      if (prevButton) {
+        prevButton.classList.remove('swiper-button-disabled');
+        prevButton.removeAttribute('disabled');
+      }
+      if (nextButton) {
+        nextButton.classList.remove('swiper-button-disabled');
+        nextButton.removeAttribute('disabled');
+      }
+    });
+  }
+
+
+  return swiper;
 }

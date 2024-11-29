@@ -1,8 +1,3 @@
-// https://swiperjs.com/get-started#installation
-// import Swiper from "swiper";
-// import { Navigation, Pagination } from "swiper/modules";
-// import "swiper/scss";
-
 import { initializeSwiper } from './utils/init-swiper';
 import { loadVideo } from './modules/video';
 import { changeTabPrice } from './modules/change-tab-price';
@@ -16,13 +11,6 @@ document.querySelectorAll('.price__tab-link').forEach((tab) => {
 document.querySelectorAll('.faq__tab-button').forEach((tab) => {
   tab.addEventListener('click', changeTabFaq);
 });
-
-// document.querySelectorAll('.faq__button').forEach((button) => {
-//   button.addEventListener('click', () => {
-//     const expanded = button.getAttribute('aria-expanded') === 'true';
-//     button.setAttribute('aria-expanded', !expanded);
-//   });
-// });
 
 document.querySelectorAll('.faq__button').forEach((button) => {
   button.addEventListener('click', () => {

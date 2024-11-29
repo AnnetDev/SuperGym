@@ -40,12 +40,13 @@
   }
 
   &:active {
-    background-color:  $basic-dark; // не работает
+    background-color: $basic-dark;
   }
 }
 
 .swiper-button-prev {
   left: -12px;
+
   @media (min-width: $desktop-width) {
     left: -69px;
   }
@@ -65,6 +66,7 @@
 .swiper-button-prev .swiper-button__icon {
   width: 16px;
   height: 32px;
+  padding: 9px 17px;
 
 
   @media (min-width: $tablet-width) {
@@ -82,10 +84,7 @@
 .swiper-button-next .swiper-button__icon {
   width: 16px;
   height: 32px;
-
-  // @media (max-width: $mobile-width-only) {
-  //   display: none;
-  // }
+  padding: 9px 17px;
 
   @media (min-width: $tablet-width) {
     display: block;
@@ -203,4 +202,18 @@
     opacity: 1;
     visibility: visible;
   }
+}
+
+.swiper-button-disabled {
+  cursor: not-allowed;
+
+  &:hover {
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+}
+
+.swiper-button-disabled .swiper-button__icon {
+  background-color: #1026544d;
 }
