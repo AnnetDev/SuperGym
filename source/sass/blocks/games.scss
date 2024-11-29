@@ -249,6 +249,7 @@
 .games__announce-button[aria-disabled="true"] {
   opacity: 50%;
   cursor: not-allowed;
+  pointer-events: none;
 
     &:hover,
     &:focus,

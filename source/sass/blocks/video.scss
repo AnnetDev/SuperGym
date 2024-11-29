@@ -81,6 +81,7 @@
     background-color: $basic-white;
     opacity: 40%;
     cursor: not-allowed;
+    pointer-events: none;
   }
 
   @media (min-width: $desktop-width) {

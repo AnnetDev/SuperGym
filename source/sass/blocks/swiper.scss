@@ -53,7 +53,10 @@
 }
 
 .swiper-button-next {
+  right: -12px;
+  @media (min-width: $desktop-width) {
   right: -69px;
+  }
 }
 
 .swiper-button-prev,
@@ -206,6 +209,7 @@
 
 .swiper-button-disabled {
   cursor: not-allowed;
+  pointer-events: none;
 
   &:hover {
     border: none;
@@ -216,4 +220,5 @@
 
 .swiper-button-disabled .swiper-button__icon {
   background-color: #1026544d;
+  pointer-events: none;
 }

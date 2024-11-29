@@ -228,6 +228,7 @@
   &:disabled {
     opacity: 30%;
     cursor: not-allowed;
+    pointer-events: none;
 
     &::after {
       background-color: $basic-dark;

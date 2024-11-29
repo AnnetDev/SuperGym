@@ -143,6 +143,7 @@
 .faq__tab-button[aria-disabled="true"] {
   opacity: 20%;
   cursor: not-allowed;
+  pointer-events: none;
 }
 
 .faq__tab {
@@ -378,6 +379,7 @@
     border-color: $bg-blocks;
     opacity: 30%;
     cursor: not-allowed;
+    pointer-events: none;
   }
 
   &:disabled::before,

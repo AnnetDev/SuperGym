@@ -219,24 +219,20 @@
       a {
         color: $bg-blocks;
         margin: 0;
-        // padding: 0;
 
         @media (min-width: $tablet-width) {
           margin-top: auto;
           margin-left: -10px;
-    margin-bottom: -10px;
+          margin-bottom: -10px;
         }
 
         &::after {
           position: absolute;
           content: "";
           display: block;
-
           width: calc(100% - 20px);
-          // width: 100%;
           height: 1px;
           background-color: $bg-blocks;
-          // bottom: -6px;
           bottom: 4px;
           left: 50%;
           transform: translateX(-50%);
@@ -253,7 +249,6 @@
         &:focus-within {
           background-image: none;
           outline: solid 1px $bg-blocks;
-
           color: $bg-blocks;
           opacity: 100%;
         }
@@ -270,7 +265,45 @@
       a[aria-disabled="true"] {
         opacity: 30%;
         cursor: not-allowed;
+        pointer-events: none;
+
+
+        &::after {
+          display: block; // Сохраняем подчеркивание
+          opacity: 30%;   // Настраиваем стиль подчеркивания при disabled
+        }
+
+        &:hover,
+        &:focus,
+        &:focus-within,
+        &:active {
+          outline: none; // Убираем фокусное оформление
+        }
+
+        // &:hover,
+        // &:focus,
+        // &:focus-within,
+        // &:active {
+        //   outline: none;
+        //   color: inherit;
+        //   pointer-events: none;
+        // }
       }
+
+      // a[aria-disabled="true"] {
+      //   opacity: 30%;
+      //   cursor: not-allowed;
+
+      //   &:hover,
+      //   &:focus,
+      //   &:focus-within,
+      //   &:active {
+      //     color: $bg-blocks;
+      //     outline: none;
+      //   }
+      // }
+
+
     }
   }
 }
@@ -330,8 +363,6 @@
     margin-top: auto;
     margin-left: -10px;
     margin-bottom: -4px;
-
-    // padding: 0 0 5px;
   }
 
   &:hover {
@@ -359,6 +390,21 @@
 .offers__more-link[aria-disabled="true"] {
   opacity: 50%;
   cursor: not-allowed;
+  pointer-events: none;
+
+  &::after {
+    display: block; // Сохраняем подчеркивание
+    opacity: 50%; // Настраиваем стиль подчеркивания при disabled
+  }
+
+  &:hover,
+  &:focus,
+  &:focus-within,
+  &:active {
+    outline: none;
+    opacity: 50%;
+    // Убираем фокусное оформление
+  }
 }
 
 .offers__image {

@@ -75,6 +75,7 @@
 .hero__phone[aria-disabled="true"] {
   opacity: 50%;
   cursor: not-allowed;
+  pointer-events: none;
 
   &:hover,
   &:focus,
@@ -306,6 +307,7 @@
 .hero__button[aria-disabled="true"] {
   opacity: 50%;
   cursor: not-allowed;
+  pointer-events: none;
 
   &:hover,
   &:focus,

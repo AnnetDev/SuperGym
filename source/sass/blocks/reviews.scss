@@ -169,6 +169,7 @@
 .reviews__button.swiper-button-prev:disabled,
 .reviews__button.swiper-button-next:disabled {
   cursor: not-allowed;
+  pointer-events: none;
 
   &:hover {
     border: none;
@@ -179,4 +180,5 @@
 
 .reviews__button:disabled .swiper-button__icon {
   background-color: #1026544d;
+  pointer-events: none;
 }
