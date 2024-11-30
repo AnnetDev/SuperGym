@@ -13,22 +13,46 @@ document.querySelectorAll('.faq__tab-button').forEach((tab) => {
   tab.addEventListener('click', changeTabFaq);
 });
 
-document.querySelectorAll('.faq__button').forEach((button) => {
-  button.addEventListener('click', () => {
-    const expanded = button.getAttribute('aria-expanded') === 'true';
-    button.setAttribute('aria-expanded', !expanded);
+// document.querySelectorAll('.faq__button').forEach((button) => {
+//   button.addEventListener('click', () => {
+//     const expanded = button.getAttribute('aria-expanded') === 'true';
+//     button.setAttribute('aria-expanded', !expanded);
+//   });
+// });
 
-    // Найти соседний <p>, используя closest и nextElementSibling
-    const parent = button.closest('li');
-    const content = parent.querySelector('p');
+document.querySelectorAll('.faq__header').forEach((header) => {
+  header.addEventListener('click', () => {
+    const isExpanded = header.getAttribute('aria-expanded') === 'true';
 
-    // if (!expanded) {
-    //   // content.style.maxHeight = `${content.scrollHeight}px`; // Разворачиваем
-    // } else {
-    //   content.style.maxHeight = null; // Сворачиваем
-    // }
+    // Переключить текущее состояние
+    header.setAttribute('aria-expanded', !isExpanded);
+    const content = header.nextElementSibling;
+    if (content) {
+      content.style.display = isExpanded ? 'none' : 'block';
+    }
+
+    // Синхронизация состояния кнопки внутри заголовка
+    const button = header.querySelector('.faq__button');
+    if (button) {
+      button.setAttribute('aria-expanded', !isExpanded);
+    }
   });
 });
+
+
+// document.querySelectorAll('.faq__header').forEach((header) => {
+//   header.addEventListener('click', () => {
+//     const expanded = header.getAttribute('aria-expanded') === 'true';
+//     header.setAttribute('aria-expanded', !expanded);
+
+//     // Поиск следующего элемента (параграфа)
+//     const content = header.nextElementSibling;
+//     if (content) {
+//       content.style.display = expanded ? 'none' : 'block'; // Скрываем/показываем параграф
+//     }
+//   });
+// });
+
 
 document.addEventListener('DOMContentLoaded', () => {
   try {

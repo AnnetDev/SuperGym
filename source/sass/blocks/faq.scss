@@ -204,6 +204,7 @@
       position: relative;
       display: flex;
       align-items: center;
+      cursor: pointer;
 
       @media (min-width: $tablet-width) {
         padding: 10px 0 8px;
@@ -301,7 +302,7 @@
   background-color: transparent;
   margin: 0;
   padding: 0;
-
+cursor: pointer;
   // top: 26px;
   right: 0;
   top: 50%;
@@ -388,17 +389,29 @@
   }
 }
 
-.faq__button[aria-expanded="true"] {
+// .faq__button[aria-expanded="true"] {
+//   background-color: $bg-blocks;
+
+//   &::before {
+//     background-color: $basic-white;
+//   }
+
+//   &::after {
+//     display: none;
+//   }
+// }
+.faq__header[aria-expanded="true"] .faq__button {
   background-color: $bg-blocks;
-
-  &::before {
-    background-color: $basic-white;
-  }
-
-  &::after {
-    display: none;
-  }
 }
+
+.faq__header[aria-expanded="true"] .faq__button::before {
+  background-color: $basic-white;
+}
+
+.faq__header[aria-expanded="true"] .faq__button::after {
+  display: none;
+}
+
 
 .faq__tab li:has(button[aria-expanded="true"]) p {
   max-height: 500px;
