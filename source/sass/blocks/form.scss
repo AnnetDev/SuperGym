@@ -95,8 +95,6 @@
   font-size: 14px;
   line-height: 22px;
   margin: 0;
-
-  // padding: 10px 4px;
   padding-bottom: 3px;
   border-bottom: solid 1px #74819c;
   width: 100%;
@@ -130,6 +128,11 @@
   &:disabled {
     opacity: 40%;
     pointer-events: none;
+
+    &:hover {
+      color: inherit;
+      border-bottom: solid 1px #74819c;
+    }
   }
 }
 
@@ -168,8 +171,15 @@
 }
 
 .form__input::placeholder {
-  color: #74819c;
+  color: #74819c; /* Стандартный цвет плейсхолдера */
+  transition: all 0.3s ease; /* Плавный переход */
 }
+
+.form__input:focus::placeholder {
+  color: transparent; /* Скрываем текст плейсхолдера */
+}
+
+
 
 .form__button {
   color: $basic-white;

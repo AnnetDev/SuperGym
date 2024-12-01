@@ -35,7 +35,8 @@
   }
 }
 
-.button[aria-disabled="true"] {
+.button[aria-disabled="true"],
+.button:disabled {
   opacity: 30%;
   cursor: not-allowed;
   pointer-events: none;
