@@ -408,17 +408,18 @@
   }
 }
 
-// .faq__button[aria-expanded="true"] {
-//   background-color: $bg-blocks;
+.faq__button[aria-expanded="true"] {
+  background-color: $bg-blocks;
 
-//   &::before {
-//     background-color: $basic-white;
-//   }
+  &::before {
+    background-color: $basic-white;
+  }
 
-//   &::after {
-//     display: none;
-//   }
-// }
+  &::after {
+    display: none;
+  }
+}
+
 .faq__header[aria-expanded="true"] .faq__button {
   background-color: $bg-blocks;
 }
@@ -453,11 +454,3 @@
     // padding: 32px 0 23px;
   }
 }
-
-
-// .faq__tab li button[aria-expanded="true"] + h3 {
-//   margin-bottom: 20px;
-// }
-
-
-//hover for .faq__button[aria-expanded="true"] ????

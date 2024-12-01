@@ -1,7 +1,7 @@
 import { changeTab } from '../utils/change-tab';
 
 export function changeTabFaq(event) {
-  event.preventDefault(); // Убираем стандартное поведение
+  event.preventDefault();
   event.target.blur();
   changeTab(event, {
     tabSelector: '.faq__tab-button',

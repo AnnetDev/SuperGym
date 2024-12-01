@@ -1,10 +1,10 @@
 export function changeTab(event, options) {
   const {
-    tabSelector, // Селектор кнопок табов
-    contentSelector, // Селектор контента табов
-    activeTabClass, // Класс для активного таба
-    activeContentClass, // Класс для активного контента
-    inactiveContentClass // Класс для неактивного контента
+    tabSelector,
+    contentSelector,
+    activeTabClass,
+    activeContentClass,
+    inactiveContentClass
   } = options;
 
   const tabs = document.querySelectorAll(tabSelector);
@@ -12,10 +12,8 @@ export function changeTab(event, options) {
   const currentTab = event.target;
   const currentContentId = currentTab.getAttribute('data-tab');
 
-  // Удаляем активные классы у всех табов
   tabs.forEach((tab) => tab.classList.remove(activeTabClass));
 
-  // Скрываем весь контент
   contents.forEach((content) => {
     content.classList.remove(activeContentClass);
     if (inactiveContentClass) {
@@ -23,7 +21,6 @@ export function changeTab(event, options) {
     }
   });
 
-  // Добавляем активные классы
   currentTab.classList.add(activeTabClass);
 
   const activeContent = document.querySelector(`${contentSelector}[data-tab="${currentContentId}"]`);

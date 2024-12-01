@@ -15,7 +15,6 @@ export function initializeSwiper(containerSelector, customOptions = {}) {
     normalizeSliderIndex: true,
   };
 
-  // Объединяем общие настройки с уникальными
   const swiperOptions = Object.assign({}, defaultOptions, customOptions);
 
   const swiper = new Swiper(containerSelector, swiperOptions);
@@ -35,7 +34,6 @@ export function initializeSwiper(containerSelector, customOptions = {}) {
       }
     });
   }
-
 
   return swiper;
 }

@@ -1,8 +1,8 @@
 import { changeTab } from '../utils/change-tab';
 
 export function changeTabPrice(event) {
-  event.preventDefault(); // Убираем стандартное поведение
-  event.target.blur(); // Сбрасываем фокус с кнопки
+  event.preventDefault();
+  event.target.blur();
 
   changeTab(event, {
     tabSelector: '.price__tab-link',

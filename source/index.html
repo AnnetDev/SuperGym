@@ -244,9 +244,18 @@
       <div class="container">
         <h2 class="juri__title">Жюри</h2>
         <div class="juri__container">
+          <button class="juri__button-prev swiper-button swiper-button-prev" type="button" tabindex="0">
+            <span class="swiper-button__icon"></span>
+            <span class="swiper-button__icon visually-hidden">Предыдущий слайд</span>
+          </button>
+
+          <button class="juri__button-next swiper-button swiper-button-next" type="button" tabindex="0">
+            <span class="swiper-button__icon"></span>
+            <span class="visually-hidden">Следующий слайд</span>
+          </button>
           <div class="juri__swiper swiper">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">
+              <div class="swiper-slide" tabindex="0">
                 <h3 class="swiper-slide__title">Анна Павлова</h3>
                 <picture>
                   <source type="image/webp" srcset="img/images/card-Anna@1x.webp 1x, img/images/card-Anna@2x.webp 2x"
@@ -265,7 +274,7 @@
                 </div>
               </div>
 
-              <div class="swiper-slide">
+              <div class="swiper-slide" tabindex="0">
                 <h3 class="swiper-slide__title">Алексей Лавров</h3>
                 <picture>
                   <source type="image/webp"
@@ -285,7 +294,7 @@
                 </div>
               </div>
 
-              <div class="swiper-slide">
+              <div class="swiper-slide" tabindex="0">
                 <h3 class="swiper-slide__title">Александр Пашков</h3>
                 <picture>
                   <source type="image/webp"
@@ -306,7 +315,7 @@
                 </div>
               </div>
 
-              <div class="swiper-slide">
+              <div class="swiper-slide" tabindex="0">
                 <h3 class="swiper-slide__title">Мария Кетова</h3>
                 <picture>
                   <source type="image/webp" srcset="img/images/card-Maria@1x.webp 1x, img/images/card-Maria@2x.webp 2x"
@@ -324,7 +333,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide" tabindex="0">
                 <h3 class="swiper-slide__title">Лукас Бергман</h3>
                 <picture>
                   <source type="image/webp"
@@ -344,7 +353,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide" tabindex="0">
                 <h3 class="swiper-slide__title">Эмма Линдгрен</h3>
                 <picture>
                   <source type="image/webp" srcset="img/images/card-Maria@1x.webp 1x, img/images/card-Maria@2x.webp 2x"
@@ -362,7 +371,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide" tabindex="0">
                 <h3 class="swiper-slide__title">Виктория Смирнова</h3>
                 <picture>
                   <source type="image/webp" srcset="img/images/card-Anna@1x.webp 1x, img/images/card-Anna@2x.webp 2x"
@@ -380,7 +389,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide" tabindex="0">
                 <h3 class="swiper-slide__title">Сергей Кузнецов</h3>
                 <picture>
                   <source type="image/webp"
@@ -402,15 +411,7 @@
             </div>
           </div>
 
-          <button class="juri__button-prev swiper-button swiper-button-prev" type="button">
-            <span class="swiper-button__icon"></span>
-            <span class="swiper-button__icon visually-hidden">Предыдущий слайд</span>
-          </button>
 
-          <button class="juri__button-next swiper-button swiper-button-next" type="button">
-            <span class="swiper-button__icon"></span>
-            <span class="visually-hidden">Следующий слайд</span>
-          </button>
         </div>
       </div>
     </section>
@@ -547,7 +548,7 @@
 
           <ul class="faq__tab faq__tab--active" data-tab="center">
             <li>
-              <div class="faq__header" role="button" aria-expanded="true">
+              <div class="faq__header" tabindex="0">
                 <h3>Как стать членом фитнес-центра?</h3>
                 <button class="faq__button" type="button" aria-expanded="true">
                   <span class="visually-hidden">Показать/Скрыть</span>
@@ -558,7 +559,7 @@
               </p>
             </li>
             <li>
-              <div class="faq__header" role="button" aria-expanded="false">
+              <div class="faq__header" tabindex="0">
                 <h3>Где можно посмотреть расписание?</h3>
                 <button class="faq__button" type="button" aria-expanded="false">
                   <span class="visually-hidden">Показать/Скрыть</span>
@@ -569,7 +570,7 @@
               </p>
             </li>
             <li>
-              <div class="faq__header" role="button" aria-expanded="false">
+              <div class="faq__header" tabindex="0">
                 <h3>Есть кулеры в центре? Предоставляются полотенца?</h3>
                 <button class="faq__button" type="button" aria-expanded="false">
                   <span class="visually-hidden">Показать/Скрыть</span>
@@ -581,7 +582,7 @@
               </p>
             </li>
             <li>
-              <div class="faq__header" role="button" aria-expanded="false">
+              <div class="faq__header" tabindex="0">
                 <h3>Сколько тренеров работает в клубе и какова их&nbsp;квалификация?</h3>
                 <button class="faq__button" type="button" aria-expanded="false">
                   <span class="visually-hidden">Показать/Скрыть</span>
@@ -594,7 +595,7 @@
 
           <ul class="faq__tab faq__tab--inactive" data-tab="subscription">
             <li>
-              <div class="faq__header" role="button" aria-expanded="false">
+              <div class="faq__header" tabindex="0">
                 <h3>Занятия с тренером входят в абонемент?</h3>
                 <button class="faq__button" type="button" aria-expanded="false">
                   <span class="visually-hidden">Показать/Скрыть</span>
@@ -606,7 +607,7 @@
               </p>
             </li>
             <li>
-              <div class="faq__header" role="button" aria-expanded="false">
+              <div class="faq__header" tabindex="0">
                 <h3>Можно ли заморозить абонемент?</h3>
                 <button class="faq__button" type="button" aria-expanded="false">
                   <span class="visually-hidden">Показать/Скрыть</span>
@@ -617,7 +618,7 @@
               </p>
             </li>
             <li>
-              <div class="faq__header" role="button" aria-expanded="false">
+              <div class="faq__header" tabindex="0">
                 <h3>Есть ли лимит по посещениям тренажерного зала и групповых занятий?</h3>
                 <button class="faq__button" type="button" aria-expanded="false">
                   <span class="visually-hidden">Показать/Скрыть</span>
@@ -629,7 +630,7 @@
               </p>
             </li>
             <li>
-              <div class="faq__header" role="button" aria-expanded="false">
+              <div class="faq__header" tabindex="0">
                 <h3>Что такое семейный доступ и доступ для друзей?</h3>
                 <button class="faq__button" type="button" aria-expanded="false">
                   <span class="visually-hidden">Показать/Скрыть</span>
@@ -643,7 +644,7 @@
 
           <ul class="faq__tab faq__tab--inactive" data-tab="services">
             <li>
-              <div class="faq__header" role="button" aria-expanded="false">
+              <div class="faq__header" tabindex="0">
                 <h3>Предлагает ли клуб услуги по консультированию по вопросам питания?</h3>
                 <button class="faq__button" type="button" aria-expanded="false">
                   <span class="visually-hidden">Показать/Скрыть</span>
@@ -654,7 +655,7 @@
               </p>
             </li>
             <li>
-              <div class="faq__header" role="button" aria-expanded="false">
+              <div class="faq__header" tabindex="0">
                 <h3>Проводятся ли в клубе какие-либо мероприятия или соревнования?</h3>
                 <button class="faq__button" type="button" aria-expanded="false">
                   <span class="visually-hidden">Показать/Скрыть</span>
@@ -665,7 +666,7 @@
               </p>
             </li>
             <li>
-              <div class="faq__header" role="button" aria-expanded="false">
+              <div class="faq__header" tabindex="0">
                 <h3>Можно ли приобрести в центре спортивное питание?</h3>
                 <button class="faq__button" type="button" aria-expanded="false">
                   <span class="visually-hidden">Показать/Скрыть</span>
@@ -677,7 +678,7 @@
               </p>
             </li>
             <li>
-              <div class="faq__header" role="button" aria-expanded="false">
+              <div class="faq__header" tabindex="0">
                 <h3>Есть ли в центре детская комната?</h3>
                 <button class="faq__button" type="button" aria-expanded="false">
                   <span class="visually-hidden">Показать/Скрыть</span>
@@ -690,7 +691,7 @@
 
           <ul class="faq__tab faq__tab--inactive" data-tab="rules">
             <li>
-              <div class="faq__header" role="button" aria-expanded="false">
+              <div class="faq__header" tabindex="0">
                 <h3>Есть в фитнес-центре дресс-код?</h3>
                 <button class="faq__button" type="button" aria-expanded="false">
                   <span class="visually-hidden">Показать/Скрыть</span>
@@ -703,7 +704,7 @@
               </p>
             </li>
             <li>
-              <div class="faq__header" role="button" aria-expanded="false">
+              <div class="faq__header" tabindex="0">
                 <h3>Можно ли приводить с собой детей на тренировки?</h3>
                 <button class="faq__button" type="button" aria-expanded="false">
                   <span class="visually-hidden">Показать/Скрыть</span>
@@ -714,7 +715,7 @@
               </p>
             </li>
             <li>
-              <div class="faq__header" role="button" aria-expanded="false">
+              <div class="faq__header" tabindex="0">
                 <h3>Какие дополнительные правила посещения центра?</h3>
                 <button class="faq__button" type="button" aria-expanded="false">
                   <span class="visually-hidden">Показать/Скрыть</span>
@@ -726,7 +727,7 @@
               </p>
             </li>
             <li>
-              <div class="faq__header" role="button" aria-expanded="false">
+              <div class="faq__header" tabindex="0">
                 <h3>Нужна ли медицинская справка для посещения залов и бассейна?</h3>
                 <button class="faq__button" type="button" aria-expanded="false">
                   <span class="visually-hidden">Показать/Скрыть</span>
@@ -746,12 +747,18 @@
       <div class="container">
         <h2 class="reviews__heading">Отзывы</h2>
         <div class="reviews__container">
-          <!-- Slider main container -->
+          <button class="reviews__button swiper-button swiper-button-prev" type="button" tabindex="0">
+            <span class="swiper-button__icon"></span>
+            <span class="visually-hidden">Предыдущий слайд</span>
+          </button>
+
+          <button class="reviews__button swiper-button swiper-button-next" type="button" tabindex="0">
+            <span class="swiper-button__icon"></span>
+            <span class="visually-hidden">Следующий слайд</span>
+          </button>
           <div class="reviews__swiper swiper">
-            <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide reviews__slide">
+              <div class="swiper-slide reviews__slide" tabindex="0">
                 <picture>
                   <source type="image/webp" media="(min-width: 768px)"
                     srcset="img/images/reviewer-img-tablet@1x.webp 1x, img/images/reviewer-img-tablet@2x.webp 2x"
@@ -773,7 +780,7 @@
                 </div>
               </div>
 
-              <div class="swiper-slide reviews__slide">
+              <div class="swiper-slide reviews__slide" tabindex="0">
                 <picture>
                   <source type="image/webp" media="(min-width: 768px)"
                     srcset="img/images/reviewer-img-tablet@1x.webp 1x, img/images/reviewer-img-tablet@2x.webp 2x"
@@ -796,7 +803,7 @@
                 </div>
               </div>
 
-              <div class="swiper-slide reviews__slide">
+              <div class="swiper-slide reviews__slide" tabindex="0">
                 <picture>
                   <source type="image/webp" media="(min-width: 768px)"
                     srcset="img/images/reviewer-img-tablet@1x.webp 1x, img/images/reviewer-img-tablet@2x.webp 2x"
@@ -820,16 +827,6 @@
               </div>
             </div>
           </div>
-
-          <button class="reviews__button swiper-button swiper-button-prev" type="button">
-            <span class="swiper-button__icon"></span>
-            <span class="visually-hidden">Предыдущий слайд</span>
-          </button>
-
-          <button class="reviews__button swiper-button swiper-button-next" type="button">
-            <span class="swiper-button__icon"></span>
-            <span class="visually-hidden">Следующий слайд</span>
-          </button>
         </div>
       </div>
     </section>
@@ -848,7 +845,7 @@
               </label>
               <label class="form__label">
                 <span class="visually-hidden">Телефон</span>
-                <input class="form__input form__input-phone"  type="tel" name="input-phone" placeholder="Телефон"
+                <input class="form__input form__input-phone" type="tel" name="input-phone" placeholder="Телефон"
                   id="input-phone" required>
               </label>
               <button class="button form__button" type="submit">отправить</button>
