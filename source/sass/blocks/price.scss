@@ -250,27 +250,31 @@
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-  padding: 50px 42px;
+  padding: 43px 35px;
   background-color: $basic-white;
   width: 290px;
   min-height: 384px;
+  box-sizing: border-box;
+  border: 7px solid transparent;
 
   @media (min-width: $tablet-width) {
     width: 380px;
-    padding: 65px;
+    padding: 58px;
     min-height: unset;
   }
 
   @media (min-width: $desktop-width) {
     width: 360px;
     align-content: center;
-    padding: 65px 65px 67px;
+    padding: 58px 58px 67px;
   }
 
-  &:hover {
-    // outline-color: $buttons-gradient;
-    // outline-width: 7px;
-    border: solid 7px $buttons-gradient;
+  &:hover,
+  &:focus,
+  &:focus-within {
+    border: 7px solid;
+    border-image-source: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
+    border-image-slice: 1;
   }
 }
 
@@ -347,6 +351,7 @@
     z-index: -1;
     min-width: 230px;
     text-align: center;
+    white-space: nowrap;
 
     @media (min-width: $tablet-width) {
       font-size: 100px;

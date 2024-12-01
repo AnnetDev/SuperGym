@@ -139,7 +139,7 @@
 }
 
 .about__video {
-  padding-bottom: 10px;
+  // padding-bottom: 10px; //может убрать - тогда при переполнении слипаются элементы
   @media (min-width: $tablet-width) {
     position: absolute;
     content: "";
