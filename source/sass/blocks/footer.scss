@@ -52,17 +52,19 @@
 .footer__navigation-list {
   list-style: none;
   margin: 0;
+  margin-left: -5px;
   padding: 0;
   display: flex;
   flex-flow: row wrap;
-  gap: 20px 35px;
+  gap: 20px 26px;
 
   @media (min-width: $tablet-width) {
-    gap: 30px;
+    gap: 21px;
+    margin-left: 0;
   }
 
   @media (min-width: $desktop-width) {
-    gap: 82px;
+    gap: 73px;
   }
 }
 
@@ -80,10 +82,50 @@
   line-height: 20px;
   text-decoration: none;
   color: $basic-white;
+  cursor: pointer;
+  position: relative;
+  padding: 0 5px;
 
   @media (min-width: $tablet-width) {
     line-height: 22px;
   }
+
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 0;
+    height: 1px;
+    background-color: $basic-white;
+    bottom: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &:hover::after {
+    width: calc(100% - 10px);
+  }
+
+  &:focus,
+  &:focus-within {
+    outline: solid 1px $basic-white;
+    outline-offset: 5px;
+  }
+
+  &:active {
+    outline: none;
+  }
+
+  &:focus::after,
+  &:focus-within::after,
+  &:active::after {
+    width: 0;
+  }
+}
+
+.footer__navigation-link[aria-disabled="true"] {
+  opacity: 40%;
+  pointer-events: none;
 }
 
 .footer__social-list {
@@ -113,11 +155,39 @@
   width: 25px;
   height: 25px;
   align-items: center;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+
+  &:hover {
+    background-color: #74819c;
+  }
+
+  &:focus,
+  &:focus-within {
+    background-color: #103aae;
+  }
+
+  &:active {
+    background-color: $basic-dark;
+  }
+
+}
+
+.footer__social-item[aria-disabled="true"] {
+  opacity: 30%;
+  pointer-events: none;
 }
 
 .footer__social-link {
   display: block;
   background-color: $bg-footer;
+  cursor: pointer;
+
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $basic-white;
+  }
 }
 
 .footer__social-link-vk {
@@ -125,8 +195,6 @@
   mask-size: contain;
   width: 14px;
   height: 14px;
-
-  // fill: red;
 }
 
 .footer__social-link-ok {
@@ -135,7 +203,6 @@
   width: 14px;
   height: 14px;
 
-  // fill: red;
 }
 
 .footer__social-link-reddit {
@@ -143,10 +210,4 @@
   mask-size: contain;
   width: 14px;
   height: 14px;
-
-  // fill: red;
 }
-
-// mask: url("/__spritemap#sprite-ruble-icon-view") center no-repeat;
-// mask-size: contain;
-// background-color: $basic-dark;
