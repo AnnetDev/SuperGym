@@ -10,6 +10,7 @@
   width: 260px;
   height: 300px;
   position: relative; //??
+
 }
 
 .swiper-button {
@@ -149,6 +150,7 @@
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
+  overflow-y: auto;
 }
 
 .swiper-slide__details-title {
@@ -173,10 +175,13 @@
 .swiper-slide__info-list {
   margin: 0;
   padding: 0;
-  width: 160px;
-  display: flex;
+  width: 100%; /* Автоматическая ширина */
+  max-width: 160px;
+    display: flex;
   flex-flow: column wrap;
   gap: 12px;
+  overflow-y: auto;
+  // min-height: 100%;
 }
 
 //состояния при кликах таб???

@@ -139,6 +139,7 @@
 }
 
 .about__video {
+  padding-bottom: 10px;
   @media (min-width: $tablet-width) {
     position: absolute;
     content: "";
