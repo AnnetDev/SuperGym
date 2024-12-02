@@ -93,6 +93,10 @@
           @media (min-width: $tablet-width) {
             font-size: 70px;
             line-height: 70px;
+            width: max-content;
+          }
+          @media (min-width: $desktop-width) {
+            width: unset;
           }
         }
 
@@ -231,6 +235,7 @@
           line-height: 22px;
           text-align: center;
           margin-bottom: 0;
+          width: 100%;
 
           @media (min-width: $tablet-width) {
             font-size: 24px;
