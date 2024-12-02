@@ -144,6 +144,7 @@
 
   @media (min-width: $desktop-width) {
     max-width: 1160px;
+    gap: 15px 51px;
     margin: 0 0 49px;
   }
 }
@@ -269,8 +270,9 @@
 
   @media (min-width: $desktop-width) {
     width: 360px;
+    min-height: 447px;
     align-content: center;
-    padding: 58px 58px 67px;
+    padding: 58px 58px 60px;
   }
 
   &:hover,
