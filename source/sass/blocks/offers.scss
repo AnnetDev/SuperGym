@@ -31,6 +31,7 @@
       @media (min-width: $desktop-width) {
         margin-right: 40px;
         margin-bottom: 0;
+        align-items: flex-start;
       }
 
 
@@ -57,6 +58,7 @@
         @media (min-width: $desktop-width) {
           padding: 40px 45px;
           width: 280px;
+          min-height: 460px;
         }
 
         h3 {
