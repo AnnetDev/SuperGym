@@ -112,8 +112,6 @@
   margin: 0 auto 39px;
   position: relative;
 
-  // border-bottom: solid 2px #78787833;
-
   &::before {
     position: absolute;
     content: "";
@@ -173,7 +171,7 @@
     display: block;
     width: 100%;
     height: 2px;
-    background-color: transparent; //  костыль
+    background-color: transparent;
     bottom: -8px;
     left: 50%;
     transform: translateX(-50%);
@@ -197,7 +195,6 @@
     color: $basic-dark;
     outline: none;
 
-    // Исключение для активных кнопок
     &.price__tab-link--active {
       color: $basic-dark;
       outline: none;
@@ -209,7 +206,6 @@
   &:focus-within::after {
     background-color: $basic-dark;
 
-    // Исключение для активных кнопок
     &.price__tab-link--active::after {
       background-color: $bg-banners;
     }
@@ -284,6 +280,7 @@
   line-height: 22px;
   margin: 0 0 17px;
   padding: 0;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     margin: 0 0 22px;
@@ -326,6 +323,7 @@
   position: relative;
   z-index: 1;
   color: $text-accent;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 23px;
@@ -350,6 +348,7 @@
     top: -48px;
     z-index: -1;
     min-width: 230px;
+    max-width: 280px;
     text-align: center;
     white-space: nowrap;
 
@@ -357,6 +356,11 @@
       font-size: 100px;
       line-height: 150px;
       top: -59px;
+      max-width: 370px;
+    }
+
+    @media (min-width: $desktop-width) {
+      max-width: 350px;
     }
   }
 }

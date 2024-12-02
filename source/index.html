@@ -24,11 +24,6 @@
 </head>
 
 <body class="page-body">
-  <!-- пример использования спрайта -->
-  <!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-    <svg>
-      <use href="/__spritemap#sprite-user"></use>
-    </svg> -->
   <main class="main-container">
 
     <section class="hero" data-test="hero">
@@ -41,7 +36,9 @@
               height="22">
             <img class="hero__logo" src="img/images/logo-supergym.svg" width="100" height="20" alt="логотип SUPERGYM">
           </picture>
-          <a class="hero__phone" href="tel:88005555555">8 800 555-55-55</a>
+          <a class="hero__phone" href="tel:88005555555">8 800 555-55-55
+            <span class="visually-hidden">Телефон спортцентра</span>
+          </a>
         </header>
         <div class="hero__wrapper">
           <div class="hero__main">
@@ -56,7 +53,9 @@
                 <h1 class="hero__title">ФИТНЕС ЦЕНТР</h1>
               </div>
             </div>
-            <a class="button hero__button" href="#price">Купить абонемент</a><!-- якорь -->
+            <a class="button hero__button" href="#price">Купить абонемент
+              <span class="visually-hidden">переход к разделу с ценами</span>
+            </a>
           </div>
           <picture>
             <source type="image/webp" media="(min-width: 1366px)"
@@ -84,7 +83,6 @@
         <div class="about__text-wrapper">
           <h2 class="about__title">Тренажёрный зал</h2>
           <h3 class="about__subtitle">Просторный зал площадью 900 кв/м</h3>
-          <!-- content area below -->
           <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья.
             Тренажёрный
             зал оснащён всем необходимым современным оборудованием для всех спортсменов.
@@ -112,6 +110,7 @@
               width="320" height="280" alt="Тренажёрный зал">
           </picture>
           <div class="about__video video">
+            <span class="visually-hidden">"Видео о центре, нажмите для воспроизведения"</span>
             <div class="video__container">
               <div class="video__placeholder">
                 <button class="video__button" type="button">
@@ -139,19 +138,28 @@
             <h3 class="price__tab-title">С тренером</h3>
             <p class="price__tab-description">12 занятий</p>
             <p class="price__tab-price" data-price="5000">5000<span class="price__ruble-icon"></span></p>
-            <a class="button price__tab-button" href="#">Купить абонемент</a>
+            <a class="button price__tab-button" href="#">
+              Купить абонемент
+              <span class="visually-hidden">Перейти к форме покупки абонемента</span>
+            </a>
           </li>
           <li class="price__tab-item">
             <h3 class="price__tab-title">Дневной</h3>
             <p class="price__tab-description">с 8:00 до 17:00</p>
             <p class="price__tab-price" data-price="1700">1700<span class="price__ruble-icon"></span></p>
-            <a class="button price__tab-button" href="#">Купить абонемент</a>
+            <a class="button price__tab-button" href="#">
+              Купить абонемент
+              <span class="visually-hidden">Перейти к форме покупки абонемента</span>
+            </a>
           </li>
           <li class="price__tab-item">
             <h3 class="price__tab-title">Полный день</h3>
             <p class="price__tab-description">с 8:00 до 22:00</p>
             <p class="price__tab-price" data-price="2700">2700<span class="price__ruble-icon"></span></p>
-            <a class="button price__tab-button" href="#">Купить абонемент</a>
+            <a class="button price__tab-button" href="#">
+              Купить абонемент
+              <span class="visually-hidden">Перейти к форме покупки абонемента</span>
+            </a>
           </li>
         </ul>
 
@@ -160,19 +168,28 @@
             <h3 class="price__tab-title">С тренером</h3>
             <p class="price__tab-description">12 занятий</p>
             <p class="price__tab-price" data-price="30 000">30 000<span class="price__ruble-icon"></span></p>
-            <a class="button price__tab-button" href="#">Купить абонемент</a>
+            <a class="button price__tab-button" href="#">
+              Купить абонемент
+              <span class="visually-hidden">Перейти к форме покупки абонемента</span>
+            </a>
           </li>
           <li class="price__tab-item">
             <h3 class="price__tab-title">Дневной</h3>
             <p class="price__tab-description">с 8:00 до 17:00</p>
             <p class="price__tab-price" data-price="10 200">10 200<span class="price__ruble-icon"></span></p>
-            <a class="button price__tab-button" href="#">Купить абонемент</a>
+            <a class="button price__tab-button" href="#">
+              Купить абонемент
+              <span class="visually-hidden">Перейти к форме покупки абонемента</span>
+            </a>
           </li>
           <li class="price__tab-item">
             <h3 class="price__tab-title">Полный день</h3>
             <p class="price__tab-description">с 8:00 до 22:00</p>
             <p class="price__tab-price" data-price="16 200">16 200<span class="price__ruble-icon"></span></p>
-            <a class="button price__tab-button" href="#">Купить абонемент</a>
+            <a class="button price__tab-button" href="#">
+              Купить абонемент
+              <span class="visually-hidden">Перейти к форме покупки абонемента</span>
+            </a>
           </li>
         </ul>
 
@@ -181,20 +198,28 @@
             <h3 class="price__tab-title">С тренером</h3>
             <p class="price__tab-description">12 занятий</p>
             <p class="price__tab-price" data-price="60 000">60 000<span class="price__ruble-icon"></span></p>
-            <a class="button price__tab-button" href="#">Купить абонемент</a>
+            <a class="button price__tab-button" href="#">
+              Купить абонемент
+              <span class="visually-hidden">Перейти к форме покупки абонемента</span>
+            </a>
           </li>
           <li class="price__tab-item">
             <h3 class="price__tab-title">Дневной</h3>
             <p class="price__tab-description">с 8:00 до 17:00</p>
             <p class="price__tab-price" data-price="20 400">20 400<span class="price__ruble-icon"></span></p>
-
-            <a class="button price__tab-button" href="#">Купить абонемент</a>
+            <a class="button price__tab-button" href="#">
+              Купить абонемент
+              <span class="visually-hidden">Перейти к форме покупки абонемента</span>
+            </a>
           </li>
           <li class="price__tab-item">
             <h3 class="price__tab-title">Полный день</h3>
             <p class="price__tab-description">с 8:00 до 22:00</p>
             <p class="price__tab-price" data-price="32 400">32 400<span class="price__ruble-icon"></span></p>
-            <a class="button price__tab-button" href="#">Купить абонемент</a>
+            <a class="button price__tab-button" href="#">
+              Купить абонемент
+              <span class="visually-hidden">Перейти к форме покупки абонемента</span>
+            </a>
           </li>
         </ul>
       </div>
@@ -220,7 +245,10 @@
             </div>
           </div>
           <p class="games__announce-description">Ежегодные соревнования по CrossFit</p>
-          <a class="button games__announce-button" href="#">заполнить заявку</a>
+          <a class="button games__announce-button" href="#">
+            заполнить заявку
+            <span class="visually-hidden">Перейти к форме для заполнения заявки</span>
+          </a>
         </div>
         <picture>
           <source type="image/webp" media="(min-width: 1366px)"
@@ -482,13 +510,15 @@
       <h2 class="offers__title">Акции</h2>
 
       <div class="offers__container container">
-        <!-- content area below -->
         <div>
           <div>
             <h3>Год</h3>
             <span>4999</span>
             <p>Безлимитный абонемент в тренажёрный зал</p>
-            <a class="button offers__more-link" href="#">подробнее</a>
+            <a class="button offers__more-link" href="#">
+              подробнее
+              <span class="visually-hidden">Узнать больше информации о предложении</span>
+            </a>
           </div>
           <picture>
             <source type="image/webp" media="(min-width: 1366px)"
@@ -516,12 +546,18 @@
           <li>
             <h3>Месяц бесплатно</h3>
             <p>Приведи друга, получи абонемент в подарок</p>
-            <a class="button offers__more-link" href="#">подробнее</a>
+            <a class="button offers__more-link" href="#">
+              подробнее
+              <span class="visually-hidden">Узнать больше информации о предложении</span>
+            </a>
           </li>
           <li>
             <h3>Скидка 20%</h3>
             <p>Корпоративный фитнес с командой</p>
-            <a class="button offers__more-link" href="#">подробнее</a>
+            <a class="button offers__more-link" href="#">
+              подробнее
+              <span class="visually-hidden">Узнать больше информации о предложении</span>
+            </a>
           </li>
         </ul>
       </div>
@@ -867,12 +903,17 @@
             </li>
             <li class="contacts__list-item">
               <h3 class="contacts__list-title">Телефон:</h3>
-              <a class="contacts__list-description contacts__list-phone" href="tel:88005555555">8 800 555-55-55</a>
+              <a class="contacts__list-description contacts__list-phone" href="tel:88005555555">
+                8 800 555-55-55
+                <span class="visually-hidden">телефон для связи</span>
+              </a>
             </li>
             <li class="contacts__list-item">
               <h3 class="contacts__list-title">Email:</h3>
-              <a class="contacts__list-description contacts__list-email"
-                href="mailto:oмск@supergym.ru">oмск@supergym.ru</a>
+              <a class="contacts__list-description contacts__list-email" href="mailto:оmsк@supergym.ru">
+                оmsк@supergym.ru
+                <span class="visually-hidden">отправить письмо</span>
+              </a>
             </li>
           </ul>
         </div>
@@ -920,18 +961,18 @@
       </nav>
       <ul class="footer__social-list">
         <li class="footer__social-item">
-          <a class="footer__social-link footer__social-link-vk" href="#">
+          <a class="footer__social-link footer__social-link-vk" href="https://htmlacademy.ru/" target="_blank" rel="noreferrer noopener">
             <span class="visually-hidden">VK</span>
 
           </a>
         </li>
         <li class="footer__social-item">
-          <a class="footer__social-link footer__social-link-ok" href="#">
+          <a class="footer__social-link footer__social-link-ok" href="https://htmlacademy.ru/" target="_blank" rel="noreferrer noopener">
             <span class="visually-hidden">OK</span>
           </a>
         </li>
         <li class="footer__social-item">
-          <a class="footer__social-link footer__social-link-reddit" href="#">
+          <a class="footer__social-link footer__social-link-reddit" href="https://htmlacademy.ru/" target="_blank" rel="noreferrer noopener">
             <span class="visually-hidden">Reddit</span>
           </a>
         </li>

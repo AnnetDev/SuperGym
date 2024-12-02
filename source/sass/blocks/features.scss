@@ -17,8 +17,6 @@
     align-items: center;
     margin: 0;
     padding: 0;
-
-    // gap: 35px;
     justify-content: center;
     position: relative;
 
@@ -27,7 +25,7 @@
       flex-flow: row wrap;
       gap: 40px 30px;
       align-items: flex-start;
-      justify-content: flex-start; // подумать о переполнении
+      justify-content: flex-start;
     }
 
     @media (min-width: $desktop-width) {

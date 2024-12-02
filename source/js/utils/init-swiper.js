@@ -19,7 +19,7 @@ export function initializeSwiper(containerSelector, customOptions = {}) {
 
   const swiper = new Swiper(containerSelector, swiperOptions);
 
-  if (containerSelector.includes('.juri__swiper') && swiper.params.loop) { // не работает
+  if (containerSelector.includes('.juri__swiper') && swiper.params.loop) {
     swiper.on('slideChange', () => {
       const prevButton = document.querySelector(swiper.params.navigation.prevEl);
       const nextButton = document.querySelector(swiper.params.navigation.nextEl);

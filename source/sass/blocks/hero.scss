@@ -99,8 +99,6 @@
     flex-flow: row wrap;
     gap: 30px;
     justify-content: center;
-
-    // align-items: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -162,7 +160,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    // width: 270px;
     max-width: 270px;
   }
 }
@@ -171,6 +168,7 @@
   display: flex;
   justify-content: flex-end;
   word-wrap: wrap;
+  word-break: break-word;
   font-family: $font-alumni;
   font-weight: 600;
   font-size: 32px;
@@ -189,6 +187,7 @@
     font-size: 54px;
     line-height: 54px;
     margin: 0 0 41px;
+
   }
 }
 
@@ -196,7 +195,7 @@
   display: flex;
   justify-content: flex-end;
   word-wrap: wrap;
-  // overflow-wrap: break-word;
+  word-break: break-word;
   font-family: $font-alumni;
   font-weight: 800;
   font-size: 62px;
@@ -210,14 +209,15 @@
     font-size: 72px;
     line-height: 85px;
     letter-spacing: 2px;
-
-    // -webkit-text-stroke: 1px $basic-white;
+    width: 187px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 92px;
     line-height: 110px;
     letter-spacing: 4px;
+    width: 270px;
+
   }
 }
 
@@ -248,7 +248,6 @@
   padding: 0;
   list-style: none;
   width: 100%;
-  // white-space: nowrap;
   word-wrap: wrap;
 
   @media (min-width: $tablet-width) {

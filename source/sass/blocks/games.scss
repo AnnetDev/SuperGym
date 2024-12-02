@@ -105,8 +105,6 @@
   line-height: 20px;
   margin: 0 0 2px;
   padding: 0 0 2px;
-
-  // width: 56px;
   width: 100%;
   border-bottom: solid 1px $basic-white;
 
@@ -123,7 +121,6 @@
 }
 
 .games__date {
-  // width: 100%;
   display: flex;
   flex-flow: row wrap;
   gap: 4px;
@@ -242,8 +239,6 @@
     color: $basic-dark;
     opacity: 100%;
   }
-
-  // &:disabled {} ???
 }
 
 .games__announce-button[aria-disabled="true"] {

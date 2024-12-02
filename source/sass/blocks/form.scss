@@ -66,12 +66,8 @@
   display: flex;
   flex-flow: column wrap;
   border: none;
-
-  // gap: 36px;
   margin: 0;
   padding: 0;
-
-  // align-content: center;
 
   @media (min-width: $tablet-width) {
     flex-flow: row wrap;
@@ -157,26 +153,22 @@
 
 .form__error-message {
   position: absolute;
-
-  // content: "";
   color: $error;
   font-size: 14px;
   line-height: 22px;
-
-  // bottom: 5px;
-  top: 100%; /* Сообщение будет под input */
+  top: 100%;
   left: 0;
   margin-top: 4px;
   width: max-content;
 }
 
 .form__input::placeholder {
-  color: #74819c; /* Стандартный цвет плейсхолдера */
-  transition: all 0.3s ease; /* Плавный переход */
+  color: #74819c;
+  transition: all 0.3s ease;
 }
 
 .form__input:focus::placeholder {
-  color: transparent; /* Скрываем текст плейсхолдера */
+  color: transparent;
 }
 
 
@@ -185,7 +177,7 @@
   color: $basic-white;
   outline: solid 2px $basic-white;
   padding: 22px;
-  margin: 0; // костыль
+  margin: 0;
   min-width: 60px;
   width: 286px;
   align-self: center;

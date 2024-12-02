@@ -45,5 +45,4 @@ export function formValidator() {
 
     input.classList.add('form__input--error');
   }
-
 }
