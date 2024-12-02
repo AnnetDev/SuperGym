@@ -17,6 +17,7 @@
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
+    gap: 10px 0;
   }
 }
 
@@ -51,7 +52,6 @@
     margin-bottom: 4px;
     max-width: 800px;
   }
-
 }
 
 .footer__navigation-list {
@@ -174,7 +174,6 @@
   &:active {
     background-color: $basic-dark;
   }
-
 }
 
 .footer__social-item[aria-disabled="true"] {
@@ -207,7 +206,6 @@
   mask-size: contain;
   width: 14px;
   height: 14px;
-
 }
 
 .footer__social-link-reddit {

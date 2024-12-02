@@ -33,7 +33,7 @@
 
 .reviews__swiper {
   width: 240px;
-  box-shadow: 0 0 40px 0 #1c337433;
+  box-shadow: 0 0 40px 0 rgba(28, 51, 116, 0.2);
   z-index: 1;
   position: relative;
 
@@ -44,98 +44,103 @@
   @media (min-width: $desktop-width) {
     width: 560px;
   }
+}
 
-  div {
-    div {
-      background-color: $bg-blocks;
-      box-shadow: 0 0 40px 0 #1c337433;
-      margin: 0;
-      padding: 30px 25px;
-      display: flex;
-      flex-flow: column wrap;
-      color: $basic-white;
-      align-items: center;
-      height: auto;
+.reviews__swiper-wrapper .reviews__slide {
+  background-color: $bg-blocks;
+  box-shadow: 0 0 40px 0 rgba(28, 51, 116, 0.2);
+  margin: 0;
+  padding: 30px 25px;
+  display: flex;
+  flex-flow: column wrap;
+  color: $basic-white;
+  align-items: center;
+  height: auto;
 
+  @media (min-width: $tablet-width) {
+    flex-flow: row wrap;
+    align-items: flex-start;
+    padding: 40px 30px;
+  }
 
-      @media (min-width: $tablet-width) {
-        flex-flow: row wrap;
-        align-items: flex-start;
-        padding: 40px 30px;
-      }
+  @media (min-width: $desktop-width) {
+    padding: 60px;
+  }
 
-      @media (min-width: $desktop-width) {
-        padding: 60px;
-      }
+  img {
+    display: block;
+    width: 68px;
+    height: 68px;
+    background-color: $basic-dark;
+    border-radius: 50%;
+    margin-bottom: 10px;
 
-      img {
-        display: block;
-        width: 68px;
-        height: 68px;
-        background-color: $basic-dark;
-        border-radius: 50%;
-        margin-bottom: 10px;
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 0;
+      margin-right: 40px;
+    }
 
-        @media (min-width: $tablet-width) {
-          width: 80px;
-          height: 80px;
-          margin-bottom: 0;
-          margin-right: 40px;
-        }
-
-        @media (min-width: $desktop-width) {
-          margin-right: 30px;
-        }
-      }
-
-      div {
-        margin: 0;
-        padding: 0;
-
-        @media (min-width: $tablet-width) {
-          width: 320px;
-        }
-
-        @media (min-width: $desktop-width) {
-          width: 330px;
-        }
-
-        h3 {
-          margin: 0;
-          padding: 0;
-          font-weight: 400;
-          font-size: 18px;
-          line-height: 20px;
-          text-align: center;
-          margin-bottom: 16px;
-
-          @media (min-width: $tablet-width) {
-            font-size: 22px;
-            line-height: 22px;
-            text-align: left;
-            margin-bottom: 20px;
-          }
-        }
-
-        p {
-          margin: 0;
-          padding: 0;
-          width: 100%;
-          font-weight: 300;
-          font-size: 14px;
-          line-height: 22px;
-          text-align: center;
-
-          @media (min-width: $tablet-width) {
-            font-size: 16px;
-            line-height: 24px;
-            text-align: left;
-          }
-        }
-      }
+    @media (min-width: $desktop-width) {
+      margin-right: 30px;
     }
   }
 }
+
+.reviews__swiper-wrapper .reviews__slide div {
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 320px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 330px;
+  }
+
+  h3 {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 16px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 22px;
+      line-height: 22px;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    overflow-y: auto;
+    max-height: 154px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 16px;
+      line-height: 24px;
+      text-align: left;
+      max-height: 120px;
+    }
+
+    @media (min-width: $desktop-width) {
+      max-height: 96px;
+    }
+  }
+}
+
 
 .reviews__container {
   position: relative;
@@ -179,6 +184,6 @@
 }
 
 .reviews__button:disabled .swiper-button__icon {
-  background-color: #1026544d;
+  background-color: rgba(16, 38, 84, 0.3);
   pointer-events: none;
 }

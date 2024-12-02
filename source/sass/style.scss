@@ -1,7 +1,7 @@
 // Vendor
 @import "vendor/normalize";
 
-//Global
+// Global
 @import "./common/variables";
 @import "./common/mixins";
 @import "./common/global";
@@ -9,7 +9,7 @@
 @import "./common/visually-hidden";
 
 
-//Blocks
+// Blocks
 @import "blocks/main-container";
 @import "./blocks/container";
 @import "./blocks/button";

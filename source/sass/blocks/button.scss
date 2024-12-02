@@ -30,7 +30,7 @@
 
   &:active {
     background-image: $buttons-play-gradient;
-    color: #ffffffb3;
+    color: rgba(255, 255, 255, 0.7);
     outline: none;
   }
 }

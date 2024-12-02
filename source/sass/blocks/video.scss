@@ -8,7 +8,7 @@
 
   @media (max-width: $mobile-width-only) {
     position: relative;
-    margin: 0 calc((100% - 320px)/2);
+    margin: 0 calc((100% - 320px) / 2);
   }
 
   @media (min-width: $tablet-width) {

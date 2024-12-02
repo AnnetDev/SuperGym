@@ -141,7 +141,7 @@
   height: 100%;
   top: 0;
   right: 0;
-  background-color: #102654e3;
+  background-color: rgba(16, 38, 84, 0.89);
   color: $basic-white;
   display: flex;
   flex-direction: column;
@@ -221,6 +221,6 @@
 }
 
 .swiper-button-disabled .swiper-button__icon {
-  background-color: #1026544d;
+  background-color: rgba(16, 38, 84, 0.3);
   pointer-events: none;
 }

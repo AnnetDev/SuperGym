@@ -8,265 +8,265 @@
   @media (min-width: $desktop-width) {
     padding: 100px 0;
   }
+}
+
+.offers__container {
+  display: flex;
+  flex-flow: column wrap;
+
+  @media (min-width: $desktop-width) {
+    flex-flow: row wrap;
+  }
 
   div {
     display: flex;
     flex-flow: column wrap;
-
-    @media (min-width: $desktop-width) {
-      flex-flow: row wrap;
-    }
-
-    div {
-      display: flex;
-      flex-flow: column wrap;
-      gap: 0;
-      margin-bottom: 40px;
-
-      @media (min-width: $tablet-width) {
-        flex-flow: row wrap;
-        margin-bottom: 35px;
-      }
-
-      @media (min-width: $desktop-width) {
-        margin-right: 40px;
-        margin-bottom: 0;
-        align-items: flex-start;
-      }
-
-
-      div {
-        display: flex;
-        flex-flow: column wrap;
-        background-color: $bg-banners;
-        align-items: center;
-        align-content: center;
-        width: 320px;
-        margin: 0 calc((100% - 320px)/2);
-        padding: 30px 30px 26px;
-        color: $basic-white;
-        min-height: 271px;
-
-        @media (min-width: $tablet-width) {
-          width: 278px;
-          margin: 0;
-          align-items: start;
-          align-content: start;
-          padding: 40px 25px;
-        }
-
-        @media (min-width: $desktop-width) {
-          padding: 40px 45px;
-          width: 280px;
-          min-height: 460px;
-        }
-
-        h3 {
-          display: block;
-          font-weight: 700;
-          font-size: 22px;
-          line-height: 22px;
-          margin: 1px 0 9px;
-          padding: 0;
-
-          @media (min-width: $tablet-width) {
-            font-size: 24px;
-            line-height: 24px;
-            margin: 0 0 20px;
-          }
-
-          @media (min-width: $desktop-width) {
-            margin: 0 0 21px;
-          }
-        }
-
-        span {
-          display: block;
-          font-weight: 700;
-          font-size: 64px;
-          line-height: 64px;
-          margin: 0 0 27px;
-          padding: 0;
-
-          @media (min-width: $tablet-width) {
-            font-size: 70px;
-            line-height: 70px;
-            margin: 0 0 40px;
-          }
-        }
-
-        p {
-          display: block;
-          font-weight: 300;
-          font-size: 16px;
-          line-height: 20px;
-          margin: 0 0 18px;
-          padding: 0;
-          text-align: center;
-
-          @media (min-width: $tablet-width) {
-            text-align: left;
-            font-size: 18px;
-            line-height: 24px;
-          }
-        }
-      }
-    }
-  }
-
-  ul {
-    list-style: none;
-    display: flex;
-    gap: 30px;
-    flex-flow: column wrap;
-    margin: 0;
-    padding: 0;
+    gap: 0;
+    margin-bottom: 40px;
 
     @media (min-width: $tablet-width) {
       flex-flow: row wrap;
+      margin-bottom: 35px;
     }
 
     @media (min-width: $desktop-width) {
-      width: 560px;
-      align-items: flex-end;
-      align-content: flex-end;
+      margin-right: 40px;
+      margin-bottom: 0;
+      align-items: flex-start;
+    }
+  }
+}
+
+.offers__container div div {
+  display: flex;
+  flex-flow: column wrap;
+  background-color: $bg-banners;
+  align-items: center;
+  align-content: center;
+  width: 320px;
+  margin: 0 calc((100% - 320px) / 2);
+  padding: 30px 30px 26px;
+  color: $basic-white;
+  min-height: 271px;
+
+  @media (min-width: $tablet-width) {
+    width: 278px;
+    margin: 0;
+    align-items: start;
+    align-content: start;
+    padding: 40px 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 40px 45px;
+    width: 280px;
+    min-height: 460px;
+  }
+
+  h3 {
+    display: block;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 22px;
+    margin: 1px 0 9px;
+    padding: 0;
+
+    @media (min-width: $tablet-width) {
+      font-size: 24px;
+      line-height: 24px;
+      margin: 0 0 20px;
     }
 
-    li {
+    @media (min-width: $desktop-width) {
+      margin: 0 0 21px;
+    }
+  }
+
+  span {
+    display: block;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 64px;
+    margin: 0 0 27px;
+    padding: 0;
+
+    @media (min-width: $tablet-width) {
+      font-size: 70px;
+      line-height: 70px;
+      margin: 0 0 40px;
+    }
+  }
+
+  p {
+    display: block;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0 0 18px;
+    padding: 0;
+    text-align: center;
+
+    @media (min-width: $tablet-width) {
+      text-align: left;
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+}
+
+
+.offers ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  flex-flow: column wrap;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    flex-flow: row wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 560px;
+    align-items: flex-end;
+    align-content: flex-end;
+  }
+}
+
+.offers ul li {
+  margin: 0;
+  padding: 21px 20px 16px;
+  border: 7px solid;
+  border-image-source: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
+  border-image-slice: 1;
+  color: $bg-blocks;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    align-items: flex-start;
+    gap: 0;
+    padding: 20px 20px 26px;
+    min-height: 188px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    gap: 0;
+    height: fit-content;
+    align-items: start;
+    text-align: left;
+    min-height: 174px;
+  }
+
+
+  h3 {
+    display: block;
+    margin: 0 0 19px;
+    padding: 0;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 22px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 26px;
+      line-height: 26px;
+      margin: 0 0 10px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0 0 10px;
+    }
+  }
+
+  p {
+    display: block;
+    margin: 0 0 10px;
+    padding: 0;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 16px;
+      line-height: 24px;
+      text-align: left;
       margin: 0;
-      padding: 21px 20px 16px;
-      border: 7px solid;
-      border-image-source: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
-      border-image-slice: 1;
-      color: $bg-blocks;
-      display: flex;
-      flex-flow: column wrap;
-      align-items: center;
-      text-align: center;
-
-      @media (min-width: $tablet-width) {
-        width: 324px;
-        align-items: flex-start;
-        gap: 0;
-        padding: 20px 20px 26px;
-        min-height: 188px;
-      }
-
-      @media (min-width: $desktop-width) {
-        width: 100%;
-        gap: 0;
-        height: fit-content;
-        align-items: start;
-        text-align: left;
-        min-height: 174px;
-      }
-
-
-      h3 {
-        display: block;
-        margin: 0 0 19px;
-        padding: 0;
-        font-weight: 700;
-        font-size: 22px;
-        line-height: 22px;
-
-        @media (min-width: $tablet-width) {
-          font-size: 26px;
-          line-height: 26px;
-          margin: 0 0 10px;
-        }
-
-        @media (min-width: $desktop-width) {
-          margin: 0 0 10px;
-        }
-      }
-
-      p {
-        display: block;
-        margin: 0 0 10px;
-        padding: 0;
-        font-weight: 300;
-        font-size: 14px;
-        line-height: 22px;
-
-        @media (min-width: $tablet-width) {
-          font-size: 16px;
-          line-height: 24px;
-          text-align: left;
-          margin: 0;
-        }
-
-
-        @media (min-width: $desktop-width) {
-          margin: 0 0 30px;
-        }
-      }
-
-      a {
-        color: $bg-blocks;
-        margin: 0;
-
-        @media (min-width: $tablet-width) {
-          margin-top: auto;
-          margin-left: -10px;
-          margin-bottom: -10px;
-        }
-
-        &::after {
-          position: absolute;
-          content: "";
-          display: block;
-          width: calc(100% - 20px);
-          height: 1px;
-          background-color: $bg-blocks;
-          bottom: 4px;
-          left: 50%;
-          transform: translateX(-50%);
-        }
-
-        &:hover {
-          background-image: none;
-          color: $bg-blocks;
-          opacity: 80%;
-        }
-
-        &:focus,
-        &:focus-visible,
-        &:focus-within {
-          background-image: none;
-          outline: solid 1px $bg-blocks;
-          color: $bg-blocks;
-          opacity: 100%;
-        }
-
-        &:active {
-          background-image: none;
-          border: none;
-          outline: none;
-          color: $bg-blocks;
-          opacity: 100%;
-        }
-      }
-
-      a[aria-disabled="true"] {
-        opacity: 30%;
-        cursor: not-allowed;
-        pointer-events: none;
-
-
-        &::after {
-          display: block;
-          opacity: 30%;
-        }
-
-        &:hover,
-        &:focus,
-        &:focus-within,
-        &:active {
-          outline: none;
-        }
-      }
     }
+
+
+    @media (min-width: $desktop-width) {
+      margin: 0 0 30px;
+    }
+  }
+
+  a {
+    color: $bg-blocks;
+    margin: 0;
+
+    @media (min-width: $tablet-width) {
+      margin-top: auto;
+      margin-left: -10px;
+      margin-bottom: -10px;
+    }
+  }
+
+  a::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: calc(100% - 20px);
+    height: 1px;
+    background-color: $bg-blocks;
+    bottom: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  a:hover {
+    background-image: none;
+    color: $bg-blocks;
+    opacity: 80%;
+  }
+
+  a:focus,
+  a:focus-visible,
+  a:focus-within {
+    background-image: none;
+    outline: solid 1px $bg-blocks;
+    color: $bg-blocks;
+    opacity: 100%;
+  }
+
+  a:active {
+    background-image: none;
+    border: none;
+    outline: none;
+    color: $bg-blocks;
+    opacity: 100%;
+  }
+}
+
+[aria-disabled="true"] {
+  opacity: 30%;
+  cursor: not-allowed;
+  pointer-events: none;
+
+
+  &::after {
+    display: block;
+    opacity: 30%;
+  }
+
+  &:hover,
+  &:focus,
+  &:focus-within,
+  &:active {
+    outline: none;
   }
 }
 
@@ -370,7 +370,7 @@
 
 .offers__image {
   display: block;
-  margin: 0 calc((100% - 320px)/2);
+  margin: 0 calc((100% - 320px) / 2);
 
   @media (min-width: $tablet-width) {
     margin: 0;
