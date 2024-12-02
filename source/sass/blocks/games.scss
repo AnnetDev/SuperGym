@@ -246,18 +246,18 @@
   cursor: not-allowed;
   pointer-events: none;
 
-    &:hover,
-    &:focus,
-    &:focus-within,
-    &:active {
-      color: inherit;
-      background-color: inherit;
-      background-image: none;
-      cursor: not-allowed;
-      outline: solid 2px $basic-white;
-      opacity: 50%;
-    }
+  &:hover,
+  &:focus,
+  &:focus-within,
+  &:active {
+    color: inherit;
+    background-color: inherit;
+    background-image: none;
+    cursor: not-allowed;
+    outline: solid 2px $basic-white;
+    opacity: 50%;
   }
+}
 
 
 .games__image {

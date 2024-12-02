@@ -14,10 +14,10 @@
       transform: rotate(150deg);
       background-image:
         image-set(url("../../img/images/bg-image-price-tablet@1x.webp") 1x,
-          url("../../img/images/bg-image-price-tablet@2x.webp") 2x,
-          url("../../img/images/bg-image-price-tablet@1x.png") 1x,
-          url("../../img/images/bg-image-price-tablet@2x.png") 2x,
-        );
+        url("../../img/images/bg-image-price-tablet@2x.webp") 2x,
+        url("../../img/images/bg-image-price-tablet@1x.png") 1x,
+        url("../../img/images/bg-image-price-tablet@2x.png") 2x,
+      );
       bottom: -50px;
       right: -15px;
     }
@@ -27,10 +27,10 @@
       height: 384px;
       background-image:
         image-set(url("../../img/images/bg-image-price-desktop@1x.webp") 1x,
-          url("../../img/images/bg-image-price-desktop@2x.webp") 2x,
-          url("../../img/images/bg-image-price-desktop@1x.png") 1x,
-          url("../../img/images/bg-image-price-desktop@2x.png") 2x,
-        );
+        url("../../img/images/bg-image-price-desktop@2x.webp") 2x,
+        url("../../img/images/bg-image-price-desktop@1x.png") 1x,
+        url("../../img/images/bg-image-price-desktop@2x.png") 2x,
+      );
       bottom: -93px;
       right: -93px;
     }

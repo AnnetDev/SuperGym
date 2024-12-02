@@ -39,14 +39,19 @@
   display: flex;
   flex-flow: row wrap;
   margin-bottom: 30px;
+  max-width: 290px;
+
 
   @media (min-width: $tablet-width) {
     margin-bottom: 3px;
+    max-width: 460px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 4px;
+    max-width: 800px;
   }
+
 }
 
 .footer__navigation-list {
