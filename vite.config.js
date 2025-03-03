@@ -1,16 +1,15 @@
+import { defineConfig } from 'vite';
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 import VitePluginSvgSpritemap from '@spiriit/vite-plugin-svg-spritemap';
-// import { ViteMinifyPlugin } from 'vite-plugin-minify';
 
-/** @type {import('vite').UserConfig} */
-export default {
+export default defineConfig({
+  // Указываем, какие файлы должны обрабатываться как ассеты.
+  assetsInclude: /\.(woff2|woff|png|jpe?g|webp)$/,
   plugins: [
     VitePluginSvgSpritemap('source/img/sprite/*.svg', {
       styles: false,
       injectSVGOnDev: true,
     }),
-    // input https://www.npmjs.com/package/html-minifier-terser options
-    // ViteMinifyPlugin({}),
     ViteImageOptimizer({
       test: /\.(jpe?g|png|svg)$/i,
       includePublic: false,
@@ -38,21 +37,17 @@ export default {
         ],
       },
       png: {
-        // https://sharp.pixelplumbing.com/api-output#png
         quality: 80,
         palette: true
       },
       jpeg: {
-        // https://sharp.pixelplumbing.com/api-output#jpeg
         quality: 80,
         progressive: true
       },
       jpg: {
-        // https://sharp.pixelplumbing.com/api-output#jpeg
         quality: 80,
         progressive: true
       },
-      // Cache assets in cacheLocation. When enabled, reads and writes asset files with their hash suffix from the specified path.
       cache: true,
       cacheLocation: './.cache',
     }),
@@ -69,4 +64,4 @@ export default {
   server: {
     port: 3000,
   }
-};
+});
