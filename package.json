@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.1",
   "type": "module",
-  "homepage": "https://annetdev.github.io/SuperGym/",
+
   "scripts": {
     "dev": "vite --host --open",
     "test": "backstop test --config=pp.config.cjs",
@@ -26,7 +26,7 @@
     "@htmlacademy/editorconfig-cli": "3.0.0",
     "@linthtml/linthtml": "0.9.5",
     "@ls-lint/ls-lint": "2.2.2",
-    "@spiriit/vite-plugin-svg-spritemap": "2.2.4",
+    "@spiriit/vite-plugin-svg-spritemap": "3.0.1",
     "@vitest/ui": "0.34.7",
     "autoprefixer": "10.4.17",
     "cli-progress": "3.12.0",

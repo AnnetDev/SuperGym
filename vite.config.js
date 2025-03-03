@@ -60,7 +60,7 @@ export default defineConfig({
   build: {
     outDir: '../dist',
   },
-  base: './',
+  base: '/SuperGym/',
   server: {
     port: 3000,
   }
