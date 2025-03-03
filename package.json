@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.1",
   "type": "module",
+  "homepage": "https://annetdev.github.io/SuperGym/",
   "scripts": {
     "dev": "vite --host --open",
     "test": "backstop test --config=pp.config.cjs",
@@ -60,4 +61,5 @@
   "volta": {
     "node": "20.11.0"
   }
+
 }
