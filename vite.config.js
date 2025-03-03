@@ -4,7 +4,7 @@ import VitePluginSvgSpritemap from '@spiriit/vite-plugin-svg-spritemap';
 
 export default defineConfig({
   // Указываем, какие файлы должны обрабатываться как ассеты.
-  assetsInclude: /\.(woff2|woff|png|jpe?g|webp)$/,
+  assetsInclude: /\.(woff2|woff|png|jpe?g|webp|svg)$/,
   plugins: [
     VitePluginSvgSpritemap('source/img/sprite/*.svg', {
       styles: false,
